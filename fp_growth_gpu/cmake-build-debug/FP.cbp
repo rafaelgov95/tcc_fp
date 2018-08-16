@@ -8,206 +8,206 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug"/>
+				<Option working_dir="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug"/>
+				<Option working_dir="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug"/>
+				<Option working_dir="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gpu_library_fp_growth">
-				<Option output="/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/libgpu_library_fp_growth.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug"/>
+				<Option output="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/libgpu_library_fp_growth.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/../../../../include/c++/8.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/../../../../include/c++/8.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/../../../../include/c++/8.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/include-fixed"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 gpu_library_fp_growth"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 gpu_library_fp_growth"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gpu_library_fp_growth/fast">
-				<Option output="/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/libgpu_library_fp_growth.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug"/>
+				<Option output="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/libgpu_library_fp_growth.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/../../../../include/c++/8.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/../../../../include/c++/8.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/../../../../include/c++/8.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/include-fixed"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 gpu_library_fp_growth/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 gpu_library_fp_growth/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cpu_library_fp_growth">
-				<Option output="/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/libcpu_library_fp_growth.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug"/>
+				<Option output="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/libcpu_library_fp_growth.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/../../../../include/c++/8.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/../../../../include/c++/8.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/../../../../include/c++/8.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/include-fixed"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 cpu_library_fp_growth"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 cpu_library_fp_growth"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cpu_library_fp_growth/fast">
-				<Option output="/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/libcpu_library_fp_growth.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug"/>
+				<Option output="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/libcpu_library_fp_growth.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/../../../../include/c++/8.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/../../../../include/c++/8.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/../../../../include/c++/8.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/include-fixed"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 cpu_library_fp_growth/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 cpu_library_fp_growth/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test">
-				<Option working_dir="/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug"/>
+				<Option working_dir="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="fp_cuda">
-				<Option output="/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/fp_cuda" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug"/>
+				<Option output="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/fp_cuda" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/../../../../include/c++/8.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/../../../../include/c++/8.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/../../../../include/c++/8.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/include-fixed"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 fp_cuda"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 fp_cuda"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="fp_cuda/fast">
-				<Option output="/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/fp_cuda" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug"/>
+				<Option output="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/fp_cuda" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/../../../../include/c++/8.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/../../../../include/c++/8.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/../../../../include/c++/8.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/include-fixed"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 fp_cuda/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 fp_cuda/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/rafael/Documentos/TCC/C++/FP/include/FPGrowth.h">
+		<Unit filename="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/include/FPGrowth.h">
 			<Option target="gpu_library_fp_growth"/>
 		</Unit>
-		<Unit filename="/home/rafael/Documentos/TCC/C++/FP/include/FPHeaderTable.h">
+		<Unit filename="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/include/FPHeaderTable.h">
 			<Option target="gpu_library_fp_growth"/>
 		</Unit>
-		<Unit filename="/home/rafael/Documentos/TCC/C++/FP/include/FPRadixTree.h">
+		<Unit filename="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/include/FPRadixTree.h">
 			<Option target="gpu_library_fp_growth"/>
 		</Unit>
-		<Unit filename="/home/rafael/Documentos/TCC/C++/FP/include/FPTransMap.h">
+		<Unit filename="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/include/FPTransMap.h">
 			<Option target="cpu_library_fp_growth"/>
 		</Unit>
-		<Unit filename="/home/rafael/Documentos/TCC/C++/FP/main.cu">
+		<Unit filename="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/main.cu">
 			<Option target="fp_cuda"/>
 		</Unit>
-		<Unit filename="/home/rafael/Documentos/TCC/C++/FP/src/FPGrowth.cu">
+		<Unit filename="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/src/FPGrowth.cu">
 			<Option target="gpu_library_fp_growth"/>
 		</Unit>
-		<Unit filename="/home/rafael/Documentos/TCC/C++/FP/src/FPHeaderTable.cu">
+		<Unit filename="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/src/FPHeaderTable.cu">
 			<Option target="gpu_library_fp_growth"/>
 		</Unit>
-		<Unit filename="/home/rafael/Documentos/TCC/C++/FP/src/FPRadixTree.cu">
+		<Unit filename="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/src/FPRadixTree.cu">
 			<Option target="gpu_library_fp_growth"/>
 		</Unit>
-		<Unit filename="/home/rafael/Documentos/TCC/C++/FP/src/FPTransMap.cpp">
+		<Unit filename="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/src/FPTransMap.cpp">
 			<Option target="cpu_library_fp_growth"/>
 		</Unit>
-		<Unit filename="/home/rafael/Documentos/TCC/C++/FP/CMakeLists.txt">
+		<Unit filename="/home/rafael/Documentos/tcc_fp/fp_growth_gpu/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

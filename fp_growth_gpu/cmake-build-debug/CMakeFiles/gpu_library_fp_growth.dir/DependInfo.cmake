@@ -4,14 +4,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CUDA
-  "/home/rafael/Documentos/TCC/C++/FP/src/FPGrowth.cu" "/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/src/FPGrowth.cu.o"
-  "/home/rafael/Documentos/TCC/C++/FP/src/FPHeaderTable.cu" "/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/src/FPHeaderTable.cu.o"
-  "/home/rafael/Documentos/TCC/C++/FP/src/FPRadixTree.cu" "/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/src/FPRadixTree.cu.o"
+  "/home/rafael/Documentos/tcc_fp/fp_growth_gpu/src/FPGrowth.cu" "/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/src/FPGrowth.cu.o"
+  "/home/rafael/Documentos/tcc_fp/fp_growth_gpu/src/FPHeaderTable.cu" "/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/src/FPHeaderTable.cu.o"
+  "/home/rafael/Documentos/tcc_fp/fp_growth_gpu/src/FPRadixTree.cu" "/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/src/FPRadixTree.cu.o"
   )
 set(CMAKE_CUDA_COMPILER_ID "NVIDIA")
 
 # The include file search paths:
 set(CMAKE_CUDA_TARGET_INCLUDE_PATH
+  "/opt/cuda/include"
+  "../src"
+  "../include"
   )
 
 # Targets to which this target links.

@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/opt/cuda/include -I/home/rafael/Documentos/tcc_fp/fp_growth_gpu/src -I/home/rafael/Documentos/tcc_fp/fp_growth_gpu/include 
 

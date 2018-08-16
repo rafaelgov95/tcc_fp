@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/fptree.hpp
+cstdint
+-
+map
+-
+memory
+-
+set
+-
+string
+-
+vector
+-
+utility
+-
+
+/home/rafael/Documentos/tcc_fp/fp_growth_cpu/src/fptree.cpp
+algorithm
+-
+cassert
+-
+cstdint
+-
+utility
+-
+fptree.hpp
+/home/rafael/Documentos/tcc_fp/fp_growth_cpu/src/fptree.hpp
+

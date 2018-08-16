@@ -6,5 +6,5 @@ CUDA_FLAGS =  -rdc=true -gencode arch=compute_50,code=sm_50 -g   -std=c++11
 
 CUDA_DEFINES = 
 
-CUDA_INCLUDES = 
+CUDA_INCLUDES = -I/opt/cuda/include -I/home/rafael/Documentos/tcc_fp/fp_growth_gpu/src -I/home/rafael/Documentos/tcc_fp/fp_growth_gpu/include 
 

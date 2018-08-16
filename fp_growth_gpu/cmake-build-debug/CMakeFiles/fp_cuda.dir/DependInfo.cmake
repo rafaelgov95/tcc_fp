@@ -4,18 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CUDA
-  "/home/rafael/Documentos/TCC/C++/FP/main.cu" "/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/CMakeFiles/fp_cuda.dir/main.cu.o"
+  "/home/rafael/Documentos/tcc_fp/fp_growth_gpu/main.cu" "/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/CMakeFiles/fp_cuda.dir/main.cu.o"
   )
 set(CMAKE_CUDA_COMPILER_ID "NVIDIA")
 
 # The include file search paths:
 set(CMAKE_CUDA_TARGET_INCLUDE_PATH
+  "/opt/cuda/include"
+  "../src"
+  "../include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/DependInfo.cmake"
-  "/home/rafael/Documentos/TCC/C++/FP/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/DependInfo.cmake"
+  "/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/DependInfo.cmake"
+  "/home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

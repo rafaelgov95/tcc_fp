@@ -26,7 +26,7 @@ void test_sub_header_table( const FPTransMap& trans_map, const FPRadixTree& radi
     thrust::device_vector<cuda_uint> output( HTBufferSize( header_table.size(), header_table.ia_size() ) / sizeof( cuda_uint ), 0 );
     cuda_uint* _output = output.data().get();
     new_header_table <<< 1, 1 >>>( trans_map.bitmap().data().get(), trans_map.blocks_per_transaction(),
-            radix_tree.inner_nodes().data().get(), radix_tree.leaf_nodes().data().get(),
+            radix_tree.inner_nodes().data().    get(), radix_tree.leaf_nodes().data().get(),
             header_table.data(), min_support, node_idx,  _output );
     cudaDeviceSynchronize();
 

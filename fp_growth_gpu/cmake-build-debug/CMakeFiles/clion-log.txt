@@ -1,4 +1,4 @@
-/opt/clion-2018.1.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DUNIT_TEST=true -G "CodeBlocks - Unix Makefiles" /home/rafael/Documentos/TCC/C++/FP
+/opt/clion-2018.1.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DUNIT_TEST=true -G "CodeBlocks - Unix Makefiles" /home/rafael/Documentos/tcc_fp/fp_growth_gpu
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/rafael/Documentos/TCC/C++/FP/cmake-build-debug
+-- Build files have been written to: /home/rafael/Documentos/tcc_fp/fp_growth_gpu/cmake-build-debug

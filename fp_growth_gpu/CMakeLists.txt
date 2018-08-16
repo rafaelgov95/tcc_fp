@@ -1,18 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
-project(FP LANGUAGES CXX CUDA)
-#find_package(CUDA REQUIRED)
+project(fp_growth_gpu LANGUAGES CXX CUDA)
+find_package(CUDA 9 REQUIRED)
 
-
-#include_directories(CUDA_INCLUDE_DIRS ${CUDA_TOOLKIT_INCLUDE}
-#                "${CMAKE_SOURCE_DIR}/src"
-#                "${CMAKE_SOURCE_DIR}/include")
-
-set(CUDA_INCLUDE_DIRS ${CUDA_TOOLKIT_INCLUDE}
-        ${CMAKE_SOURCE_DIR}/src
-        ${CMAKE_SOURCE_DIR}/include
-        )
-
-
+include_directories(${CUDA_INCLUDE_DIRS} "${CMAKE_SOURCE_DIR}/src" "${CMAKE_SOURCE_DIR}/include")
 set(CMAKE_C_COMPILER /usr/bin/gcc-6 CACHE PATH "" FORCE)
 set(CMAKE_CXX_COMPILER /usr/bin/g++-6 CACHE PATH "" FORCE)
 set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} -rdc=true -gencode arch=compute_50,code=sm_50")

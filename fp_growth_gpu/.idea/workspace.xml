@@ -2,9 +2,9 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="FP" targetName="cpu_library_fp_growth" />
-      <config projectName="FP" targetName="gpu_library_fp_growth" />
-      <config projectName="FP" targetName="fp_cuda" />
+      <config projectName="fp_growth_gpu" targetName="cpu_library_fp_growth" />
+      <config projectName="fp_growth_gpu" targetName="gpu_library_fp_growth" />
+      <config projectName="fp_growth_gpu" targetName="fp_cuda" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -13,37 +13,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4c34366-f5f2-4412-b90c-87ffca36a515" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../Apriori_CUDA/Check.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Apriori_CUDA/Check.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Apriori_CUDA/InputReader.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Apriori_CUDA/InputReader.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Apriori_CUDA/Kernel.cu" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Apriori_CUDA/OutputPrinter.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Apriori_CUDA/OutputPrinter.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apriori_v1/Apriori.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Artigos/04.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Artigos/05.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Artigos/2011vinicius.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Artigos/2013vinicius.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Artigos/MaletzkeC3N2008.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Artigos/Monica Aparecida Viana.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Artigos/Monografia1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Artigos/Monografia2.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TCC-PESQUISAS-ARTIGOS/ESP8266/69-161-1-SM.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../TCC-PESQUISAS-ARTIGOS/ESP8266/69-161-1-SM.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TCC-PESQUISAS-ARTIGOS/ESP8266/Dissertacao_MiETI_A61904_MarioJorgeGarciaOliveira.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../TCC-PESQUISAS-ARTIGOS/ESP8266/Dissertacao_MiETI_A61904_MarioJorgeGarciaOliveira.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TCC-PESQUISAS-ARTIGOS/ESP8266/fallback.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../../TCC-PESQUISAS-ARTIGOS/ESP8266/fallback.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TCC-PESQUISAS-ARTIGOS/Mineracao De Dados/TensorFlow/07973757.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../TCC-PESQUISAS-ARTIGOS/Mineracao De Dados/TensorFlow/07973757.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TCC-PESQUISAS-ARTIGOS/Mineracao De Dados/TensorFlow/07993784.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../TCC-PESQUISAS-ARTIGOS/Mineracao De Dados/TensorFlow/07993784.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TCC-PESQUISAS-ARTIGOS/Mineracao De Dados/TensorFlow/08019861.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../TCC-PESQUISAS-ARTIGOS/Mineracao De Dados/TensorFlow/08019861.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TCC-PESQUISAS-ARTIGOS/Mineracao De Dados/TensorFlow/1-s2.0-S2405471216000107-main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../TCC-PESQUISAS-ARTIGOS/Mineracao De Dados/TensorFlow/1-s2.0-S2405471216000107-main.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TCC-PESQUISAS-ARTIGOS/Mineracao De Dados/TensorFlow/1603.04467.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../TCC-PESQUISAS-ARTIGOS/Mineracao De Dados/TensorFlow/1603.04467.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TCC-PESQUISAS-ARTIGOS/Mineracao De Dados/TensorFlow/1708.00630.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../TCC-PESQUISAS-ARTIGOS/Mineracao De Dados/TensorFlow/1708.00630.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TCC-PESQUISAS-ARTIGOS/Mineracao De Dados/TensorFlow/LearningSys_2015_paper_33.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../TCC-PESQUISAS-ARTIGOS/Mineracao De Dados/TensorFlow/LearningSys_2015_paper_33.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TCC-PESQUISAS-ARTIGOS/Mineracao De Dados/TensorFlow/osdi16-abadi.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../TCC-PESQUISAS-ARTIGOS/Mineracao De Dados/TensorFlow/osdi16-abadi.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Texto/document.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Texto/document.tex" afterDir="false" />
-    </list>
+    <list default="true" id="a4c34366-f5f2-4412-b90c-87ffca36a515" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,11 +28,8 @@
       <file leaf-file-name="main.cu" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cu">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="558">
+              <caret line="38" column="23" selection-start-line="29" selection-start-column="51" selection-end-line="38" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -82,8 +49,8 @@
       <file leaf-file-name="FPGrowth.cu" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FPGrowth.cu">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+            <state relative-caret-position="306">
+              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -91,8 +58,8 @@
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            <state relative-caret-position="54">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -101,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/src/FPTransMap.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="39">
-              <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -118,8 +85,8 @@
       <file leaf-file-name="FPTransMap.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/FPTransMap.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+            <state relative-caret-position="165">
+              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -129,9 +96,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="6138">
               <caret line="341" column="37" selection-start-line="334" selection-start-column="7" selection-end-line="341" selection-end-column="37" />
-              <folding>
-                <element signature="e#587#607#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -148,11 +112,8 @@
       <file leaf-file-name="Test_FPTransMap.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unit-test/Test_FPTransMap.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
+            <state relative-caret-position="1368">
               <caret line="76" column="62" selection-start-line="76" selection-start-column="62" selection-end-line="76" selection-end-column="62" />
-              <folding>
-                <element signature="e#587#607#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -195,8 +156,8 @@
         <option value="$PROJECT_DIR$/src/FPTransMap.cpp" />
         <option value="$PROJECT_DIR$/src/FPHeaderTable.cu" />
         <option value="$PROJECT_DIR$/unit-test/Test_FPHeaderTable.cu" />
-        <option value="$PROJECT_DIR$/main.cu" />
         <option value="$PROJECT_DIR$/src/FPGrowth.cu" />
+        <option value="$PROJECT_DIR$/main.cu" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
       </list>
     </option>
@@ -229,37 +190,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="FP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FP" type="462c0819:PsiDirectoryNode" />
+              <item name="fp_growth_gpu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fp_growth_gpu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="FP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FP" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FP" type="462c0819:PsiDirectoryNode" />
+              <item name="fp_growth_gpu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fp_growth_gpu" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FP" type="462c0819:PsiDirectoryNode" />
-              <item name="unit-test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -290,9 +242,9 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Build All">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FP" RUN_TARGET_NAME="fp_cuda" EXPLICIT_BUILD_TARGET_NAME="all" />
-    <configuration name="cpu_library_fp_growth" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FP" TARGET_NAME="cpu_library_fp_growth" CONFIG_NAME="Debug" />
-    <configuration name="gpu_library_fp_growth" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FP" TARGET_NAME="gpu_library_fp_growth" CONFIG_NAME="Debug" />
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="fp_growth_gpu" RUN_TARGET_NAME="fp_cuda" EXPLICIT_BUILD_TARGET_NAME="all" />
+    <configuration name="cpu_library_fp_growth" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="fp_growth_gpu" TARGET_NAME="cpu_library_fp_growth" CONFIG_NAME="Debug" />
+    <configuration name="gpu_library_fp_growth" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="fp_growth_gpu" TARGET_NAME="gpu_library_fp_growth" CONFIG_NAME="Debug" />
     <list>
       <item itemvalue="Application.Build All" />
       <item itemvalue="Application.cpu_library_fp_growth" />
@@ -329,6 +281,7 @@
       <workItem from="1534379742572" duration="8841000" />
       <workItem from="1534388998061" duration="1198000" />
       <workItem from="1534421675266" duration="614000" />
+      <workItem from="1534425132173" duration="1499000" />
     </task>
     <servers />
   </component>
@@ -344,7 +297,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90810000" />
+    <option name="totallyTimeSpent" value="92309000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -352,8 +305,8 @@
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15603584" />
       <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Messages" order="0" visible="true" weight="0.39692983" />
-      <window_info anchor="bottom" id="CMake" order="2" weight="0.31688598" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.39692983" />
+      <window_info anchor="bottom" id="CMake" order="2" visible="true" weight="0.31688598" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32894737" />
       <window_info anchor="bottom" id="Run" order="10" weight="0.29057017" />
@@ -982,16 +935,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6138">
           <caret line="341" column="37" selection-start-line="334" selection-start-column="7" selection-end-line="341" selection-end-column="37" />
-          <folding>
-            <element signature="e#587#607#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/FPTransMap.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1002,44 +945,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/unit-test/Test_FPTransMap.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="76" column="62" selection-start-line="76" selection-start-column="62" selection-end-line="76" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/FPTransMap.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="39">
-          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/FPTransMap.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FPGrowth.cu">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit-test/Test_FPTransMap.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="76" column="62" selection-start-line="76" selection-start-column="62" selection-end-line="76" selection-end-column="62" />
-          <folding>
-            <element signature="e#587#607#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cu">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="558">
+          <caret line="38" column="23" selection-start-line="29" selection-start-column="51" selection-end-line="38" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        <state relative-caret-position="54">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
