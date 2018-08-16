@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rafael/Documentos/TCC/C++/FP/src/FPTransMap.cpp
+algorithm
+-
+cassert
+-
+limits
+-
+map
+-
+numeric
+/home/rafael/Documentos/TCC/C++/FP/src/numeric
+FPTransMap.h
+/home/rafael/Documentos/TCC/C++/FP/src/FPTransMap.h
+

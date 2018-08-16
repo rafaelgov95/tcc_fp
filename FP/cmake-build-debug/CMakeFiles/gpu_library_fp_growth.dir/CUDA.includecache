@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rafael/Documentos/TCC/C++/FP/src/FPGrowth.cu
+FPGrowth.h
+/home/rafael/Documentos/TCC/C++/FP/src/FPGrowth.h
+cudaHeaders.h
+/home/rafael/Documentos/TCC/C++/FP/src/cudaHeaders.h
+cuda_runtime.h
+/home/rafael/Documentos/TCC/C++/FP/src/cuda_runtime.h
+
+/home/rafael/Documentos/TCC/C++/FP/src/FPHeaderTable.cu
+FPHeaderTable.h
+/home/rafael/Documentos/TCC/C++/FP/src/FPHeaderTable.h
+cudaHeaders.h
+/home/rafael/Documentos/TCC/C++/FP/src/cudaHeaders.h
+cuda_runtime.h
+/home/rafael/Documentos/TCC/C++/FP/src/cuda_runtime.h
+
+/home/rafael/Documentos/TCC/C++/FP/src/FPRadixTree.cu
+FPRadixTree.h
+/home/rafael/Documentos/TCC/C++/FP/src/FPRadixTree.h
+cudaHeaders.h
+/home/rafael/Documentos/TCC/C++/FP/src/cudaHeaders.h
+

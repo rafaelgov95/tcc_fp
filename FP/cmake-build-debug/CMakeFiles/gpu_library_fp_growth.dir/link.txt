@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgpu_library_fp_growth.a  CMakeFiles/gpu_library_fp_growth.dir/src/FPRadixTree.cu.o CMakeFiles/gpu_library_fp_growth.dir/src/FPHeaderTable.cu.o CMakeFiles/gpu_library_fp_growth.dir/src/FPGrowth.cu.o
+/usr/bin/ranlib libgpu_library_fp_growth.a
