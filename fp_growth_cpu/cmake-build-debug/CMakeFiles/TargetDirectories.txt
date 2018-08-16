@@ -1,4 +1,0 @@
-/home/rafael/Documentos/tcc_fp/fp_growth_cpu/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/rafael/Documentos/tcc_fp/fp_growth_cpu/cmake-build-debug/CMakeFiles/fp_cpu.dir
-/home/rafael/Documentos/tcc_fp/fp_growth_cpu/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/rafael/Documentos/tcc_fp/fp_growth_cpu/cmake-build-debug/CMakeFiles/library_fp_growth.dir
