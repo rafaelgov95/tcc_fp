@@ -65,7 +65,7 @@ class FPHeaderTable
         __host__ __device__
         inline const cuda_uint* data() const { return _data; }
 
-//#ifdef UNIT_TEST
+#ifdef UNIT_TEST
         Items get_items() const;
 
         Sizes get_counts() const;
@@ -77,7 +77,7 @@ class FPHeaderTable
         Sizes get_node_counts( index_type idx ) const;
 
         NodeTypes get_node_types( index_type idx ) const;
-//#endif // UNIT_TEST
+#endif // UNIT_TEST
 
     private:
         const BitBlock* __restrict__ _trans_map;
