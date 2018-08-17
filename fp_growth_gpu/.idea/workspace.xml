@@ -25,65 +25,50 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FPHeaderTable.cu" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FPHeaderTable.cu">
+      <file leaf-file-name="catch.hpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unit-test/catch.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="337" column="19" selection-start-line="337" selection-start-column="10" selection-end-line="337" selection-end-column="19" />
+            <state relative-caret-position="15084">
+              <caret line="838" column="9" selection-start-line="838" selection-start-column="9" selection-end-line="838" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reference.inl" pinned="false" current-in-tab="false">
+        <entry file="file:///opt/cuda/include/thrust/detail/reference.inl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2448">
+              <caret line="136" selection-start-line="136" selection-end-line="136" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.cu" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.cu">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="7" selection-end-column="44" />
               <folding>
-                <element signature="e#16023#16038#0" expanded="true" />
+                <element signature="e#69#83#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test_FPGrowth.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp">
+      <file leaf-file-name="stl_vector.h" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/bits/stl_vector.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
-              <folding>
-                <element signature="e#587#607#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FPTransMap.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FPTransMap.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
-              <folding>
-                <element signature="e#587#607#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FPHeaderTable.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/FPHeaderTable.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_FPHeaderTable.cu" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/unit-test/Test_FPHeaderTable.cu">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="341" column="37" selection-start-line="334" selection-start-column="7" selection-end-line="341" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FPGrowth.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/FPGrowth.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5">
-              <caret line="49" column="11" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
+            <state relative-caret-position="7290">
+              <caret line="405" column="10" selection-start-line="405" selection-start-column="10" selection-end-line="405" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -91,37 +76,49 @@
       <file leaf-file-name="Test_FPRadixTree.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unit-test/Test_FPRadixTree.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="96" column="51" selection-start-line="96" selection-start-column="51" selection-end-line="96" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cudaHeaders.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/cudaHeaders.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_FPTransMap.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/unit-test/Test_FPTransMap.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="87" column="11" selection-start-line="87" selection-start-column="11" selection-end-line="87" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FPRadixTree.cu" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FPRadixTree.cu">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-42">
-              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            <state relative-caret-position="91">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="19" selection-end-column="25" />
               <folding>
-                <element signature="e#587#611#0" expanded="true" />
+                <element signature="e#587#607#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test_FPHeaderTable.cu" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unit-test/Test_FPHeaderTable.cu">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test_FPGrowth.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stdlib.h" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/include/stdlib.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15048">
+              <caret line="836" selection-start-line="836" selection-end-line="836" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test_FPTransMap.cu" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unit-test/Test_FPTransMap.cu">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2646">
+              <caret line="147" selection-start-line="147" selection-end-line="147" />
+              <folding>
+                <element signature="e#99#119#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,21 +151,25 @@
       <list>
         <option value="$PROJECT_DIR$/src/FPRadixTree.cu" />
         <option value="$PROJECT_DIR$/include/FPGrowth.h" />
-        <option value="$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp" />
         <option value="$PROJECT_DIR$/FP_TransMap.h" />
         <option value="$PROJECT_DIR$/FP_TransMap.cpp" />
         <option value="$PROJECT_DIR$/unit-test/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/include/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/include/FPTransMap.h" />
         <option value="$PROJECT_DIR$/src/FPTransMap.cpp" />
         <option value="$PROJECT_DIR$/src/FPHeaderTable.cu" />
-        <option value="$PROJECT_DIR$/unit-test/Test_FPHeaderTable.cu" />
         <option value="$PROJECT_DIR$/src/FPGrowth.cu" />
-        <option value="$PROJECT_DIR$/main.cu" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/include/FPHeaderTable.h" />
+        <option value="$PROJECT_DIR$/unit-test/Test_FPTransMap.cpp" />
+        <option value="$PROJECT_DIR$/unit-test/Test_FPRadixTree.cpp" />
+        <option value="$PROJECT_DIR$/unit-test/catch.hpp" />
+        <option value="$PROJECT_DIR$/unit-test/Test_FPHeaderTable.cu" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/unit-test/Test_FPTransMap.cu" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/main.cu" />
+        <option value="$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp" />
       </list>
     </option>
   </component>
@@ -189,10 +190,9 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="461" />
-    <option name="y" value="116" />
-    <option name="width" value="950" />
-    <option name="height" value="789" />
+    <option name="y" value="27" />
+    <option name="width" value="1920" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -200,7 +200,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,11 +226,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Catch2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -262,14 +262,27 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Build All">
+    <configuration name="FPGrowth correctly functions" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" TEST_CLASS="[FPGrowth]" TEST_METHOD="FPGrowth correctly functions" TEST_MODE="SUITE_TEST" />
+    <configuration name="FPRadixTree correctly functions" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" TEST_CLASS="[FPRadixTree]" TEST_METHOD="FPRadixTree correctly functions" TEST_MODE="SUITE_TEST" />
+    <configuration name="FPTransMap correctly functions" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" TEST_CLASS="[FPTransMap]" TEST_METHOD="FPTransMap correctly functions" TEST_MODE="SUITE_TEST" />
+    <configuration name="Unnamed" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="fp_growth_gpu" TARGET_NAME="cpu_library_fp_growth" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="fp_growth_gpu" RUN_TARGET_NAME="cpu_library_fp_growth" TEST_MODE="SUITE_TEST" />
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="fp_growth_gpu" RUN_TARGET_NAME="fp_cuda" EXPLICIT_BUILD_TARGET_NAME="all" />
-    <configuration name="cpu_library_fp_growth" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="fp_growth_gpu" TARGET_NAME="cpu_library_fp_growth" CONFIG_NAME="Debug" />
     <configuration name="gpu_library_fp_growth" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="fp_growth_gpu" TARGET_NAME="gpu_library_fp_growth" CONFIG_NAME="Debug" />
     <list>
       <item itemvalue="Application.Build All" />
-      <item itemvalue="Application.cpu_library_fp_growth" />
+      <item itemvalue="Google Test.Unnamed" />
       <item itemvalue="Application.gpu_library_fp_growth" />
+      <item itemvalue="Catch.FPGrowth correctly functions" />
+      <item itemvalue="Catch.FPRadixTree correctly functions" />
+      <item itemvalue="Catch.FPTransMap correctly functions" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Catch.FPTransMap correctly functions" />
+        <item itemvalue="Catch.FPRadixTree correctly functions" />
+        <item itemvalue="Catch.FPGrowth correctly functions" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -301,7 +314,9 @@
       <workItem from="1534379742572" duration="8841000" />
       <workItem from="1534388998061" duration="1198000" />
       <workItem from="1534421675266" duration="614000" />
-      <workItem from="1534425132173" duration="4222000" />
+      <workItem from="1534425132173" duration="11034000" />
+      <workItem from="1534462122988" duration="8077000" />
+      <workItem from="1534471859353" duration="2239000" />
     </task>
     <servers />
   </component>
@@ -317,7 +332,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95032000" />
+    <option name="totallyTimeSpent" value="112160000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -330,13 +345,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15603584" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.32894737" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.39692983" />
-      <window_info anchor="bottom" id="CMake" order="2" visible="true" weight="0.31688598" />
+      <window_info anchor="bottom" id="Messages" order="0" visible="true" weight="0.39692983" />
+      <window_info anchor="bottom" id="CMake" order="2" weight="0.31688598" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.32896176" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32894737" />
       <window_info anchor="bottom" id="Run" order="10" weight="0.29057017" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -349,6 +364,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32896176" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,327 +383,322 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>55</line>
+          <line>58</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>56</line>
+          <line>59</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>57</line>
+          <line>60</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>59</line>
+          <line>62</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>63</line>
+          <line>66</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>61</line>
+          <line>64</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>62</line>
+          <line>65</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>60</line>
+          <line>63</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>65</line>
+          <line>68</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>64</line>
+          <line>67</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>66</line>
+          <line>69</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>68</line>
+          <line>71</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>70</line>
+          <line>73</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>71</line>
+          <line>74</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>73</line>
+          <line>76</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>75</line>
+          <line>78</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>76</line>
+          <line>79</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>87</line>
+          <line>90</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>88</line>
+          <line>91</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>33</line>
+          <line>36</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>35</line>
+          <line>38</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>37</line>
+          <line>40</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>39</line>
+          <line>42</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>38</line>
+          <line>41</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>41</line>
+          <line>44</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>43</line>
+          <line>46</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>40</line>
+          <line>43</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>42</line>
+          <line>45</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>44</line>
+          <line>47</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>46</line>
+          <line>49</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>45</line>
+          <line>48</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>47</line>
+          <line>50</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>49</line>
+          <line>52</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>48</line>
+          <line>51</line>
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>50</line>
+          <line>53</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>51</line>
+          <line>54</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>77</line>
+          <line>80</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>78</line>
+          <line>81</line>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>79</line>
+          <line>82</line>
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>80</line>
+          <line>83</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>82</line>
+          <line>85</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>84</line>
+          <line>87</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>83</line>
+          <line>86</line>
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>85</line>
+          <line>88</line>
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/catch.hpp</url>
-          <line>10511</line>
+          <line>13275</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/catch.hpp</url>
-          <line>3156</line>
+          <line>3171</line>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>25</line>
+          <line>28</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/unit-test/Test_FPHeaderTable.cu</url>
-          <line>16</line>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>104</line>
+          <line>107</line>
           <option name="timeStamp" value="232" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>105</line>
+          <line>108</line>
           <option name="timeStamp" value="233" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>103</line>
+          <line>106</line>
           <option name="timeStamp" value="234" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>102</line>
+          <line>105</line>
           <option name="timeStamp" value="235" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>100</line>
+          <line>103</line>
           <option name="timeStamp" value="236" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>101</line>
+          <line>104</line>
           <option name="timeStamp" value="237" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>99</line>
+          <line>102</line>
           <option name="timeStamp" value="238" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>98</line>
+          <line>101</line>
           <option name="timeStamp" value="239" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>97</line>
+          <line>100</line>
           <option name="timeStamp" value="240" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>96</line>
+          <line>99</line>
           <option name="timeStamp" value="241" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>95</line>
+          <line>98</line>
           <option name="timeStamp" value="242" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>94</line>
+          <line>97</line>
           <option name="timeStamp" value="243" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>93</line>
+          <line>96</line>
           <option name="timeStamp" value="244" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>92</line>
+          <line>95</line>
           <option name="timeStamp" value="245" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>89</line>
+          <line>92</line>
           <option name="timeStamp" value="247" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>90</line>
+          <line>93</line>
           <option name="timeStamp" value="248" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
-          <line>91</line>
+          <line>94</line>
           <option name="timeStamp" value="249" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
@@ -696,24 +707,20 @@
           <option name="timeStamp" value="356" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cu</url>
-          <option name="timeStamp" value="357" />
+          <url>file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp</url>
+          <line>57</line>
+          <option name="timeStamp" value="362" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/unit-test/Test_FPTransMap.cu</url>
+          <line>143</line>
+          <option name="timeStamp" value="367" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="358" />
+      <option name="time" value="368" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main.cu">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/FPTransMap.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FPTransMap.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -803,13 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unit-test/catch.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="10520" selection-start-line="10520" selection-end-line="10520" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///opt/cuda/include/thrust/detail/type_traits.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -836,20 +836,6 @@
         <state relative-caret-position="-1026" />
       </provider>
     </entry>
-    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/bits/stl_vector.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="402" column="8" selection-start-line="402" selection-start-column="8" selection-end-line="402" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///opt/cuda/include/thrust/detail/vector_base.inl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7164">
-          <caret line="398" column="24" selection-start-line="398" selection-start-column="24" selection-end-line="398" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt" />
     <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/bits/stl_algo.h">
@@ -863,23 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#757#790#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///opt/cuda/include/thrust/system/detail/generic/memory.inl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
@@ -897,48 +866,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///opt/cuda/include/thrust/detail/reference.inl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="136" selection-start-line="136" selection-end-line="136" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///opt/cuda/include/thrust/detail/static_assert.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="70" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cu">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="242" column="10" lean-forward="true" selection-start-line="242" selection-start-column="10" selection-end-line="242" selection-end-column="10" />
-          <folding>
-            <element signature="e#9769#9897#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FPGrowth.cu">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/FPTransMap.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -998,34 +929,118 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="414">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/cuda/include/thrust/detail/vector_base.inl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6282">
+          <caret line="349" column="8" selection-start-line="349" selection-start-column="8" selection-end-line="349" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cu" />
+    <entry file="file:///opt/cuda/include/thrust/system/detail/generic/memory.inl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FPGrowth.cu">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/FPTransMap.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit-test/Test_FPHeaderTable.cu">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/stdlib.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15048">
+          <caret line="836" selection-start-line="836" selection-end-line="836" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit-test/catch.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15084">
+          <caret line="838" column="9" selection-start-line="838" selection-start-column="9" selection-end-line="838" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/cuda/include/thrust/detail/reference.inl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2448">
+          <caret line="136" selection-start-line="136" selection-end-line="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/bits/stl_vector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7290">
+          <caret line="405" column="10" selection-start-line="405" selection-start-column="10" selection-end-line="405" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cu">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="7" selection-end-column="44" />
+          <folding>
+            <element signature="e#69#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit-test/Test_FPRadixTree.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="19" selection-end-column="25" />
           <folding>
             <element signature="e#587#607#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unit-test/Test_FPHeaderTable.cu">
+    <entry file="file://$PROJECT_DIR$/unit-test/Test_FPTransMap.cu">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="341" column="37" selection-start-line="334" selection-start-column="7" selection-end-line="341" selection-end-column="37" />
+        <state relative-caret-position="2646">
+          <caret line="147" selection-start-line="147" selection-end-line="147" />
+          <folding>
+            <element signature="e#99#119#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unit-test/Test_FPRadixTree.cpp">
+    <entry file="file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="96" column="51" selection-start-line="96" selection-start-column="51" selection-end-line="96" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit-test/Test_FPTransMap.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="87" column="11" selection-start-line="87" selection-start-column="11" selection-end-line="87" selection-end-column="11" />
+        <state relative-caret-position="378">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
         </state>
       </provider>
     </entry>

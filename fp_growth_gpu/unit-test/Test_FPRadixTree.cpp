@@ -17,6 +17,7 @@
 #include "catch.hpp"
 
 #include "FPRadixTree.h"
+#define CATCH_CONFIG_MAIN
 
 namespace cuda_fp_growth {
 

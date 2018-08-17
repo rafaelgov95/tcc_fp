@@ -14,9 +14,12 @@
    limitations under the License.
  */
 
+#define CATCH_CONFIG_MAIN
 #include "catch.hpp"
-
 #include "FPGrowth.h"
+#include "FPTransMap.h"
+#include "FPHeaderTable.h"
+#include "FPRadixTree.h"
 
 namespace cuda_fp_growth {
 

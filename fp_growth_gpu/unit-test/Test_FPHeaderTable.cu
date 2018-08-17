@@ -15,11 +15,11 @@
  */
 
 #include "catch.hpp"
-
 #include <thrust/device_vector.h>
 #include <thrust/extrema.h>
 #include "numeric"
 #include "FPHeaderTable.h"
+#define CATCH_CONFIG_MAIN
 
 namespace cuda_fp_growth {
 
