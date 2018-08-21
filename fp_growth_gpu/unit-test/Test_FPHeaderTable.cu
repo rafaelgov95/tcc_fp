@@ -14,12 +14,13 @@
    limitations under the License.
  */
 
+
+#define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch.hpp"
 #include <thrust/device_vector.h>
 #include <thrust/extrema.h>
 #include "numeric"
 #include "FPHeaderTable.h"
-#define CATCH_CONFIG_MAIN
 
 namespace cuda_fp_growth {
 

@@ -90,7 +90,7 @@ void FPTransMap::build_transaction_map( Items::const_iterator trans_begin, Indic
         } );
     }
 
-    // copy frequent items and remove infrequent items
+    // confere frequencia e remove as não maiores que o min_suporte
     freq_items.clear();
     for ( auto iter = counts.begin(), iter_end = counts.end(); iter != iter_end; ) {
         if ( iter->second >= min_support ) {
@@ -104,11 +104,11 @@ void FPTransMap::build_transaction_map( Items::const_iterator trans_begin, Indic
 
     // sort frequent items   // ERRO
     std::sort( freq_items.begin(), freq_items.end(), [&]( const Item& item_a, const Item& item_b ) {
-//        if ( item_a != rhs && item_b != rhs ) {
+        if ( item_a != rhs && item_b != rhs ) {
             size_type count_a = counts.at( item_a ), count_b = counts.at( item_b );
             return ( count_a < count_b ) || ( count_a == count_b && item_a < item_b );
-//        }
-//        else return item_a == rhs;
+        }
+        else return item_a == rhs;
     } );
 
     // copy frequency count and transaction map in order
@@ -131,6 +131,8 @@ void FPTransMap::build_transaction_map( Items::const_iterator trans_begin, Indic
     }
 }
 
+
+// Candidato para nova GPU :D toppppp
 void FPTransMap::transpose_bitmap( BitBlocks& bitmap, size_type blocks_per_row )
 {
     assert( bitmap.size() % blocks_per_row == 0 );

@@ -1,0 +1,47 @@
+cmake_minimum_required(VERSION 3.10)
+project(fp_growth_gpu LANGUAGES CXX CUDA)
+find_package(CUDA 9 REQUIRED)
+
+set(CTest)
+include_directories(${CUDA_INCLUDE_DIRS} "${CMAKE_SOURCE_DIR}/src" "${CMAKE_SOURCE_DIR}/include")
+set(CATCH_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/unit-test)
+set(CMAKE_C_COMPILER /usr/bin/gcc-6 CACHE PATH "" FORCE)
+set(CMAKE_CXX_COMPILER /usr/bin/g++-6 CACHE PATH "" FORCE)
+set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} -rdc=true -gencode arch=compute_50,code=sm_50")
+set(CMAKE_C_FLAGS_DEBUG "-D_DEBUG")
+add_definitions(-DUNIT_TEST)
+add_library(gpu_library_fp_growth STATIC
+        include/cudaHeaders.h
+        include/kernel_pfp.h
+        src/kernel_pfp.cu
+        include/pfp_tree_growth.h
+        src/pfp_tree_growth.cpp
+        )
+
+#add_library(cpu_library_fp_growth STATIC
+#       )
+
+
+# Prepare "Catch" library for other executables
+#add_library(Catch INTERFACE)
+#target_include_directories(Catch INTERFACE ${CATCH_INCLUDE_DIR})
+
+#target_compile_features(cpu_library_fp_growth PUBLIC cxx_std_11)
+
+#set_target_properties( cpu_library_fp_growth
+#        PROPERTIES CUDA_SEPARABLE_COMPILATION ON)
+
+add_executable(fp_cuda main.cpp)
+
+#set_property(TARGET fp_cuda
+#        PROPERTY CUDA_SEPARABLE_COMPILATION ON)
+target_link_libraries( fp_cuda gpu_library_fp_growth )
+
+
+if(APPLE)
+    # We need to add the path to the driver (libcuda.dylib) as an rpath,
+    # so that the static cuda runtime can find it at runtime.
+    set_property(TARGET fp_cuda
+            PROPERTY
+            BUILD_RPATH ${CMAKE_CUDA_IMPLICIT_LINK_DIRECTORIES})
+endif()

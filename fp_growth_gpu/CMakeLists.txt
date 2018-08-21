@@ -17,6 +17,7 @@ add_library(gpu_library_fp_growth STATIC
         src/FPRadixTree.cu
         src/FPHeaderTable.cu
         src/FPGrowth.cu
+
         )
 
 add_library(cpu_library_fp_growth STATIC

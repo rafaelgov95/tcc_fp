@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/pfp_tree_growth.h
+cstdint
+-
+map
+-
+memory
+-
+set
+-
+string
+-
+vector
+-
+utility
+-
+
+/home/rafael/Documentos/tcc_fp/pfp-growth/main.cpp
+pfp_tree_growth.h
+/home/rafael/Documentos/tcc_fp/pfp-growth/pfp_tree_growth.h
+cassert
+-
+cstdlib
+-
+iostream
+-
+set
+-
+vector
+-
+

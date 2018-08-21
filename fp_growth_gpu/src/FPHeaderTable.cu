@@ -260,12 +260,12 @@ FPHeaderTable::FPHeaderTable( const BitBlock* __restrict__ trans_map, const size
     _data = new cuda_uint[ HTBufferSize( ht_size, ia_size ) / sizeof( cuda_uint ) ];
 
     // Construct sub header table
-//    const size_type* __restrict__ parent_ia_sizes = reinterpret_cast<const size_type*>( parent_ht ) + 2 + 2 * ht_size;
-//    size_type node_ia_size = parent_ia_sizes[ node_idx ];
-//    construct_sub_header_table <<< 1, node_ia_size, HTBufferSize( ht_size, ia_size ) >>>(
-//        trans_map, blocks_per_trans, inner_nodes, leaf_nodes, parent_ht, node_idx, _data
-//    );
-//    cudaDeviceSynchronize();
+    const size_type* __restrict__ parent_ia_sizes = reinterpret_cast<const size_type*>( parent_ht ) + 2 + 2 * ht_size;
+    size_type node_ia_size = parent_ia_sizes[ node_idx ];
+    construct_sub_header_table <<< 1, node_ia_size, HTBufferSize( ht_size, ia_size ) >>>(
+        trans_map, blocks_per_trans, inner_nodes, leaf_nodes, parent_ht, node_idx, _data
+    );
+    cudaDeviceSynchronize();
     _ht_size = *( reinterpret_cast<const size_type*>( _data ) );
     _ia_size = *( reinterpret_cast<const size_type*>( _data ) + 1 );
 

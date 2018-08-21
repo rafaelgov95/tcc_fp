@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/cudaHeaders.h
+math.h
+../include/math.h
+
+../include/kernel_pfp.h
+cudaHeaders.h
+../include/cudaHeaders.h
+
+../include/pfp_tree_growth.h
+cstdint
+-
+map
+-
+memory
+-
+set
+-
+string
+-
+vector
+-
+utility
+-
+
+/home/rafael/Documentos/tcc_fp/pfp-growth/src/pfp_tree_growth.cpp
+algorithm
+-
+cassert
+-
+cstdint
+-
+utility
+-
+pfp_tree_growth.h
+/home/rafael/Documentos/tcc_fp/pfp-growth/src/pfp_tree_growth.h
+kernel_pfp.h
+/home/rafael/Documentos/tcc_fp/pfp-growth/src/kernel_pfp.h
+
