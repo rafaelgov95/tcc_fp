@@ -7,9 +7,14 @@
 #include <cstdio>
 #include "kernel_pfp.h"
 
+
+__device__ void addNew (int *a, int *b, int *c,int size) {
+    int tid = blockIdx.x;
+    if (tid < size) c[tid] = a[tid] + b[tid];
+}
 __global__ void add( int *a, int *b, int *c,int size) {
-               int tid = blockIdx.x;
-               if (tid < size) c[tid] = a[tid] + b[tid];
+    addNew(a,b,c,size);
+
 }
     void run(int i)
     {
