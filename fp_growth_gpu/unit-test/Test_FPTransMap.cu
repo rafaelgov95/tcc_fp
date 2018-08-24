@@ -106,7 +106,6 @@ namespace cuda_fp_growth {
             CHECK( freq_items[ 3 ] == p );
             CHECK( freq_items[ 4 ] == c );
             CHECK( freq_items[ 5 ] == f );
-            freq_items_counts.reserve(freq_items_counts.size());
             REQUIRE( freq_items_counts.size() == 6 );
             CHECK( freq_items_counts[ 0 ] == 3 );
             CHECK( freq_items_counts[ 1 ] == 3 );

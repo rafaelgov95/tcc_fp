@@ -6,23 +6,41 @@
 
 #IncludeRegexTransform: 
 
+../include/Kernel.h
+cudaHeaders.h
+../include/cudaHeaders.h
+
+../include/PFPTree.hpp
+cstdint
+-
+map
+-
+memory
+-
+set
+-
+string
+-
+vector
+-
+utility
+-
+
 ../include/cudaHeaders.h
 math.h
 ../include/math.h
 
-../include/kernel_pfp.h
-cudaHeaders.h
-../include/cudaHeaders.h
-
-/home/rafael/Documentos/tcc_fp/pfp-growth/src/kernel_pfp.cu
+/home/rafael/Documentos/tcc_fp/pfp-growth/src/Kernel.cu
 cudaHeaders.h
 -
 cuda_runtime_api.h
 -
 cstdio
 -
-kernel_pfp.h
-/home/rafael/Documentos/tcc_fp/pfp-growth/src/kernel_pfp.h
+Kernel.h
+/home/rafael/Documentos/tcc_fp/pfp-growth/src/Kernel.h
+PFPTree.hpp
+/home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPTree.hpp
 
 /opt/cuda/include/builtin_types.h
 device_types.h

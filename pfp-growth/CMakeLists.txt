@@ -1,41 +1,44 @@
 cmake_minimum_required(VERSION 3.10)
-project(fp_growth_gpu LANGUAGES CXX CUDA)
+project(pfp_growth LANGUAGES CXX CUDA)
 find_package(CUDA 9 REQUIRED)
 
 set(CTest)
 include_directories(${CUDA_INCLUDE_DIRS} "${CMAKE_SOURCE_DIR}/src" "${CMAKE_SOURCE_DIR}/include")
 set(CATCH_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/unit-test)
-set(CMAKE_C_COMPILER /usr/bin/gcc-6 CACHE PATH "" FORCE)
-set(CMAKE_CXX_COMPILER /usr/bin/g++-6 CACHE PATH "" FORCE)
+set(CMAKE_C_COMPILER /usr/bin/gcc-7 CACHE PATH "" FORCE)
+set(CMAKE_CXX_COMPILER /usr/bin/g++-7 CACHE PATH "" FORCE)
 set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} -rdc=true -gencode arch=compute_50,code=sm_50")
 set(CMAKE_C_FLAGS_DEBUG "-D_DEBUG")
 add_definitions(-DUNIT_TEST)
 add_library(gpu_library_fp_growth STATIC
         include/cudaHeaders.h
-        include/kernel_pfp.h
-        src/kernel_pfp.cu
-        include/pfp_tree_growth.h
-        src/pfp_tree_growth.cpp
+        src/Kernel.cu
+        include/Kernel.h
         )
 
-#add_library(cpu_library_fp_growth STATIC
-#       )
+add_library(cpu_library_fp_growth STATIC
+        include/PFPGrowth.h
+        include/PFPTree.hpp
+        src/PFPTree.cpp
+        src/PFPGrowth.cpp
+        include/FPTransMap.h
+        src/FPTransMap.cpp)
 
 
 # Prepare "Catch" library for other executables
-#add_library(Catch INTERFACE)
-#target_include_directories(Catch INTERFACE ${CATCH_INCLUDE_DIR})
+add_library(Catch INTERFACE)
+target_include_directories(Catch INTERFACE ${CATCH_INCLUDE_DIR})
 
-#target_compile_features(cpu_library_fp_growth PUBLIC cxx_std_11)
+target_compile_features(cpu_library_fp_growth PUBLIC cxx_std_11)
 
-#set_target_properties( cpu_library_fp_growth
-#        PROPERTIES CUDA_SEPARABLE_COMPILATION ON)
+set_target_properties( cpu_library_fp_growth
+        PROPERTIES CUDA_SEPARABLE_COMPILATION ON)
 
-add_executable(fp_cuda main.cpp)
+add_executable(fp_cuda main.cu unit-test/catch.hpp)
 
-#set_property(TARGET fp_cuda
-#        PROPERTY CUDA_SEPARABLE_COMPILATION ON)
-target_link_libraries( fp_cuda gpu_library_fp_growth )
+set_property(TARGET fp_cuda
+        PROPERTY CUDA_SEPARABLE_COMPILATION ON)
+target_link_libraries( fp_cuda cpu_library_fp_growth gpu_library_fp_growth Catch)
 
 
 if(APPLE)

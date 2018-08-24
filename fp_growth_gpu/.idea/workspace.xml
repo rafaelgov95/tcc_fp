@@ -2,9 +2,9 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="fp_growth_gpu" targetName="fp_cuda" />
       <config projectName="fp_growth_gpu" targetName="cpu_library_fp_growth" />
       <config projectName="fp_growth_gpu" targetName="gpu_library_fp_growth" />
+      <config projectName="fp_growth_gpu" targetName="fp_cuda" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -28,11 +28,17 @@
       <file leaf-file-name="main.cu" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cu">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-              <folding>
-                <element signature="e#199#1180#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="228">
+              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeTestCUDACompiler.cmake" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/bin/cmake/share/cmake-3.10/Modules/CMakeTestCUDACompiler.cmake">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="855">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
             </state>
           </provider>
         </entry>
@@ -40,17 +46,17 @@
       <file leaf-file-name="cudaHeaders.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/cudaHeaders.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="9" column="20" lean-forward="true" selection-end-line="286" />
+            <state relative-caret-position="171">
+              <caret line="9" column="20" selection-end-line="286" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test_FPRadixTree.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Test_FPRadixTree.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/unit-test/Test_FPRadixTree.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="49">
+              <caret line="44" column="10" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
               <folding>
                 <element signature="e#686#706#0" expanded="true" />
               </folding>
@@ -58,14 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FPTransMap.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FPTransMap.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FPTransMap.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="62" lean-forward="true" selection-end-line="233" />
-              <folding>
-                <element signature="e#587#607#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1007">
+              <caret line="53" column="100" selection-start-line="53" selection-start-column="100" selection-end-line="53" selection-end-column="100" />
             </state>
           </provider>
         </entry>
@@ -73,31 +76,31 @@
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="39" column="32" selection-end-line="50" />
+            <state relative-caret-position="190">
+              <caret line="31" column="33" selection-end-line="50" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test_FPHeaderTable.cu" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/unit-test/Test_FPHeaderTable.cu">
+      <file leaf-file-name="Test_FPTransMap.cu" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unit-test/Test_FPTransMap.cu">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="149" column="24" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="50" />
+            <state relative-caret-position="57">
+              <caret line="57" column="20" lean-forward="true" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
               <folding>
-                <element signature="e#686#706#0" expanded="true" />
+                <element signature="e#99#119#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FPHeaderTable.cu" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FPHeaderTable.cu">
+      <file leaf-file-name="FPTransMap.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/FPTransMap.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="159" column="27" selection-start-line="159" selection-start-column="15" selection-end-line="159" selection-end-column="27" />
+            <state relative-caret-position="178">
+              <caret line="60" column="6" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
               <folding>
-                <element signature="e#587#613#0" expanded="true" />
+                <element signature="e#660#678#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,31 +109,19 @@
       <file leaf-file-name="FPRadixTree.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/FPRadixTree.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+            <state relative-caret-position="288">
+              <caret line="55" column="14" lean-forward="true" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test_FPGrowth.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp">
+      <file leaf-file-name="FPRadixTree.cu" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FPRadixTree.cu">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="99" column="25" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
+            <state relative-caret-position="330">
+              <caret line="134" column="23" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="34" />
               <folding>
-                <element signature="e#613#633#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_FPTransMap.cu" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/unit-test/Test_FPTransMap.cu">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="105" column="30" lean-forward="true" selection-end-line="147" />
-              <folding>
-                <element signature="e#99#119#0" expanded="true" />
+                <element signature="e#586#622#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -176,14 +167,14 @@
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp" />
         <option value="$PROJECT_DIR$/src/FPTransMap.cpp" />
-        <option value="$PROJECT_DIR$/src/FPRadixTree.cu" />
         <option value="$PROJECT_DIR$/unit-test/Off_TestFP.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/unit-test/Test_FPRadixTree.cpp" />
         <option value="$PROJECT_DIR$/src/FPHeaderTable.cu" />
         <option value="$PROJECT_DIR$/unit-test/Test_FPHeaderTable.cu" />
-        <option value="$PROJECT_DIR$/unit-test/Test_FPTransMap.cu" />
         <option value="$PROJECT_DIR$/main.cu" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/unit-test/Test_FPTransMap.cu" />
+        <option value="$PROJECT_DIR$/src/FPRadixTree.cu" />
       </list>
     </option>
   </component>
@@ -204,9 +195,9 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="27" />
-    <option name="width" value="1910" />
-    <option name="height" value="789" />
+    <option name="x" value="1920" />
+    <option name="width" value="1360" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -245,7 +236,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Catch2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -334,6 +325,8 @@
       <workItem from="1534509139751" duration="4181000" />
       <workItem from="1534526823397" duration="15700000" />
       <workItem from="1534812959900" duration="3928000" />
+      <workItem from="1534988815689" duration="1260000" />
+      <workItem from="1535083428313" duration="4093000" />
     </task>
     <servers />
   </component>
@@ -349,7 +342,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138554000" />
+    <option name="totallyTimeSpent" value="143907000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -361,16 +354,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <frame x="1920" y="0" width="1360" height="768" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15603584" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.023898432" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.32894737" />
-      <window_info anchor="bottom" id="Messages" order="0" visible="true" weight="0.39692983" />
-      <window_info anchor="bottom" id="CMake" order="2" weight="0.31688598" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.3960827" />
+      <window_info anchor="bottom" id="CMake" order="2" weight="0.31664854" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32894737" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.08201893" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32894737" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -505,7 +498,7 @@
           <option name="timeStamp" value="509" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="510" />
+      <option name="time" value="511" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -525,13 +518,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/include/FPGrowth.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FPGrowth.cu">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2124">
@@ -572,20 +558,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/limits">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10566">
-          <caret line="587" column="11" selection-start-line="587" selection-start-column="11" selection-end-line="587" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/bits/stl_iterator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14778">
-          <caret line="821" selection-start-line="821" selection-end-line="821" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/limits" />
+    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/bits/stl_iterator.h" />
     <entry file="file:///opt/cuda/include/thrust/detail/type_traits.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -607,11 +581,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/ostream">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1026" />
-      </provider>
-    </entry>
+    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/ostream" />
     <entry file="file://$PROJECT_DIR$/include/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt" />
     <entry file="file:///opt/cuda/include/thrust/device_vector.h">
@@ -685,41 +655,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/bits/predefined_ops.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2232">
-          <caret line="124" selection-start-line="124" selection-end-line="124" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/bits/stl_map.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="518" selection-start-line="518" selection-end-line="518" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/bits/stl_algo.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="3783" column="53" selection-start-line="3783" selection-start-column="53" selection-end-line="3783" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/bits/stl_vector.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="290" column="6" selection-start-line="290" selection-start-column="6" selection-end-line="290" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/x86_64-pc-linux-gnu/bits/c++config.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="565" column="7" selection-start-line="565" selection-start-column="7" selection-end-line="565" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/bits/predefined_ops.h" />
+    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/bits/stl_map.h" />
+    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/bits/stl_algo.h" />
+    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/bits/stl_vector.h" />
+    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/x86_64-pc-linux-gnu/bits/c++config.h" />
     <entry file="file://$PROJECT_DIR$/unit-test/Off_TestFP.cpp" />
     <entry file="file://$PROJECT_DIR$/include/FPGrowth.h">
       <provider selected="true" editor-type-id="text-editor">
@@ -735,10 +675,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/unit-test/catch.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57366">
+          <caret line="3187" selection-start-line="3187" selection-end-line="3187" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FPHeaderTable.cu">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3021">
+          <caret line="159" column="27" selection-start-line="159" selection-start-column="15" selection-end-line="159" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1881">
+          <caret line="99" column="25" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit-test/Test_FPHeaderTable.cu">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2831">
+          <caret line="149" column="24" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/cudaHeaders.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="20" selection-end-line="286" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FPTransMap.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1007">
+          <caret line="53" column="100" selection-start-line="53" selection-start-column="100" selection-end-line="53" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/bin/cmake/share/cmake-3.10/Modules/CMakeTestCUDACompiler.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="31" column="33" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cu">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit-test/Test_FPTransMap.cu">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="57" column="20" lean-forward="true" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+          <folding>
+            <element signature="e#99#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/FPRadixTree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="55" column="14" lean-forward="true" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/include/FPTransMap.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1386">
-          <caret line="119" column="58" selection-start-line="119" selection-start-column="58" selection-end-line="119" selection-end-column="58" />
+        <state relative-caret-position="178">
+          <caret line="60" column="6" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
           <folding>
             <element signature="e#660#678#0" expanded="true" />
           </folding>
@@ -747,108 +767,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FPRadixTree.cu">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2556">
-          <caret line="142" selection-start-line="142" selection-end-line="142" />
+        <state relative-caret-position="330">
+          <caret line="134" column="23" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="34" />
           <folding>
             <element signature="e#586#622#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unit-test/catch.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57366">
-          <caret line="3187" selection-start-line="3187" selection-end-line="3187" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/FPRadixTree.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FPHeaderTable.cu">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="159" column="27" selection-start-line="159" selection-start-column="15" selection-end-line="159" selection-end-column="27" />
-          <folding>
-            <element signature="e#587#613#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit-test/Test_FPGrowth.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="99" column="25" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
-          <folding>
-            <element signature="e#613#633#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit-test/Test_FPHeaderTable.cu">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="149" column="24" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="50" />
-          <folding>
-            <element signature="e#686#706#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/unit-test/Test_FPRadixTree.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="49">
+          <caret line="44" column="10" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
           <folding>
             <element signature="e#686#706#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="39" column="32" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cu">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding>
-            <element signature="e#199#1180#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/cudaHeaders.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="9" column="20" lean-forward="true" selection-end-line="286" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit-test/Test_FPTransMap.cu">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="105" column="30" lean-forward="true" selection-end-line="147" />
-          <folding>
-            <element signature="e#99#119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FPTransMap.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="62" lean-forward="true" selection-end-line="233" />
-          <folding>
-            <element signature="e#587#607#0" expanded="true" />
           </folding>
         </state>
       </provider>

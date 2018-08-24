@@ -52,6 +52,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/fp_cuda.dir/DependInfo.cmake"
   "CMakeFiles/gpu_library_fp_growth.dir/DependInfo.cmake"
+  "CMakeFiles/cpu_library_fp_growth.dir/DependInfo.cmake"
+  "CMakeFiles/fp_cuda.dir/DependInfo.cmake"
   )

@@ -23,7 +23,7 @@ namespace cuda_fp_growth {
 __device__
 inline int sgn( int x ) { return ( 0 < x ) - ( x < 0 ); }
 
-/// Counts the length of the shared prefix between two transactions
+    /// Counts the length of the shared prefix between two transactions
 __device__
 int pfx( int i, int j, const BitBlock* __restrict__ trans_map, size_type n_trans, size_type blocks_per_trans )
 {
