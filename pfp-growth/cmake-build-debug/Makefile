@@ -176,33 +176,6 @@ main.cu.s:
 	$(MAKE) -f CMakeFiles/fp_cuda.dir/build.make CMakeFiles/fp_cuda.dir/main.cu.s
 .PHONY : main.cu.s
 
-src/FPTransMap.o: src/FPTransMap.cpp.o
-
-.PHONY : src/FPTransMap.o
-
-# target to build an object file
-src/FPTransMap.cpp.o:
-	$(MAKE) -f CMakeFiles/cpu_library_fp_growth.dir/build.make CMakeFiles/cpu_library_fp_growth.dir/src/FPTransMap.cpp.o
-.PHONY : src/FPTransMap.cpp.o
-
-src/FPTransMap.i: src/FPTransMap.cpp.i
-
-.PHONY : src/FPTransMap.i
-
-# target to preprocess a source file
-src/FPTransMap.cpp.i:
-	$(MAKE) -f CMakeFiles/cpu_library_fp_growth.dir/build.make CMakeFiles/cpu_library_fp_growth.dir/src/FPTransMap.cpp.i
-.PHONY : src/FPTransMap.cpp.i
-
-src/FPTransMap.s: src/FPTransMap.cpp.s
-
-.PHONY : src/FPTransMap.s
-
-# target to generate assembly for a file
-src/FPTransMap.cpp.s:
-	$(MAKE) -f CMakeFiles/cpu_library_fp_growth.dir/build.make CMakeFiles/cpu_library_fp_growth.dir/src/FPTransMap.cpp.s
-.PHONY : src/FPTransMap.cpp.s
-
 src/Kernel.o: src/Kernel.cu.o
 
 .PHONY : src/Kernel.o
@@ -230,32 +203,32 @@ src/Kernel.cu.s:
 	$(MAKE) -f CMakeFiles/gpu_library_fp_growth.dir/build.make CMakeFiles/gpu_library_fp_growth.dir/src/Kernel.cu.s
 .PHONY : src/Kernel.cu.s
 
-src/PFPGrowth.o: src/PFPGrowth.cpp.o
+src/PFPArray.o: src/PFPArray.cpp.o
 
-.PHONY : src/PFPGrowth.o
+.PHONY : src/PFPArray.o
 
 # target to build an object file
-src/PFPGrowth.cpp.o:
-	$(MAKE) -f CMakeFiles/cpu_library_fp_growth.dir/build.make CMakeFiles/cpu_library_fp_growth.dir/src/PFPGrowth.cpp.o
-.PHONY : src/PFPGrowth.cpp.o
+src/PFPArray.cpp.o:
+	$(MAKE) -f CMakeFiles/cpu_library_fp_growth.dir/build.make CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o
+.PHONY : src/PFPArray.cpp.o
 
-src/PFPGrowth.i: src/PFPGrowth.cpp.i
+src/PFPArray.i: src/PFPArray.cpp.i
 
-.PHONY : src/PFPGrowth.i
+.PHONY : src/PFPArray.i
 
 # target to preprocess a source file
-src/PFPGrowth.cpp.i:
-	$(MAKE) -f CMakeFiles/cpu_library_fp_growth.dir/build.make CMakeFiles/cpu_library_fp_growth.dir/src/PFPGrowth.cpp.i
-.PHONY : src/PFPGrowth.cpp.i
+src/PFPArray.cpp.i:
+	$(MAKE) -f CMakeFiles/cpu_library_fp_growth.dir/build.make CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.i
+.PHONY : src/PFPArray.cpp.i
 
-src/PFPGrowth.s: src/PFPGrowth.cpp.s
+src/PFPArray.s: src/PFPArray.cpp.s
 
-.PHONY : src/PFPGrowth.s
+.PHONY : src/PFPArray.s
 
 # target to generate assembly for a file
-src/PFPGrowth.cpp.s:
-	$(MAKE) -f CMakeFiles/cpu_library_fp_growth.dir/build.make CMakeFiles/cpu_library_fp_growth.dir/src/PFPGrowth.cpp.s
-.PHONY : src/PFPGrowth.cpp.s
+src/PFPArray.cpp.s:
+	$(MAKE) -f CMakeFiles/cpu_library_fp_growth.dir/build.make CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.s
+.PHONY : src/PFPArray.cpp.s
 
 src/PFPTree.o: src/PFPTree.cpp.o
 
@@ -298,15 +271,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/FPTransMap.o"
-	@echo "... src/FPTransMap.i"
-	@echo "... src/FPTransMap.s"
 	@echo "... src/Kernel.o"
 	@echo "... src/Kernel.i"
 	@echo "... src/Kernel.s"
-	@echo "... src/PFPGrowth.o"
-	@echo "... src/PFPGrowth.i"
-	@echo "... src/PFPGrowth.s"
+	@echo "... src/PFPArray.o"
+	@echo "... src/PFPArray.i"
+	@echo "... src/PFPArray.s"
 	@echo "... src/PFPTree.o"
 	@echo "... src/PFPTree.i"
 	@echo "... src/PFPTree.s"

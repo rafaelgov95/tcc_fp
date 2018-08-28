@@ -12,17 +12,16 @@ set(CMAKE_C_FLAGS_DEBUG "-D_DEBUG")
 add_definitions(-DUNIT_TEST)
 add_library(gpu_library_fp_growth STATIC
         include/cudaHeaders.h
-        src/Kernel.cu
         include/Kernel.h
+        src/Kernel.cu
         )
 
 add_library(cpu_library_fp_growth STATIC
-        include/PFPGrowth.h
+        include/PFPArray.h
         include/PFPTree.hpp
         src/PFPTree.cpp
-        src/PFPGrowth.cpp
-        include/FPTransMap.h
-        src/FPTransMap.cpp)
+        src/PFPArray.cpp
+        )
 
 
 # Prepare "Catch" library for other executables

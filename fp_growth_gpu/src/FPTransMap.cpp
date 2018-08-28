@@ -104,11 +104,11 @@ void FPTransMap::build_transaction_map( Items::const_iterator trans_begin, Indic
 
     // sort frequent items   // ERRO
     std::sort( freq_items.begin(), freq_items.end(), [&]( const Item& item_a, const Item& item_b ) {
-        if ( item_a != rhs && item_b != rhs ) {
+//        if ( item_a != rhs && item_b != rhs ) {
             size_type count_a = counts.at( item_a ), count_b = counts.at( item_b );
             return ( count_a < count_b ) || ( count_a == count_b && item_a < item_b );
-        }
-        else return item_a == rhs;
+//        }
+//        else return item_a == rhs;
     } );
 
     // copy frequency count and transaction map in order

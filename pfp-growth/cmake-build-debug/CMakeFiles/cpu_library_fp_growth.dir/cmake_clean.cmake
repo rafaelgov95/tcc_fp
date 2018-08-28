@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o"
-  "CMakeFiles/cpu_library_fp_growth.dir/src/PFPGrowth.cpp.o"
-  "CMakeFiles/cpu_library_fp_growth.dir/src/FPTransMap.cpp.o"
+  "CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o"
   "libcpu_library_fp_growth.pdb"
   "libcpu_library_fp_growth.a"
 )

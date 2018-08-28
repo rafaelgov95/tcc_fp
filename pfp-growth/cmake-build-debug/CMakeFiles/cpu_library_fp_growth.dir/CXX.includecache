@@ -6,23 +6,11 @@
 
 #IncludeRegexTransform: 
 
-../include/FPTransMap.h
-cstdint
--
-iostream
--
-string
--
-vector
--
-thrust/device_vector.h
--
-
 ../include/Kernel.h
 cudaHeaders.h
 ../include/cudaHeaders.h
 
-../include/PFPGrowth.h
+../include/PFPArray.h
 cstdint
 -
 map
@@ -39,6 +27,10 @@ utility
 -
 PFPTree.hpp
 ../include/PFPTree.hpp
+iostream
+-
+thrust/device_vector.h
+-
 
 ../include/PFPTree.hpp
 cstdint
@@ -60,25 +52,7 @@ utility
 math.h
 ../include/math.h
 
-/home/rafael/Documentos/tcc_fp/pfp-growth/src/FPTransMap.cpp
-algorithm
--
-cassert
--
-limits
--
-map
--
-numeric
-/home/rafael/Documentos/tcc_fp/pfp-growth/src/numeric
-FPTransMap.h
-/home/rafael/Documentos/tcc_fp/pfp-growth/src/FPTransMap.h
-limits
--
-iostream
--
-
-/home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPGrowth.cpp
+/home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPArray.cpp
 algorithm
 -
 cassert
@@ -87,8 +61,8 @@ cstdint
 -
 utility
 -
-PFPGrowth.h
-/home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPGrowth.h
+PFPArray.h
+/home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPArray.h
 Kernel.h
 /home/rafael/Documentos/tcc_fp/pfp-growth/src/Kernel.h
 
@@ -100,6 +74,8 @@ cassert
 cstdint
 -
 utility
+-
+iostream
 -
 PFPTree.hpp
 /home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPTree.hpp

@@ -21,7 +21,6 @@
 #include <iostream>
 #include <string>
 #include <vector>
-
 #include <thrust/device_vector.h>
 
 namespace cuda_fp_growth {

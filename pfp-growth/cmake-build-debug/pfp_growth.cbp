@@ -196,13 +196,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/rafael/Documentos/tcc_fp/pfp-growth/include/FPTransMap.h">
-			<Option target="cpu_library_fp_growth"/>
-		</Unit>
 		<Unit filename="/home/rafael/Documentos/tcc_fp/pfp-growth/include/Kernel.h">
 			<Option target="gpu_library_fp_growth"/>
 		</Unit>
-		<Unit filename="/home/rafael/Documentos/tcc_fp/pfp-growth/include/PFPGrowth.h">
+		<Unit filename="/home/rafael/Documentos/tcc_fp/pfp-growth/include/PFPArray.h">
 			<Option target="cpu_library_fp_growth"/>
 		</Unit>
 		<Unit filename="/home/rafael/Documentos/tcc_fp/pfp-growth/include/PFPTree.hpp">
@@ -214,13 +211,10 @@
 		<Unit filename="/home/rafael/Documentos/tcc_fp/pfp-growth/main.cu">
 			<Option target="fp_cuda"/>
 		</Unit>
-		<Unit filename="/home/rafael/Documentos/tcc_fp/pfp-growth/src/FPTransMap.cpp">
-			<Option target="cpu_library_fp_growth"/>
-		</Unit>
 		<Unit filename="/home/rafael/Documentos/tcc_fp/pfp-growth/src/Kernel.cu">
 			<Option target="gpu_library_fp_growth"/>
 		</Unit>
-		<Unit filename="/home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPGrowth.cpp">
+		<Unit filename="/home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPArray.cpp">
 			<Option target="cpu_library_fp_growth"/>
 		</Unit>
 		<Unit filename="/home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPTree.cpp">

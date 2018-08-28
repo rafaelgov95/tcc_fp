@@ -9,29 +9,33 @@
 #include <vector>
 #include <utility>
 
-
 using Item = std::string;
 using Transaction = std::vector<Item>;
 using TransformedPrefixPath = std::pair<std::vector<Item>, uint64_t>;
 using Pattern = std::pair<std::set<Item>, uint64_t>;
 
-
-struct FPNode {
+struct PFPNode {
     const Item item;
     uint64_t frequency;
-    std::shared_ptr<FPNode> node_link;
-    std::weak_ptr<FPNode> parent;
-    std::vector<std::shared_ptr<FPNode>> children;
-
-    FPNode(const Item&, const std::shared_ptr<FPNode>&);
+    std::shared_ptr<PFPNode> parent;
+    std::vector<std::shared_ptr<PFPNode>> children;
+    PFPNode(const Item&, const std::shared_ptr<PFPNode>&);
 };
 
-struct FPTree {
-    std::shared_ptr<FPNode> root;
-    std::map<Item, std::shared_ptr<FPNode>> header_table;
+
+struct PFPLeaf{
+    std::shared_ptr<PFPNode> value;
+    std::shared_ptr<PFPLeaf> next;
+    PFPLeaf(const std::shared_ptr<PFPNode>&);
+};
+
+
+struct PFPTree {
+    std::shared_ptr<PFPNode> root;
+    std::shared_ptr<PFPLeaf> rootFolhas;
     uint64_t minimum_support_threshold;
 
-    FPTree(const std::vector<Transaction>&, uint64_t);
+    PFPTree(const std::vector<Transaction>&, uint64_t);
 
     bool empty() const;
 };
