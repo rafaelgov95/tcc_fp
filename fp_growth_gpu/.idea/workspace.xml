@@ -2,9 +2,9 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="fp_growth_gpu" targetName="fp_cuda" />
       <config projectName="fp_growth_gpu" targetName="cpu_library_fp_growth" />
       <config projectName="fp_growth_gpu" targetName="gpu_library_fp_growth" />
+      <config projectName="fp_growth_gpu" targetName="fp_cuda" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -58,8 +58,8 @@
       <file leaf-file-name="FPTransMap.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FPTransMap.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="110" column="11" lean-forward="true" selection-start-line="110" selection-start-column="11" selection-end-line="110" selection-end-column="11" />
+            <state relative-caret-position="2090">
+              <caret line="110" column="11" selection-start-line="110" selection-start-column="11" selection-end-line="110" selection-end-column="11" />
               <folding>
                 <element signature="e#587#607#0" expanded="true" />
               </folding>
@@ -88,8 +88,8 @@
       <file leaf-file-name="Test_FPTransMap.cu" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/unit-test/Test_FPTransMap.cu">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2242">
-              <caret line="133" selection-start-line="133" selection-end-line="133" />
+            <state relative-caret-position="394">
+              <caret line="112" column="49" selection-start-line="112" selection-start-column="49" selection-end-line="112" selection-end-column="49" />
               <folding>
                 <element signature="e#99#119#0" expanded="true" />
               </folding>
@@ -197,10 +197,11 @@
     <packageJsonPaths />
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="27" />
-    <option name="width" value="1920" />
-    <option name="height" value="1053" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-128" />
+    <option name="y" value="644" />
+    <option name="width" value="1910" />
+    <option name="height" value="789" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -208,7 +209,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -235,6 +235,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -334,7 +335,8 @@
       <workItem from="1535165250827" duration="1318000" />
       <workItem from="1535229587741" duration="45000" />
       <workItem from="1535395687950" duration="2095000" />
-      <workItem from="1535426741650" duration="1940000" />
+      <workItem from="1535426741650" duration="2539000" />
+      <workItem from="1535457037294" duration="19000" />
     </task>
     <servers />
   </component>
@@ -350,7 +352,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150183000" />
+    <option name="totallyTimeSpent" value="150801000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -362,20 +364,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <frame x="-128" y="644" width="1910" height="789" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30680022" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30842608" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.32894737" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.39583334" />
       <window_info anchor="bottom" id="CMake" order="2" weight="0.31664854" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="3" weight="0.32894737" />
       <window_info anchor="bottom" id="Run" order="10" weight="0.08201893" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.32894737" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32894737" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4484649" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="7" visible="true" weight="0.4484649" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -383,6 +384,7 @@
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32896176" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.39583334" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -808,8 +810,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FPTransMap.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="110" column="11" lean-forward="true" selection-start-line="110" selection-start-column="11" selection-end-line="110" selection-end-column="11" />
+        <state relative-caret-position="2090">
+          <caret line="110" column="11" selection-start-line="110" selection-start-column="11" selection-end-line="110" selection-end-column="11" />
           <folding>
             <element signature="e#587#607#0" expanded="true" />
           </folding>
@@ -818,8 +820,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/unit-test/Test_FPTransMap.cu">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2242">
-          <caret line="133" selection-start-line="133" selection-end-line="133" />
+        <state relative-caret-position="394">
+          <caret line="112" column="49" selection-start-line="112" selection-start-column="49" selection-end-line="112" selection-end-column="49" />
           <folding>
             <element signature="e#99#119#0" expanded="true" />
           </folding>

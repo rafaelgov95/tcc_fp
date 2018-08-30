@@ -14,10 +14,8 @@ PFPNode::PFPNode(const Item& item, const std::shared_ptr<PFPNode>& parent):
 {
 }
 
-
-
 PFPTree::PFPTree(const std::vector<Transaction>& transactions, uint64_t minimum_support_threshold) :
-        root( std::make_shared<PFPNode>( Item{}, nullptr ) ),
+        root( std::make_shared<PFPNode>( "{}", nullptr ) ),
         minimum_support_threshold( minimum_support_threshold ),
         rootFolhas(std::make_shared<PFPLeaf>( nullptr ))
 {
