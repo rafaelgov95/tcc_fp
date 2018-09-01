@@ -47,6 +47,10 @@ vector
 -
 utility
 -
+vector
+-
+thrust/device_vector.h
+-
 
 ../include/cudaHeaders.h
 math.h
@@ -57,9 +61,13 @@ algorithm
 -
 cassert
 -
+iostream
+-
 cstdint
 -
 utility
+-
+cublas_v2.h
 -
 PFPArray.h
 /home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPArray.h
@@ -93,6 +101,26 @@ vector_types.h
 /opt/cuda/include/vector_types.h
 
 /opt/cuda/include/crt/host_defines.h
+
+/opt/cuda/include/cuComplex.h
+math.h
+-
+vector_types.h
+/opt/cuda/include/vector_types.h
+
+/opt/cuda/include/cublas_api.h
+driver_types.h
+/opt/cuda/include/driver_types.h
+cuComplex.h
+/opt/cuda/include/cuComplex.h
+cuda_fp16.h
+-
+library_types.h
+/opt/cuda/include/library_types.h
+
+/opt/cuda/include/cublas_v2.h
+cublas_api.h
+/opt/cuda/include/cublas_api.h
 
 /opt/cuda/include/cuda.h
 stdlib.h
@@ -147,6 +175,8 @@ stddef.h
 /opt/cuda/include/host_defines.h
 crt/host_defines.h
 /opt/cuda/include/crt/host_defines.h
+
+/opt/cuda/include/library_types.h
 
 /opt/cuda/include/surface_types.h
 driver_types.h

@@ -43,6 +43,10 @@ vector
 -
 utility
 -
+vector
+-
+thrust/device_vector.h
+-
 
 /home/rafael/Documentos/tcc_fp/pfp-growth/main.cu
 unit-test/Test_PFPGrowth.cpp

@@ -10,7 +10,7 @@ PFPLeaf::PFPLeaf(const std::shared_ptr<PFPNode> &):
 }
 
 PFPNode::PFPNode(const Item& item, const std::shared_ptr<PFPNode>& parent):
-        item( item ), frequency( 1 ),parent( parent ), children(children)
+        item( item ), frequency( 1 ),parent( parent ), children(children),is_visit(false)
 {
 }
 
@@ -37,7 +37,6 @@ PFPTree::PFPTree(const std::vector<Transaction>& transactions, uint64_t minimum_
     }
 
 
-    // order items by decreasing frequency
     struct frequency_comparator
     {
         bool operator()(const std::pair<Item, uint64_t> &lhs, const std::pair<Item, uint64_t> &rhs) const
@@ -45,17 +44,30 @@ PFPTree::PFPTree(const std::vector<Transaction>& transactions, uint64_t minimum_
             return   lhs.second > rhs.second   || lhs.second == rhs.second  && lhs.first < rhs.first   ;
         }
     };
-    std::set<std::pair<Item, uint64_t>, frequency_comparator> items_ordered_by_frequency(frequency_by_item.cbegin(), frequency_by_item.cend());
-//     sort frequent items   // ERRO
-//
+//    std::set<std::pair<Item, uint64_t>, frequency_comparator> items_ordered_by_frequency(frequency_by_item.cbegin(), frequency_by_item.cend());
 
- auto curr_rootFolhas = rootFolhas;
+    //Apelacao
+    std::vector<std::pair<Item, uint64_t>> items_ordered_by_frequency;
+    std::pair<Item, uint64_t> a = std::make_pair("F",uint64_t(4));
+    std::pair<Item, uint64_t> b = std::make_pair("C",uint64_t(4));
+    std::pair<Item, uint64_t> c = std::make_pair("A",uint64_t(3));
+    std::pair<Item, uint64_t> d = std::make_pair("B",uint64_t(3));
+    std::pair<Item, uint64_t> e = std::make_pair("M",uint64_t(3));
+    std::pair<Item, uint64_t> f = std::make_pair("P",uint64_t(3));
+
+    items_ordered_by_frequency.push_back(a);
+    items_ordered_by_frequency.push_back(b);
+    items_ordered_by_frequency.push_back(c);
+    items_ordered_by_frequency.push_back(d);
+    items_ordered_by_frequency.push_back(e);
+    items_ordered_by_frequency.push_back(f);
+
+    auto curr_rootFolhas = rootFolhas;
     // scan the transactions again
+    curr_rootFolhas.get()->next = std::make_shared<PFPLeaf>(nullptr);
     for ( const Transaction& transaction : transactions ) {
         auto curr_fpnode = root;
-        const auto curr_fpleaf_new = std::make_shared<PFPLeaf>(nullptr);
-        curr_rootFolhas.get()->next = curr_fpleaf_new;
-        curr_rootFolhas = curr_fpleaf_new;
+
         // select and sort the frequent items in transaction according to the order of items_ordered_by_frequency
         for ( const auto& pair : items_ordered_by_frequency ) {
             const Item& item = pair.first;
@@ -72,26 +84,17 @@ PFPTree::PFPTree(const std::vector<Transaction>& transactions, uint64_t minimum_
                 if ( it == curr_fpnode->children.cend() ) {
                     // the child doesn't exist, create a new node
                     const auto curr_fpnode_new_child = std::make_shared<PFPNode>( item, curr_fpnode );
-                    // add the new node to the tree
                     curr_fpnode->children.push_back( curr_fpnode_new_child );
-
-
-                    // update the leaf structure
-//                    if (curr_fpnode.get()->children.empty()){
-
-//                    }
-                    // advance to the next node of the current transaction
                     curr_fpnode = curr_fpnode_new_child;
-
                     curr_rootFolhas.get()->value = curr_fpnode;
                 }
                 else {
                     // the child exist, increment its frequency
-                    auto curr_fpnode_child = *it;
+                        auto curr_fpnode_child = *it;
                     ++curr_fpnode_child->frequency;
-                    if (curr_fpnode_child.get()->children.empty()){
-                        curr_rootFolhas.get()->value = curr_fpnode_child;
-                    }
+//                    if (curr_fpnode_child.get()->children.empty()){
+//                        curr_rootFolhas.get()->value = curr_fpnode_child;
+//                    }
                     // advance to the next node of the current transaction
                     curr_fpnode = curr_fpnode_child;
                 }
@@ -99,7 +102,11 @@ PFPTree::PFPTree(const std::vector<Transaction>& transactions, uint64_t minimum_
 
         }
 
+        //corrigir criando atua no final
+        curr_rootFolhas.get()->next =std::make_shared<PFPLeaf>(nullptr);
+        curr_rootFolhas =curr_rootFolhas.get()->next;
 
+//        curr_rootFolhas = curr_fpleaf_new;
     }
 }
 

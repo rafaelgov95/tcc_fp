@@ -2,9 +2,9 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="pfp_growth" targetName="cpu_library_fp_growth" />
-      <config projectName="pfp_growth" targetName="fp_cuda" />
       <config projectName="pfp_growth" targetName="gpu_library_fp_growth" />
+      <config projectName="pfp_growth" targetName="fp_cuda" />
+      <config projectName="pfp_growth" targetName="cpu_library_fp_growth" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -14,21 +14,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5c27c88-cbca-48a3-9363-a43c1d9f5e45" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/include/PFPGrowth.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PFPGrowth.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fp_growth_gpu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../fp_growth_gpu/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/CUDA.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/CUDA.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/cmake_device_link.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/cmake_device_link.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/main.cu.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/main.cu.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/CUDA.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/CUDA.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/src/Kernel.cu.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/src/Kernel.cu.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/fp_cuda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/fp_cuda" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/libcpu_library_fp_growth.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libcpu_library_fp_growth.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libgpu_library_fp_growth.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libgpu_library_fp_growth.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/PFPArray.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/PFPArray.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/PFPTree.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/PFPTree.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PFPArray.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/PFPArray.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PFPTree.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/PFPTree.cpp" afterDir="false" />
     </list>
@@ -46,11 +52,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PFPTree.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PFPTree.cpp">
+      <file leaf-file-name="PFPArray.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/PFPArray.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="380">
+              <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+              <folding>
+                <element signature="e#43#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stdint-uintn.h" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/include/bits/stdint-uintn.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PFPArray.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PFPArray.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="67" selection-start-line="67" selection-end-line="67" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -58,14 +85,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PFPArray.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/PFPArray.cpp">
+      <file leaf-file-name="PFPGrowth.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PFPGrowth.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="140">
+              <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-end-line="7" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PFPGrowth.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/PFPGrowth.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stringfwd.h" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/stringfwd.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1460">
+              <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Kernel.cu" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Kernel.cu">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -73,64 +124,19 @@
       <file leaf-file-name="shared_ptr.h" pinned="false" current-in-tab="false">
         <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/shared_ptr.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
+            <state relative-caret-position="4700">
               <caret line="235" column="4" selection-start-line="235" selection-start-column="4" selection-end-line="235" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="basic_string.h" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/basic_string.h">
+      <file leaf-file-name="PFPTree.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/PFPTree.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114171">
-              <caret line="6009" selection-start-line="6009" selection-end-line="6009" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="predefined_ops.h" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/predefined_ops.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5358">
-              <caret line="282" selection-start-line="282" selection-end-line="282" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stl_algo.h" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/stl_algo.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2261">
-              <caret line="119" selection-start-line="119" selection-end-line="119" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_PFPGrowth.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/unit-test/Test_PFPGrowth.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shared_ptr_base.h" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/shared_ptr_base.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23864">
-              <caret line="1256" column="6" selection-start-line="1256" selection-start-column="6" selection-end-line="1256" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PFPArray.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/PFPArray.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+            <state relative-caret-position="638">
+              <caret line="94" selection-start-line="94" selection-end-line="94" />
               <folding>
-                <element signature="e#43#61#0" expanded="true" />
+                <element signature="e#0#20#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,8 +145,8 @@
       <file leaf-file-name="PFPTree.hpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/PFPTree.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
-              <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+            <state relative-caret-position="300">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#41#59#0" expanded="true" />
               </folding>
@@ -153,6 +159,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>children</find>
+      <find>Folhas</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -181,13 +188,13 @@
         <option value="$PROJECT_DIR$/src/kernel_pfp.cu" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/unit-test/TestTree.cpp" />
-        <option value="$PROJECT_DIR$/src/PFPGrowth.cpp" />
         <option value="$PROJECT_DIR$/include/PFPGrowth.h" />
-        <option value="$PROJECT_DIR$/include/PFPTree.hpp" />
         <option value="$PROJECT_DIR$/unit-test/Test_PFPGrowth.cpp" />
-        <option value="$PROJECT_DIR$/src/PFPTree.cpp" />
+        <option value="$PROJECT_DIR$/include/PFPTree.hpp" />
         <option value="$PROJECT_DIR$/include/PFPArray.h" />
+        <option value="$PROJECT_DIR$/src/PFPGrowth.cpp" />
         <option value="$PROJECT_DIR$/src/PFPArray.cpp" />
+        <option value="$PROJECT_DIR$/src/PFPTree.cpp" />
       </list>
     </option>
   </component>
@@ -208,9 +215,10 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="724" />
-    <option name="width" value="1440" />
-    <option name="height" value="176" />
+    <option name="x" value="-128" />
+    <option name="y" value="644" />
+    <option name="width" value="1910" />
+    <option name="height" value="789" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -218,6 +226,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -243,15 +252,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fp_growth_cpu" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fp_growth_gpu" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -261,8 +269,8 @@
       <recent name="$PROJECT_DIR$/unit_test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/include" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -333,12 +341,19 @@
       <workItem from="1535510643813" duration="12950000" />
       <workItem from="1535546185043" duration="8858000" />
       <workItem from="1535568362032" duration="4712000" />
-      <workItem from="1535599032182" duration="9409000" />
+      <workItem from="1535599032182" duration="11491000" />
+      <workItem from="1535654829465" duration="2320000" />
+      <workItem from="1535680226839" duration="2454000" />
+      <workItem from="1535689167505" duration="2281000" />
+      <workItem from="1535717259061" duration="15536000" />
+      <workItem from="1535760781086" duration="4355000" />
+      <workItem from="1535798736394" duration="1413000" />
+      <workItem from="1535834104033" duration="289000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139394000" />
+    <option name="totallyTimeSpent" value="170124000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -351,22 +366,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49496645" visible="true" weight="0.17606747" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4857456" visible="true" weight="0.17606747" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32894737" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.31688598" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.3297062" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32854864" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.40899122" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32785088" />
-      <window_info id="Favorites" order="2" sideWeight="0.50503355" side_tool="true" visible="true" weight="0.17606747" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.34649122" />
+      <window_info id="Favorites" order="2" sideWeight="0.5142544" side_tool="true" visible="true" weight="0.17606747" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32894737" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.31688598" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297062" />
@@ -388,204 +404,44 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>12</line>
-          <option name="timeStamp" value="218" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
           <line>43</line>
-          <option name="timeStamp" value="256" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>44</line>
-          <option name="timeStamp" value="265" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>45</line>
-          <option name="timeStamp" value="267" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>46</line>
-          <option name="timeStamp" value="268" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>49</line>
-          <option name="timeStamp" value="271" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>51</line>
-          <option name="timeStamp" value="272" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>50</line>
-          <option name="timeStamp" value="273" />
+          <option name="timeStamp" value="413" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
           <line>48</line>
-          <option name="timeStamp" value="274" />
+          <option name="timeStamp" value="415" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>47</line>
-          <option name="timeStamp" value="275" />
+          <line>41</line>
+          <option name="timeStamp" value="416" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>53</line>
-          <option name="timeStamp" value="278" />
+          <line>40</line>
+          <option name="timeStamp" value="417" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>52</line>
-          <option name="timeStamp" value="279" />
+          <line>44</line>
+          <option name="timeStamp" value="418" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>54</line>
-          <option name="timeStamp" value="280" />
+          <line>36</line>
+          <option name="timeStamp" value="419" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>55</line>
-          <option name="timeStamp" value="281" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>73</line>
-          <option name="timeStamp" value="287" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>74</line>
-          <option name="timeStamp" value="288" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>76</line>
-          <option name="timeStamp" value="289" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>71</line>
-          <option name="timeStamp" value="290" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>70</line>
-          <option name="timeStamp" value="291" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>69</line>
-          <option name="timeStamp" value="292" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>68</line>
-          <option name="timeStamp" value="294" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>67</line>
-          <option name="timeStamp" value="295" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>66</line>
-          <option name="timeStamp" value="296" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>56</line>
-          <option name="timeStamp" value="302" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>65</line>
-          <option name="timeStamp" value="309" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>62</line>
-          <option name="timeStamp" value="310" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>61</line>
-          <option name="timeStamp" value="311" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>57</line>
-          <option name="timeStamp" value="312" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>58</line>
-          <option name="timeStamp" value="313" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>59</line>
-          <option name="timeStamp" value="314" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>64</line>
-          <option name="timeStamp" value="315" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>72</line>
-          <option name="timeStamp" value="316" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>75</line>
-          <option name="timeStamp" value="317" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>60</line>
-          <option name="timeStamp" value="318" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>63</line>
-          <option name="timeStamp" value="319" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/PFPArray.cpp</url>
-          <line>42</line>
-          <option name="timeStamp" value="321" />
+          <line>45</line>
+          <option name="timeStamp" value="420" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="322" />
+      <option name="time" value="421" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/include/Kernel.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/bits/stl_set.h" />
-    <entry file="file://$PROJECT_DIR$/include/PFPArray.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PFP_Trans.h.cpp" />
     <entry file="file://$PROJECT_DIR$/include/PFP_Trans.h" />
     <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/6.4.1/include/c++/bits/stl_set.h" />
@@ -667,13 +523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/move.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/allocator.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
@@ -695,13 +544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26391">
           <caret line="1389" selection-start-line="1379" selection-start-column="35" selection-end-line="1389" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/stl_set.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3458">
-          <caret line="182" selection-start-line="182" selection-end-line="182" />
         </state>
       </provider>
     </entry>
@@ -733,24 +575,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/alloc_traits.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1653">
-          <caret line="87" column="42" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/ext/alloc_traits.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="931">
           <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/ext/atomicity.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="988">
-          <caret line="52" column="57" selection-start-line="52" selection-start-column="57" selection-end-line="52" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -761,27 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/include/bits/stdint-uintn.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/stl_pair.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3838">
-          <caret line="202" column="10" selection-start-line="202" selection-start-column="10" selection-end-line="202" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/stl_vector.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17822">
-          <caret line="938" column="6" selection-start-line="938" selection-start-column="6" selection-end-line="938" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/basic_string.tcc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4180">
@@ -789,89 +596,159 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kernel.cu">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/shared_ptr_base.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23864">
-          <caret line="1256" column="6" selection-start-line="1256" selection-start-column="6" selection-end-line="1256" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/PFPTree.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-          <folding>
-            <element signature="e#41#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PFPTree.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit-test/Test_PFPGrowth.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/stl_algo.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2261">
+        <state relative-caret-position="2380">
           <caret line="119" selection-start-line="119" selection-end-line="119" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/predefined_ops.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5358">
+        <state relative-caret-position="5640">
           <caret line="282" selection-start-line="282" selection-end-line="282" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/basic_string.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114171">
+        <state relative-caret-position="120180">
           <caret line="6009" selection-start-line="6009" selection-end-line="6009" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/stl_pair.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4040">
+          <caret line="202" column="10" selection-start-line="202" selection-start-column="10" selection-end-line="202" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/stl_set.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11340">
+          <caret line="567" column="18" selection-start-line="567" selection-start-column="18" selection-end-line="567" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/alloc_traits.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="87" column="42" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit-test/Test_PFPGrowth.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/ext/atomicity.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1340">
+          <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/stl_vector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11240">
+          <caret line="562" selection-start-line="562" selection-end-line="562" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/shared_ptr_base.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20660">
+          <caret line="1033" selection-start-line="1033" selection-end-line="1033" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/move.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4180">
+          <caret line="209" column="22" selection-start-line="209" selection-start-column="22" selection-end-line="209" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/shared_ptr.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4700">
+          <caret line="235" column="4" selection-start-line="235" selection-start-column="4" selection-end-line="235" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/bits/stdint-uintn.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kernel.cu">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/stringfwd.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1460">
+          <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/PFPTree.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#41#59#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/PFPArray.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+        <state relative-caret-position="380">
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
           <folding>
             <element signature="e#43#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/bits/shared_ptr.h">
+    <entry file="file://$PROJECT_DIR$/include/PFPGrowth.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="235" column="4" selection-start-line="235" selection-start-column="4" selection-end-line="235" selection-end-column="4" />
+        <state relative-caret-position="280">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PFPGrowth.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-end-line="7" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PFPArray.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="38">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PFPTree.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
