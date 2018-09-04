@@ -57,33 +57,9 @@ include CMakeFiles/cpu_library_fp_growth.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cpu_library_fp_growth.dir/flags.make
 
-CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o: CMakeFiles/cpu_library_fp_growth.dir/flags.make
-CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o: ../src/PFPTree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafael/Documentos/tcc_fp/pfp-growth/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o -c /home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPTree.cpp
-
-CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPTree.cpp > CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.i
-
-CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPTree.cpp -o CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.s
-
-CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o.requires:
-
-.PHONY : CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o.requires
-
-CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o.provides: CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o.requires
-	$(MAKE) -f CMakeFiles/cpu_library_fp_growth.dir/build.make CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o.provides.build
-.PHONY : CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o.provides
-
-CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o.provides.build: CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o
-
-
 CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o: CMakeFiles/cpu_library_fp_growth.dir/flags.make
 CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o: ../src/PFPArray.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafael/Documentos/tcc_fp/pfp-growth/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafael/Documentos/tcc_fp/pfp-growth/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o"
 	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o -c /home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPArray.cpp
 
 CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.i: cmake_force
@@ -105,16 +81,40 @@ CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o.provides: CMakeFiles/cpu
 CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o.provides.build: CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o
 
 
+CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o: CMakeFiles/cpu_library_fp_growth.dir/flags.make
+CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o: ../src/PFPTree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafael/Documentos/tcc_fp/pfp-growth/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o"
+	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o -c /home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPTree.cpp
+
+CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.i"
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPTree.cpp > CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.i
+
+CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.s"
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPTree.cpp -o CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.s
+
+CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o.requires:
+
+.PHONY : CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o.requires
+
+CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o.provides: CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cpu_library_fp_growth.dir/build.make CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o.provides.build
+.PHONY : CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o.provides
+
+CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o.provides.build: CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o
+
+
 # Object files for target cpu_library_fp_growth
 cpu_library_fp_growth_OBJECTS = \
-"CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o" \
-"CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o"
+"CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o" \
+"CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o"
 
 # External object files for target cpu_library_fp_growth
 cpu_library_fp_growth_EXTERNAL_OBJECTS =
 
-libcpu_library_fp_growth.a: CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o
 libcpu_library_fp_growth.a: CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o
+libcpu_library_fp_growth.a: CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o
 libcpu_library_fp_growth.a: CMakeFiles/cpu_library_fp_growth.dir/build.make
 libcpu_library_fp_growth.a: CMakeFiles/cpu_library_fp_growth.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rafael/Documentos/tcc_fp/pfp-growth/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libcpu_library_fp_growth.a"
@@ -126,8 +126,8 @@ CMakeFiles/cpu_library_fp_growth.dir/build: libcpu_library_fp_growth.a
 
 .PHONY : CMakeFiles/cpu_library_fp_growth.dir/build
 
-CMakeFiles/cpu_library_fp_growth.dir/requires: CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o.requires
 CMakeFiles/cpu_library_fp_growth.dir/requires: CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o.requires
+CMakeFiles/cpu_library_fp_growth.dir/requires: CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o.requires
 
 .PHONY : CMakeFiles/cpu_library_fp_growth.dir/requires
 

@@ -22,7 +22,6 @@ PFPArray::PFPArray(const PFPTree &fptree) {
     fptree.root.get()->frequency = std::uint64_t(-1);
     create_array_and_elepos(fptree);
     eloPosStapOne(ArrayMap);
-    std::cout << "Testando" << std::endl;
 }
 
 void PFPArray::createHasMap(const PFPTree &fptree, const HashMap &hashMap) {

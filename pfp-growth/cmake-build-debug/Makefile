@@ -230,6 +230,33 @@ src/PFPArray.cpp.s:
 	$(MAKE) -f CMakeFiles/cpu_library_fp_growth.dir/build.make CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.s
 .PHONY : src/PFPArray.cpp.s
 
+src/PFPGrowth.o: src/PFPGrowth.cu.o
+
+.PHONY : src/PFPGrowth.o
+
+# target to build an object file
+src/PFPGrowth.cu.o:
+	$(MAKE) -f CMakeFiles/gpu_library_fp_growth.dir/build.make CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o
+.PHONY : src/PFPGrowth.cu.o
+
+src/PFPGrowth.i: src/PFPGrowth.cu.i
+
+.PHONY : src/PFPGrowth.i
+
+# target to preprocess a source file
+src/PFPGrowth.cu.i:
+	$(MAKE) -f CMakeFiles/gpu_library_fp_growth.dir/build.make CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.i
+.PHONY : src/PFPGrowth.cu.i
+
+src/PFPGrowth.s: src/PFPGrowth.cu.s
+
+.PHONY : src/PFPGrowth.s
+
+# target to generate assembly for a file
+src/PFPGrowth.cu.s:
+	$(MAKE) -f CMakeFiles/gpu_library_fp_growth.dir/build.make CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.s
+.PHONY : src/PFPGrowth.cu.s
+
 src/PFPTree.o: src/PFPTree.cpp.o
 
 .PHONY : src/PFPTree.o
@@ -277,6 +304,9 @@ help:
 	@echo "... src/PFPArray.o"
 	@echo "... src/PFPArray.i"
 	@echo "... src/PFPArray.s"
+	@echo "... src/PFPGrowth.o"
+	@echo "... src/PFPGrowth.i"
+	@echo "... src/PFPGrowth.s"
 	@echo "... src/PFPTree.o"
 	@echo "... src/PFPTree.i"
 	@echo "... src/PFPTree.s"

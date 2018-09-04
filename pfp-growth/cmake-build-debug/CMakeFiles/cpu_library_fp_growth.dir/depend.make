@@ -3,7 +3,7 @@
 
 CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o: ../include/Kernel.h
 CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o: ../include/PFPArray.h
-CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o: ../include/PFPTree.hpp
+CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o: ../include/PFPTree.h
 CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o: ../include/cudaHeaders.h
 CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o: ../src/PFPArray.cpp
 CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o: /opt/cuda/include/builtin_types.h
@@ -684,7 +684,7 @@ CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o: /opt/cuda/include/thrus
 CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o: /opt/cuda/include/thrust/version.h
 CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o: /opt/cuda/include/vector_types.h
 
-CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o: ../include/PFPTree.hpp
+CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o: ../include/PFPTree.h
 CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o: ../src/PFPTree.cpp
 CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o: /opt/cuda/include/builtin_types.h
 CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o: /opt/cuda/include/crt/host_defines.h

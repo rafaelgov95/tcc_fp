@@ -3,7 +3,7 @@
 #include <cstdint>
 #include <utility>
 #include <iostream>
-#include "PFPTree.hpp"
+#include "PFPTree.h"
 PFPLeaf::PFPLeaf(const std::shared_ptr<PFPNode> &):
         value( value ), next(next)
 {
@@ -19,8 +19,6 @@ PFPTree::PFPTree(const std::vector<Transaction>& transactions, uint64_t minimum_
         minimum_support_threshold( minimum_support_threshold ),
         rootFolhas(std::make_shared<PFPLeaf>( nullptr ))
 {
-
-
 
     std::map<Item, uint64_t> frequency_by_item;
     for ( const Transaction& transaction : transactions ) {

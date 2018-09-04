@@ -81,17 +81,43 @@ CMakeFiles/gpu_library_fp_growth.dir/src/Kernel.cu.o.provides: CMakeFiles/gpu_li
 CMakeFiles/gpu_library_fp_growth.dir/src/Kernel.cu.o.provides.build: CMakeFiles/gpu_library_fp_growth.dir/src/Kernel.cu.o
 
 
+CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o: CMakeFiles/gpu_library_fp_growth.dir/flags.make
+CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o: ../src/PFPGrowth.cu
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafael/Documentos/tcc_fp/pfp-growth/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CUDA object CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o"
+	/opt/cuda/bin/nvcc  $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -x cu -c /home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPGrowth.cu -o CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o
+
+CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
+CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o.requires:
+
+.PHONY : CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o.requires
+
+CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o.provides: CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o.requires
+	$(MAKE) -f CMakeFiles/gpu_library_fp_growth.dir/build.make CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o.provides.build
+.PHONY : CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o.provides
+
+CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o.provides.build: CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o
+
+
 # Object files for target gpu_library_fp_growth
 gpu_library_fp_growth_OBJECTS = \
-"CMakeFiles/gpu_library_fp_growth.dir/src/Kernel.cu.o"
+"CMakeFiles/gpu_library_fp_growth.dir/src/Kernel.cu.o" \
+"CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o"
 
 # External object files for target gpu_library_fp_growth
 gpu_library_fp_growth_EXTERNAL_OBJECTS =
 
 libgpu_library_fp_growth.a: CMakeFiles/gpu_library_fp_growth.dir/src/Kernel.cu.o
+libgpu_library_fp_growth.a: CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o
 libgpu_library_fp_growth.a: CMakeFiles/gpu_library_fp_growth.dir/build.make
 libgpu_library_fp_growth.a: CMakeFiles/gpu_library_fp_growth.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rafael/Documentos/tcc_fp/pfp-growth/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CUDA static library libgpu_library_fp_growth.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rafael/Documentos/tcc_fp/pfp-growth/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CUDA static library libgpu_library_fp_growth.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/gpu_library_fp_growth.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gpu_library_fp_growth.dir/link.txt --verbose=$(VERBOSE)
 
@@ -101,6 +127,7 @@ CMakeFiles/gpu_library_fp_growth.dir/build: libgpu_library_fp_growth.a
 .PHONY : CMakeFiles/gpu_library_fp_growth.dir/build
 
 CMakeFiles/gpu_library_fp_growth.dir/requires: CMakeFiles/gpu_library_fp_growth.dir/src/Kernel.cu.o.requires
+CMakeFiles/gpu_library_fp_growth.dir/requires: CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o.requires
 
 .PHONY : CMakeFiles/gpu_library_fp_growth.dir/requires
 

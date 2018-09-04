@@ -8,7 +8,7 @@
 #include <string>
 #include <vector>
 #include <utility>
-#include "PFPTree.hpp"
+#include "PFPTree.h"
 
 #include <iostream>
 #include <thrust/device_vector.h>

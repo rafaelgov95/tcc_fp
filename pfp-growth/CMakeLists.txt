@@ -10,17 +10,20 @@ set(CMAKE_CXX_COMPILER /usr/bin/g++-7 CACHE PATH "" FORCE)
 set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} -rdc=true -gencode arch=compute_50,code=sm_50")
 set(CMAKE_C_FLAGS_DEBUG "-D_DEBUG")
 add_definitions(-DUNIT_TEST)
+
 add_library(gpu_library_fp_growth STATIC
         include/cudaHeaders.h
         include/Kernel.h
         src/Kernel.cu
+        include/PFPGrowth.h
+        src/PFPGrowth.cu
         )
 
 add_library(cpu_library_fp_growth STATIC
         include/PFPArray.h
-        include/PFPTree.hpp
-        src/PFPTree.cpp
+        include/PFPTree.h
         src/PFPArray.cpp
+        src/PFPTree.cpp
         )
 
 

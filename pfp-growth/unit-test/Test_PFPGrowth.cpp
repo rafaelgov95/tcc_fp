@@ -1,9 +1,9 @@
 
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch.hpp"
-#include "PFPTree.hpp"
+#include "PFPTree.h"
 #include "PFPArray.h"
-
+#include "PFPGrowth.h"
 //    TEST_CASE( "FPTransMap correctly functions", "[FPTransMap]" ) {
 
     const Item a{ "A" };
@@ -34,8 +34,8 @@
 
     const uint64_t minimum_support_threshold = 3;
     const PFPTree fptree{ transactions, minimum_support_threshold };
-    const PFPArray pfp_array( fptree);
-//
+    PFPArray pfp_array( fptree);
+    PFPGrowth pfpGrowth(pfp_array.ArrayMap,pfp_array.eloPos);
 //std::set<Pattern>  patterns = pfp_growth.padroes();
 
 

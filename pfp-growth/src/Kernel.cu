@@ -6,8 +6,11 @@
 #include <cuda_runtime_api.h>
 #include <cstdio>
 #include "Kernel.h"
-#include "PFPTree.hpp"
+#include "PFPTree.h"
 
 
 
-
+//
+//mining_candidate(){
+//
+//}

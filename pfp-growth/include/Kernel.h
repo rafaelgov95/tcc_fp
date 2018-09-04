@@ -7,11 +7,13 @@
 
 
 #include "cudaHeaders.h"
+
+//void mining_candidate();
 void add( int *a, int *b, int *c );
 
 
 
-void  run(int p);
+void run(int p);
 
 
 #endif //FP_GROWTH_GPU_KERNEL_PFP_H

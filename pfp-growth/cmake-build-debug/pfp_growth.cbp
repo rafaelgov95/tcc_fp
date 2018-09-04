@@ -202,7 +202,10 @@
 		<Unit filename="/home/rafael/Documentos/tcc_fp/pfp-growth/include/PFPArray.h">
 			<Option target="cpu_library_fp_growth"/>
 		</Unit>
-		<Unit filename="/home/rafael/Documentos/tcc_fp/pfp-growth/include/PFPTree.hpp">
+		<Unit filename="/home/rafael/Documentos/tcc_fp/pfp-growth/include/PFPGrowth.h">
+			<Option target="gpu_library_fp_growth"/>
+		</Unit>
+		<Unit filename="/home/rafael/Documentos/tcc_fp/pfp-growth/include/PFPTree.h">
 			<Option target="cpu_library_fp_growth"/>
 		</Unit>
 		<Unit filename="/home/rafael/Documentos/tcc_fp/pfp-growth/include/cudaHeaders.h">
@@ -216,6 +219,9 @@
 		</Unit>
 		<Unit filename="/home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPArray.cpp">
 			<Option target="cpu_library_fp_growth"/>
+		</Unit>
+		<Unit filename="/home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPGrowth.cu">
+			<Option target="gpu_library_fp_growth"/>
 		</Unit>
 		<Unit filename="/home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPTree.cpp">
 			<Option target="cpu_library_fp_growth"/>

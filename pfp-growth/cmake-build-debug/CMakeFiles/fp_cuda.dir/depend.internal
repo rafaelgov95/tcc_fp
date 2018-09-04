@@ -3,7 +3,8 @@
 
 CMakeFiles/fp_cuda.dir/main.cu.o
  ../include/PFPArray.h
- ../include/PFPTree.hpp
+ ../include/PFPGrowth.h
+ ../include/PFPTree.h
  /home/rafael/Documentos/tcc_fp/pfp-growth/main.cu
  /home/rafael/Documentos/tcc_fp/pfp-growth/unit-test/Test_PFPGrowth.cpp
  /home/rafael/Documentos/tcc_fp/pfp-growth/unit-test/catch.hpp

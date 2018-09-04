@@ -21,14 +21,28 @@ vector
 -
 utility
 -
-PFPTree.hpp
-../include/PFPTree.hpp
+PFPTree.h
+../include/PFPTree.h
 iostream
 -
 thrust/device_vector.h
 -
 
-../include/PFPTree.hpp
+../include/PFPGrowth.h
+cstdint
+-
+iostream
+-
+string
+-
+vector
+-
+thrust/device_vector.h
+-
+PFPArray.h
+../include/PFPArray.h
+
+../include/PFPTree.h
 cstdint
 -
 map
@@ -55,10 +69,12 @@ unit-test/Test_PFPGrowth.cpp
 /home/rafael/Documentos/tcc_fp/pfp-growth/unit-test/Test_PFPGrowth.cpp
 catch.hpp
 /home/rafael/Documentos/tcc_fp/pfp-growth/unit-test/catch.hpp
-PFPTree.hpp
-/home/rafael/Documentos/tcc_fp/pfp-growth/unit-test/PFPTree.hpp
+PFPTree.h
+/home/rafael/Documentos/tcc_fp/pfp-growth/unit-test/PFPTree.h
 PFPArray.h
 /home/rafael/Documentos/tcc_fp/pfp-growth/unit-test/PFPArray.h
+PFPGrowth.h
+/home/rafael/Documentos/tcc_fp/pfp-growth/unit-test/PFPGrowth.h
 
 /home/rafael/Documentos/tcc_fp/pfp-growth/unit-test/catch.hpp
 TargetConditionals.h
