@@ -1,1 +1,0 @@
-/opt/cuda/bin/nvcc    -rdc=true -gencode arch=compute_50,code=sm_50 -g -Xcompiler=-fPIC -Wno-deprecated-gpu-targets -shared -dlink CMakeFiles/gpu_library_fp_growth.dir/src/Kernel.cu.o CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o -o CMakeFiles/gpu_library_fp_growth.dir/cmake_device_link.o 

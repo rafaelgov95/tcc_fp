@@ -13,9 +13,9 @@ add_definitions(-DUNIT_TEST)
 
 add_library(gpu_library_fp_growth STATIC
         include/cudaHeaders.h
-        include/Kernel.h
-        src/Kernel.cu
-        include/PFPGrowth.h
+#        include/Kernel.h
+#        src/Kernel.cu
+        include/PFPGrowth.cu.h
         src/PFPGrowth.cu
         )
 
@@ -36,7 +36,7 @@ target_compile_features(cpu_library_fp_growth PUBLIC cxx_std_11)
 set_target_properties( cpu_library_fp_growth
         PROPERTIES CUDA_SEPARABLE_COMPILATION ON)
 
-add_executable(fp_cuda main.cu unit-test/catch.hpp)
+add_executable(fp_cuda main.cu include/Kernel.h src/Kernel.cu unit-test/catch.hpp)
 
 set_property(TARGET fp_cuda
         PROPERTY CUDA_SEPARABLE_COMPILATION ON)

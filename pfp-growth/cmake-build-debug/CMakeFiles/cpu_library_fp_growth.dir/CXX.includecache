@@ -7,8 +7,16 @@
 #IncludeRegexTransform: 
 
 ../include/Kernel.h
+cuda_runtime_api.h
+-
+cstdio
+-
+cuda.h
+../include/cuda.h
 cudaHeaders.h
 ../include/cudaHeaders.h
+PFPArray.h
+../include/PFPArray.h
 
 ../include/PFPArray.h
 cstdint
@@ -56,7 +64,7 @@ thrust/device_vector.h
 math.h
 ../include/math.h
 
-/home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPArray.cpp
+/home/rafael/socorro/tcc_fp/pfp-growth/src/PFPArray.cpp
 algorithm
 -
 cassert
@@ -70,11 +78,11 @@ utility
 cublas_v2.h
 -
 PFPArray.h
-/home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPArray.h
+/home/rafael/socorro/tcc_fp/pfp-growth/src/PFPArray.h
 Kernel.h
-/home/rafael/Documentos/tcc_fp/pfp-growth/src/Kernel.h
+/home/rafael/socorro/tcc_fp/pfp-growth/src/Kernel.h
 
-/home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPTree.cpp
+/home/rafael/socorro/tcc_fp/pfp-growth/src/PFPTree.cpp
 algorithm
 -
 cassert
@@ -86,7 +94,7 @@ utility
 iostream
 -
 PFPTree.h
-/home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPTree.h
+/home/rafael/socorro/tcc_fp/pfp-growth/src/PFPTree.h
 
 /opt/cuda/include/builtin_types.h
 device_types.h

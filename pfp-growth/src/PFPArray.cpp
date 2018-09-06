@@ -7,14 +7,14 @@
 #include "PFPArray.h"
 #include "Kernel.h"
 
-PFPEloPos::PFPEloPos(const Item itemID, const cuda_int indexArray, const cuda_int suporte) : indexID(itemID),
+
+
+PFPEloPos::PFPEloPos(const char* itemID, const cuda_int indexArray, const cuda_int suporte) : indexID(itemID),
                                                                                              indexArray(indexArray),
                                                                                              suporte(suporte) {
-
-
 }
 
-PFPArrayMap::PFPArrayMap(PFPNode *i, const size_t p, const uint64_t s) : ItemId(i), indexP(p), suporte(s) {
+PFPArrayMap::PFPArrayMap(PFPNode *i, const int p, const int s) : ItemId(i), indexP(p), suporte(s) {
 }
 
 
@@ -41,7 +41,7 @@ void PFPArray::eloPosStapOne(std::vector<PFPArrayMap> ArrayMap) {
     for (std::vector<PFPArrayMap>::iterator it = ArrayMap.begin(); it != ArrayMap.end(); ++it) {
 
         if (a != (*it).ItemId->item) {
-            PFPEloPos eloNew = PFPEloPos(it.base()->ItemId->item, indexIDneW, cuda_int(it.base()->suporte));
+            PFPEloPos eloNew = PFPEloPos(it.base()->ItemId->item.c_str(), indexIDneW, cuda_int(it.base()->suporte));
             eloPos.push_back(eloNew);
         }
         indexIDneW++;

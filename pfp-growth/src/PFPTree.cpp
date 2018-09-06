@@ -46,7 +46,7 @@ PFPTree::PFPTree(const std::vector<Transaction>& transactions, uint64_t minimum_
 
     //Apelacao
     std::vector<std::pair<Item, uint64_t>> items_ordered_by_frequency;
-    std::pair<Item, uint64_t> a = std::make_pair("F",uint64_t(4));
+    std::pair<Item, uint64_t> a = std::make_pair(("F"),uint64_t(4));
     std::pair<Item, uint64_t> b = std::make_pair("C",uint64_t(4));
     std::pair<Item, uint64_t> c = std::make_pair("A",uint64_t(3));
     std::pair<Item, uint64_t> d = std::make_pair("B",uint64_t(3));
@@ -106,6 +106,7 @@ PFPTree::PFPTree(const std::vector<Transaction>& transactions, uint64_t minimum_
 
 //        curr_rootFolhas = curr_fpleaf_new;
     }
+    using DItems = thrust::device_vector<Item>;
 }
 
 bool PFPTree::empty() const

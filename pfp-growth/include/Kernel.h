@@ -6,14 +6,17 @@
 #define FP_GROWTH_GPU_KERNEL_PFP_H
 
 
+#include <cuda_runtime_api.h>
+#include <cstdio>
+#include "cuda.h"
 #include "cudaHeaders.h"
-
-//void mining_candidate();
-void add( int *a, int *b, int *c );
+#include "PFPArray.h"
 
 
 
-void run(int p);
+__global__ void AlgoritmoI(gpuArrayMap *v);
+
+__global__ void AlgoritmoI();
 
 
 #endif //FP_GROWTH_GPU_KERNEL_PFP_H

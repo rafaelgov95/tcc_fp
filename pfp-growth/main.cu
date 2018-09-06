@@ -3,7 +3,7 @@
 
 
 #ifdef UNIT_TEST
-#include "unit-test/Test_PFPGrowth.cpp"
+#include "unit-test/Test_PFPGrowth.cu"
 
 
 //

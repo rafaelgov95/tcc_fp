@@ -6,5 +6,5 @@ CUDA_FLAGS =  -rdc=true -gencode arch=compute_50,code=sm_50 -g   -std=c++11
 
 CUDA_DEFINES = -DUNIT_TEST
 
-CUDA_INCLUDES = -I/opt/cuda/include -I/home/rafael/Documentos/tcc_fp/pfp-growth/src -I/home/rafael/Documentos/tcc_fp/pfp-growth/include -I/home/rafael/Documentos/tcc_fp/pfp-growth/unit-test 
+CUDA_INCLUDES = -I/opt/cuda/include -I/home/rafael/socorro/tcc_fp/pfp-growth/src -I/home/rafael/socorro/tcc_fp/pfp-growth/include -I/home/rafael/socorro/tcc_fp/pfp-growth/unit-test 
 
