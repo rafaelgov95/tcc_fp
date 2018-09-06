@@ -11,9 +11,9 @@
 #include "cuda.h"
 #include "../include/PFPArray.h"
 
-__global__ void AlgoritmoI(gpuArrayMap *v ){
+__global__ void AlgoritmoI(gpuArrayMap *arrayMap, gpuEloMap *eloMap){
     if(threadIdx.x<12) {
-        printf("%d\n", v[threadIdx.x].suporte);
+        printf("%d\n", arrayMap[threadIdx.x].suporte);
     }
 }
 

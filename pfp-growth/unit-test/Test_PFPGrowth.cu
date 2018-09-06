@@ -36,6 +36,6 @@ int main( int argc, char * argv[] ){
         const uint64_t minimum_support_threshold = 3;
         const PFPTree fptree{transactions, minimum_support_threshold};
         PFPArray pfp_array(fptree);
-        PFPGrowth pfpGrowth(pfp_array.ArrayMap);
+        PFPGrowth pfpGrowth(pfp_array._arrayMap,pfp_array._eloMap);
     return 0;
     }

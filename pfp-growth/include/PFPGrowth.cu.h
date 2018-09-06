@@ -21,7 +21,7 @@ class PFPGrowth {
     gpuArrayMap*  ArrayMap;
     gpuArrayMap*  EloPos;
 public:
-    PFPGrowth(std::vector<PFPArrayMap> );
+    PFPGrowth(gpuArrayMap *arrayMap,gpuEloMap *eloMap );
 
 };
 

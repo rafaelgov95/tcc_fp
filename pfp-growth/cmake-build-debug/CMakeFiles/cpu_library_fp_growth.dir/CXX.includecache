@@ -78,6 +78,8 @@ utility
 cublas_v2.h
 -
 PFPArray.h
+-
+PFPArray.h
 /home/rafael/socorro/tcc_fp/pfp-growth/src/PFPArray.h
 Kernel.h
 /home/rafael/socorro/tcc_fp/pfp-growth/src/Kernel.h

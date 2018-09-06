@@ -33,6 +33,11 @@ struct PFPArrayMap {
     PFPArrayMap(PFPNode *, const int, const int);
 
 };
+typedef struct {
+    char ItemId[MAX_STR_SIZE];
+    cuda_int indexArrayMap;
+    cuda_int suporte;
+} gpuEloMap;
 
 typedef struct {
     char ItemId[MAX_STR_SIZE];
@@ -40,33 +45,22 @@ typedef struct {
     cuda_int suporte;
 } gpuArrayMap;
 
-//struct GPUArray {
-//    const char *ItemId;
-//    cuda_int indexP;
-//    cuda_int suporte;
-//    GPUArray(char *itemP, const cuda_int indexP, const cuda_int suporte);
-//    GPUArray(PFPArrayMap &outro);
-//    GPUArray();
-//};
-
-//using DEloPos = thrust::device_vector<PFPEloPos>;
-//using DArrayMap = thrust::device_vector<gpuArrayMap>;
-using HashMap = std::vector<std::pair<PFPArrayMap, uint64_t >>;
-using AuxMap =thrust::device_vector<int>;
+using HashMap = std::vector<std::pair<PFPArrayMap, int >>;
 class PFPArray {
 public:
     PFPArray(const PFPTree &fptree);
     HashMap hashMap;
-//    DArrayMap gpuArrayMap;
-    std::vector<PFPArrayMap> ArrayMap;
-    std::vector<PFPEloPos> eloPos;
+    gpuArrayMap*  _arrayMap;
+    gpuEloMap*  _eloMap;
+    std::vector<PFPArrayMap> arrayMap;
+    std::vector<PFPEloPos> eloMap;
 
 private:
     void createHasMap(const PFPTree &fptree, const HashMap &hashMap);
 
     void eloPosStapOne(std::vector<PFPArrayMap> ArrayMap);
 
-    uint64_t recur_is_parent_array(PFPNode *a);
+    int recur_is_parent_array(PFPNode *a);
 
     void create_array_and_elepos(const PFPTree &fptree);
 

@@ -24,7 +24,7 @@ using Pattern = std::pair<std::set<Item>, uint64_t>;
 struct PFPNode {
     const Item item;
     bool is_visit ;
-    uint64_t frequency;
+    int frequency;
     std::shared_ptr<PFPNode> parent;
     std::vector<std::shared_ptr<PFPNode>> children;
     PFPNode(const Item&, const std::shared_ptr<PFPNode>&);

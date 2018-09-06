@@ -14,7 +14,7 @@
 
 
 
-__global__ void AlgoritmoI(gpuArrayMap *v);
+__global__ void AlgoritmoI(gpuArrayMap *arrayMap, gpuEloMap *eloMap );
 
 __global__ void AlgoritmoI();
 

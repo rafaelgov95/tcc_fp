@@ -86,28 +86,6 @@ thrust/device_vector.h
 math.h
 ../include/math.h
 
-/home/rafael/socorro/tcc_fp/pfp-growth/include/PFPArray.h
-cstdint
--
-map
--
-memory
--
-set
--
-string
--
-vector
--
-utility
--
-PFPTree.h
-/home/rafael/socorro/tcc_fp/pfp-growth/include/PFPTree.h
-iostream
--
-thrust/device_vector.h
--
-
 /home/rafael/socorro/tcc_fp/pfp-growth/src/PFPGrowth.cu
 cudaHeaders.h
 /home/rafael/socorro/tcc_fp/pfp-growth/src/cudaHeaders.h
@@ -119,8 +97,8 @@ PFPGrowth.cu.h
 /home/rafael/socorro/tcc_fp/pfp-growth/src/PFPGrowth.cu.h
 PFPArray.h
 /home/rafael/socorro/tcc_fp/pfp-growth/src/PFPArray.h
-../include/PFPArray.h
-/home/rafael/socorro/tcc_fp/pfp-growth/include/PFPArray.h
+PFPArray.h
+/home/rafael/socorro/tcc_fp/pfp-growth/src/PFPArray.h
 
 /opt/cuda/include/builtin_types.h
 device_types.h
