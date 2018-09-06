@@ -13,7 +13,9 @@
 
 __global__ void AlgoritmoI(gpuArrayMap *arrayMap, gpuEloMap *eloMap){
     if(threadIdx.x<12) {
-        printf("%d\n", arrayMap[threadIdx.x].suporte);
+        printf("ARRAY %d\n", arrayMap[threadIdx.x].suporte);
+        printf("ELO %d\n", eloMap[threadIdx.x].suporte);
+
     }
 }
 

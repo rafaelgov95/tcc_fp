@@ -110,7 +110,7 @@ void PFPArray::create_array_and_elepos(const PFPTree &fptree) {
         _arrayMap[index].suporte = (*it).suporte;
         _arrayMap[index].indexP = (*it).indexP;
         std::strcpy(_arrayMap[index].ItemId, (*it).ItemId->item.c_str());
-        std::cout << _arrayMap[index].ItemId << std::endl;
+//        std::cout << _arrayMap[index].ItemId << std::endl;
     }
 }
 

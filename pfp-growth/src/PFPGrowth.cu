@@ -16,11 +16,16 @@ inline void gpuAssert(cudaError_t code, const char *file, int line, bool abort=t
         if (abort) exit(code);
     }
 }
-PFPGrowth::PFPGrowth(gpuArrayMap *arrayMap, gpuEloMap *eloMap) {
+PFPGrowth::PFPGrowth(gpuArrayMap *arrayMap, gpuEloMap *eloMap,size_t arrayMapSize,size_t eloPosMapSize) {
     gpuArrayMap *device_ArrayMap;
-    gpuErrchk(cudaMalloc((void **) &device_ArrayMap, sizeof(arrayMap)));
-    gpuErrchk(cudaMemcpy(device_ArrayMap, arrayMap, sizeof(arrayMap), cudaMemcpyHostToDevice));
-    AlgoritmoI<<<1,12>>>(device_ArrayMap,eloMap);
+    gpuEloMap *device_EloMap;
+    gpuErrchk(cudaMalloc((void **) &device_ArrayMap, sizeof(gpuArrayMap)*arrayMapSize));
+    gpuErrchk(cudaMemcpy(device_ArrayMap, arrayMap, sizeof(gpuArrayMap)*arrayMapSize, cudaMemcpyHostToDevice));
+
+    gpuErrchk(cudaMalloc((void **) &device_EloMap, sizeof(gpuEloMap)*eloPosMapSize));
+    gpuErrchk(cudaMemcpy(device_EloMap, eloMap, sizeof(gpuArrayMap)*eloPosMapSize, cudaMemcpyHostToDevice));
+
+    AlgoritmoI<<<1,12>>>(device_ArrayMap,device_EloMap);
     gpuErrchk( cudaPeekAtLastError());
     gpuErrchk( cudaDeviceSynchronize() );
 }

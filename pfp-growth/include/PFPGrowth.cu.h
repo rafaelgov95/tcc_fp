@@ -11,6 +11,7 @@
 #include <thrust/device_vector.h>
 #include <thrust/host_vector.h>
 #include "PFPArray.h"
+
 #ifndef PFP_GROWTH_PFPGROWTH_H
 #define PFP_GROWTH_PFPGROWTH_H
 
@@ -21,7 +22,7 @@ class PFPGrowth {
     gpuArrayMap*  ArrayMap;
     gpuArrayMap*  EloPos;
 public:
-    PFPGrowth(gpuArrayMap *arrayMap,gpuEloMap *eloMap );
+    PFPGrowth(gpuArrayMap *arrayMap,gpuEloMap *eloMap,size_t arrayMapSize,size_t eloPosMapSize);
 
 };
 
