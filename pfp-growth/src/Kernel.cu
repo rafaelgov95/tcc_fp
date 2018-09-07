@@ -11,15 +11,18 @@
 #include "cuda.h"
 #include "../include/PFPArray.h"
 
-__global__ void AlgoritmoI(gpuArrayMap *arrayMap, gpuEloMap *eloMap){
-    if(threadIdx.x<12) {
-        printf("ARRAY %d\n", arrayMap[threadIdx.x].suporte);
-        printf("ELO %d\n", eloMap[threadIdx.x].suporte);
+__global__ void AlgoritmoI(gpuArrayMap *arrayMap, gpuEloMap *eloMap) {
+    if (threadIdx.x < 12) {
+        printf("ARRAY ITEM: %s | PARENT INDEX %d | SUPORTE %d\n", arrayMap[threadIdx.x].ItemId,
+               arrayMap[threadIdx.x].indexP, arrayMap[threadIdx.x].suporte);
 
     }
+    if (threadIdx.x < 11) {
+        printf("ELO ITEM: %s |  INDEX ARRAY %d | SUPORTE %d\n", eloMap[threadIdx.x].ItemId,
+               eloMap[threadIdx.x].indexArrayMap, eloMap[threadIdx.x].suporte);
+    }
+
 }
-
-
 __global__ void AlgoritmoI(){
     printf("Hello from block %d, thread %d\n", blockIdx.x, threadIdx.x);
 }

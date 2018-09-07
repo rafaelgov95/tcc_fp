@@ -8,9 +8,13 @@
 #include "PFPArray.h"
 #include "Kernel.h"
 
-PFPEloPos::PFPEloPos(const char *itemID, const cuda_int indexArray, const cuda_int suporte) : indexID(itemID),
-                                                                                              indexArray(indexArray),
-                                                                                              suporte(suporte) {
+
+void cstringcpy(char *src, char * dest)
+{
+    while (*src) {
+        *(dest++) = *(src++);
+    }
+    *dest = '\0';
 }
 
 PFPArrayMap::PFPArrayMap(PFPNode *i, const int p, const int s) : ItemId(i), indexP(p), suporte(s) {
@@ -20,32 +24,25 @@ PFPArrayMap::PFPArrayMap(PFPNode *i, const int p, const int s) : ItemId(i), inde
 PFPArray::PFPArray(const PFPTree &fptree) {
     fptree.root.get()->frequency = -1;
     create_array_and_elepos(fptree);
-    eloPosStapOne(arrayMap);
+    eloPosStapOne();
 }
 
-void PFPArray::createHasMap(const PFPTree &fptree, const HashMap &hashMap) {
-    auto rootFolha = fptree.rootFolhas.get()->next;
-    while (rootFolha) {
-        auto current_leaf = rootFolha.get()->value;
-        while (current_leaf.get()) {
 
+void PFPArray::eloPosStapOne() {
+    size_t size = sizeof(gpuEloMap) * (arrayMap.size()-1);
+    _eloMap = (gpuEloMap *) malloc(size);
+    int b =0;
+    for (int i=0; i < arrayMap.size();i++) {
+        if(_arrayMap[i].indexP > -1) {
+            strcpy(_eloMap[b].ItemId,_arrayMap[i].ItemId);
+            _eloMap[b].indexArrayMap = i;
+            _eloMap[b].suporte = _arrayMap[i].suporte;
+            b++;
         }
     }
+    for (int i=0; i<(arrayMap.size()-1);i++) {
+        std::cout<<"ITEM: "<< _eloMap[i].ItemId<<" Index "<<_eloMap[i].indexArrayMap <<" Suporte "<<_eloMap[i].suporte<<std::endl;
 
-}
-
-void PFPArray::eloPosStapOne(std::vector<PFPArrayMap> ArrayMap) {
-    std::string a = "{}";
-    size_t size = sizeof(gpuEloMap) * ArrayMap.size();
-    _eloMap = (gpuEloMap *) malloc(size);
-    for (auto it = ArrayMap.begin(); it != ArrayMap.end(); ++it) {
-        long index = std::distance(ArrayMap.begin(), it);
-        if (a != (*it).ItemId->item) {
-            PFPEloPos eloNew = PFPEloPos(it.base()->ItemId->item.c_str(), (int)index, cuda_int(it.base()->suporte));
-            eloMap.push_back(eloNew);
-            _eloMap[index].suporte=eloNew.suporte;
-            std::strcpy(_eloMap[index].ItemId,eloNew.indexID);
-        }
     }
 }
 
@@ -57,8 +54,10 @@ int PFPArray::recur_is_parent_array(PFPNode *current_leaf) {
     if (k != hashMap.cend()) {
         return k->second;
     } else {
-        int parent_pos =(int)arrayMap.size() + 1;
-        return parent_pos;
+
+            int parent_pos =(int)arrayMap.size() + 1;
+            return parent_pos;
+
     }
 }
 
@@ -76,14 +75,14 @@ void PFPArray::create_array_and_elepos(const PFPTree &fptree) {
                 int parent_pos = 0;
                 if (current_leaf.get()->parent) {
                     parent_pos = recur_is_parent_array(current_leaf.get()->parent.get());
+                }else{
+                    parent_pos =-1;
                 }
                 current_leaf.get()->is_visit = true;
                 const PFPArrayMap a(current_leaf.get(), parent_pos, current_leaf.get()->frequency);
                 arrayMap.push_back(a);
                 size_t pos = arrayMap.size() - 1;
-                if (current_leaf.get()->parent) {
-                    hashMap.push_back(std::make_pair(a, uint64_t(pos)));
-                }
+                hashMap.push_back(std::make_pair(a, int(pos)));
             } else {
                 if (current_leaf.get()->is_visit && !current_leaf.get()->children.empty()) {
                     returnn = true;
@@ -110,7 +109,6 @@ void PFPArray::create_array_and_elepos(const PFPTree &fptree) {
         _arrayMap[index].suporte = (*it).suporte;
         _arrayMap[index].indexP = (*it).indexP;
         std::strcpy(_arrayMap[index].ItemId, (*it).ItemId->item.c_str());
-//        std::cout << _arrayMap[index].ItemId << std::endl;
     }
 }
 
