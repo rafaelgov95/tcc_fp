@@ -40,10 +40,6 @@ void PFPArray::eloPosStapOne() {
             b++;
         }
     }
-    for (int i=0; i<(arrayMap.size()-1);i++) {
-        std::cout<<"ITEM: "<< _eloMap[i].ItemId<<" Index "<<_eloMap[i].indexArrayMap <<" Suporte "<<_eloMap[i].suporte<<std::endl;
-
-    }
 }
 
 

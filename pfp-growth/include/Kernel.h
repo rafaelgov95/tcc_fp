@@ -14,7 +14,7 @@
 
 
 
-__global__ void AlgoritmoI(gpuArrayMap *arrayMap, gpuEloMap *eloMap );
+__global__ void AlgoritmoI(gpuEloMap **device_elo_frequencias,gpuArrayMap *arrayMap, gpuEloMap *eloMap, size_t arrayMapSize,int round);
 
 __global__ void AlgoritmoI();
 

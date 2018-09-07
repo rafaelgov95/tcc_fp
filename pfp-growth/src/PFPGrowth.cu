@@ -19,13 +19,20 @@ inline void gpuAssert(cudaError_t code, const char *file, int line, bool abort=t
 PFPGrowth::PFPGrowth(gpuArrayMap *arrayMap, gpuEloMap *eloMap,size_t arrayMapSize,size_t eloPosMapSize) {
     gpuArrayMap *device_ArrayMap;
     gpuEloMap *device_EloMap;
+    gpuEloMap **device_elo_frequencias;
+
     gpuErrchk(cudaMalloc((void **) &device_ArrayMap, sizeof(gpuArrayMap)*arrayMapSize));
     gpuErrchk(cudaMemcpy(device_ArrayMap, arrayMap, sizeof(gpuArrayMap)*arrayMapSize, cudaMemcpyHostToDevice));
 
     gpuErrchk(cudaMalloc((void **) &device_EloMap, sizeof(gpuEloMap)*eloPosMapSize));
     gpuErrchk(cudaMemcpy(device_EloMap, eloMap, sizeof(gpuArrayMap)*eloPosMapSize, cudaMemcpyHostToDevice));
 
-    AlgoritmoI<<<1,12>>>(device_ArrayMap,device_EloMap);
+    gpuErrchk(cudaMalloc((void **) &device_elo_frequencias, sizeof(gpuEloMap)*eloPosMapSize*eloPosMapSize));
+
+
+    AlgoritmoI<<<1,arrayMapSize-1>>>(device_elo_frequencias,device_ArrayMap,device_EloMap,arrayMapSize,0);
     gpuErrchk( cudaPeekAtLastError());
     gpuErrchk( cudaDeviceSynchronize() );
+    cudaFree(device_EloMap);
+    cudaFree(device_ArrayMap);
 }
