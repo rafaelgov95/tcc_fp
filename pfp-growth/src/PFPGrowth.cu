@@ -30,7 +30,7 @@ PFPGrowth::PFPGrowth(gpuArrayMap *arrayMap, gpuEloMap *eloMap,size_t arrayMapSiz
     gpuErrchk(cudaMalloc((void **) &device_elo_frequencias, sizeof(gpuEloMap*)*eloPosMapSize));
 
 
-    AlgoritmoI<<<1,arrayMapSize-1>>>(device_elo_frequencias,device_ArrayMap,device_EloMap,arrayMapSize,arrayMapSize-1);
+    AlgoritmoI<<<1,arrayMapSize>>>(device_elo_frequencias,device_ArrayMap,device_EloMap,arrayMapSize,arrayMapSize-1);
     gpuErrchk( cudaPeekAtLastError());
     gpuErrchk( cudaDeviceSynchronize() );
     cudaFree(device_EloMap);
