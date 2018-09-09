@@ -12,9 +12,7 @@
 #include "cudaHeaders.h"
 #include "PFPArray.h"
 
-
-
-__global__ void AlgoritmoI(gpuEloMap **device_elo_frequencias,gpuArrayMap *arrayMap, gpuEloMap *eloMap, size_t arrayMapSize,int round);
+__global__ void AlgoritmoI(gpuEloMap **Elo_k1, gpuArrayMap *arrayMap, gpuEloMap *eloMap, size_t arrayMapSize,size_t eloMapSize);
 
 __global__ void AlgoritmoI();
 

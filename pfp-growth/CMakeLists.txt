@@ -7,7 +7,8 @@ include_directories(${CUDA_INCLUDE_DIRS} "${CMAKE_SOURCE_DIR}/src" "${CMAKE_SOUR
 set(CATCH_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/unit-test)
 set(CMAKE_C_COMPILER /usr/bin/gcc-7 CACHE PATH "" FORCE)
 set(CMAKE_CXX_COMPILER /usr/bin/g++-7 CACHE PATH "" FORCE)
-set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} -rdc=true -gencode arch=compute_50,code=sm_50")
+
+set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} -rdc=true -shared -gencode arch=compute_50,code=sm_50 -lineinfo")
 set(CMAKE_C_FLAGS_DEBUG "-D_DEBUG")
 add_definitions(-DUNIT_TEST)
 
