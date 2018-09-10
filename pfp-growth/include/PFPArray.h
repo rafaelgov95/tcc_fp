@@ -39,14 +39,15 @@ typedef struct {
     cuda_int size;
 } EloMap;
 
+
 typedef struct {
     EloMap *eloMap;
     cuda_int size;
 } EloGrid;
 
 
-
 using HashMap = std::vector<std::pair<PFPArrayMap, int >>;
+
 class PFPArray {
 public:
     PFPArray(const PFPTree &fptree);
