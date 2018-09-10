@@ -34,6 +34,18 @@ typedef struct {
     cuda_int suporte;
 } gpuArrayMap;
 
+typedef struct {
+    gpuEloMap *elo;
+    cuda_int size;
+} EloMap;
+
+typedef struct {
+    EloMap *eloMap;
+    cuda_int size;
+} EloGrid;
+
+
+
 using HashMap = std::vector<std::pair<PFPArrayMap, int >>;
 class PFPArray {
 public:
@@ -42,7 +54,6 @@ public:
     gpuArrayMap*  _arrayMap;
     gpuEloMap*  _eloMap;
     std::vector<PFPArrayMap> arrayMap;
-
 private:
 
     void eloPosStapOne();

@@ -42,26 +42,19 @@ __device__ char *my_cpcat(const char *array1, const char *array2, char *src) {
     return src;
 }
 
-__device__ void reducex_suporte(gpuEloMap *Elo_k1,gpuArrayMap *arrayMap, gpuEloMap *eloMap, size_t arrayMapSize, size_t eloMapSize,size_t elo_k1_map_size) {
-
-
-
+__device__ void reducex_suporte(EloMap *elomap, gpuArrayMap *arrayMap, gpuEloMap *eloMap, size_t arrayMapSize, size_t eloMapSize,int elo_k1_map_size,gpuEloMap *Elo_k1) {
+    elomap[threadIdx.x].elo=Elo_k1;
     for(int i =0;i<elo_k1_map_size;i++)
-        printf("THREAD %d CHAR %s\n",  threadIdx.x,Elo_k1[i].ItemId);
+        printf("THREAD %d CHAR %s\n",  threadIdx.x,elomap[threadIdx.x].elo[i].ItemId);
 
-
-
-
-
-
-//    printf("THREAD FINALIZANDO TRABALHO %d\n", threadIdx.x);
 }
 
 
-__device__ void geracao_candidato( gpuEloMap *Elo_k1,gpuArrayMap *arrayMap, gpuEloMap *eloMap, size_t arrayMapSize, size_t eloMapSize) {
+__device__ void geracao_candidato( EloMap *Elo_Map,gpuArrayMap *arrayMap, gpuEloMap *eloMap, size_t arrayMapSize, size_t eloMapSize) {
     auto indexAtual = threadIdx.x;
     int xxx = 0;
     bool flag = true;
+    gpuEloMap *Elo_k1 = (gpuEloMap*)malloc(sizeof(gpuEloMap)*eloMapSize);
     while (flag) {
         char a[32] = "";
         if(indexAtual+xxx<eloMapSize) {
@@ -74,8 +67,8 @@ __device__ void geracao_candidato( gpuEloMap *Elo_k1,gpuArrayMap *arrayMap, gpuE
                 my_strcpy(Elo_k1[xxx].ItemId, a);
                 Elo_k1[xxx].indexArrayMap = arrayMap[indexParentArrayMap].indexP;
                 Elo_k1[xxx].suporte = arrayMap[indexAtual].suporte;
-                printf("THEREAD %d | xxx %d | %s INDEX %d  SUPORTE %d \n", indexAtual, xxx, Elo_k1[xxx].ItemId,
-                       Elo_k1[xxx].indexArrayMap, Elo_k1[xxx].suporte);
+//                printf("THEREAD %d | xxx %d | %s INDEX %d  SUPORTE %d \n", indexAtual, xxx, Elo_k1[xxx].ItemId,
+//                       Elo_k1[xxx].indexArrayMap, Elo_k1[xxx].suporte);
             } else {
                 my_cpcat(arrayMap[eloMap[indexAtual].indexArrayMap].ItemId,
                          arrayMap[indexParentArrayMap].ItemId, a);
@@ -91,19 +84,23 @@ __device__ void geracao_candidato( gpuEloMap *Elo_k1,gpuArrayMap *arrayMap, gpuE
             flag = false;
         }
     }
-//    reducex_suporte(Elo_k1,arrayMap,eloMap,arrayMapSize,eloMapSize,xxx-1);
+    reducex_suporte(Elo_Map,arrayMap,eloMap,arrayMapSize,eloMapSize,xxx-1,Elo_k1);
+    free(Elo_k1);
+
+//    reducex_suporte(Elo_Map,arrayMap,eloMap,arrayMapSize,eloMapSize,xxx-1,Elo_k1);
+
 
 }
 
-__global__ void AlgoritmoI(gpuEloMap **Elo_k1, gpuArrayMap *arrayMap, gpuEloMap *eloMap, size_t sizeArrayMap,size_t eloMapSize) {
+__global__ void AlgoritmoI(EloGrid *Elo_k1, gpuArrayMap *arrayMap, gpuEloMap *eloMap, size_t sizeArrayMap,size_t eloMapSize) {
 
-    if(threadIdx.x< eloMapSize) {
-
-Elo_k1[threadIdx.x] = (gpuEloMap *)malloc(sizeof(gpuEloMap)*eloMapSize);
-geracao_candidato(Elo_k1[threadIdx.x],arrayMap,eloMap,sizeArrayMap,eloMapSize);
+    if(threadIdx.x < eloMapSize) {
+    Elo_k1 = (EloGrid )malloc(sizeof(EloMap ));
+        geracao_candidato(Elo_k1[threadIdx.x],arrayMap,eloMap,sizeArrayMap,eloMapSize);
     }
+        printf("TESTANDO\n");
 
-free(Elo_k1[threadIdx.x]);
+    cudaFree(Elo_k1[threadIdx.x]);
 
 }
 

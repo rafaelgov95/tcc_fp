@@ -6,6 +6,7 @@ CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o: ../include/PFPArray.h
 CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o: ../include/PFPGrowth.cu.h
 CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o: ../include/PFPTree.h
 CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o: ../include/cudaHeaders.h
+CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o: ../include/PFPArray.h
 CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o: ../src/PFPGrowth.cu
 CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o: /opt/cuda/include/builtin_types.h
 CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o: /opt/cuda/include/crt/host_defines.h
