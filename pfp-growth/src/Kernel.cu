@@ -52,7 +52,7 @@ reducex_suporte(EloGrid *eloGrid, gpuArrayMap *arrayMap, gpuEloMap *eloMap, size
     eloGrid->eloMap[indexEloMap].size=elo_k1_map_size;
 
     for (int i = 0; i < eloGrid->eloMap[indexEloMap].size; i++)
-        printf("THREAD %d CHAR %s\n", threadIdx.x,  eloGrid->eloMap[indexEloMap].elo[i].ItemId);
+        printf("THREAD %d ITEMID %s | IndexArray %d| Suporte %d |\n", threadIdx.x,  eloGrid->eloMap[indexEloMap].elo[i].ItemId,eloGrid->eloMap[indexEloMap].elo[i].indexArrayMap,eloGrid->eloMap[indexEloMap].elo[i].suporte);
     eloGrid->size=+eloGrid->size;
 }
 
@@ -63,40 +63,27 @@ geracao_candidato(EloGrid **Elo_Grid, gpuArrayMap *arrayMap, gpuEloMap *eloMap, 
     int xxx = 0;
     bool flag = true;
     gpuEloMap *Elo_k1 = (gpuEloMap *) malloc(sizeof(gpuEloMap) * eloMapSize);
-    while (flag) {
+    while (flag && (indexAtual + xxx) < eloMapSize) {
         char a[32] = "";
-        if (indexAtual + xxx < eloMapSize) {
             auto indexParentArrayMap = arrayMap[eloMap[indexAtual + xxx].indexArrayMap].indexP;
-//        printf("THEREAD %d | index %d\n",indexAtual,indexParentArrayMap );
             if (arrayMap[indexParentArrayMap].indexP != -1 &&
                 arrayMap[eloMap[indexAtual].indexArrayMap].indexP != -1) {
                 my_cpcat(arrayMap[eloMap[indexAtual].indexArrayMap].ItemId,
                          arrayMap[indexParentArrayMap].ItemId, a);
                 my_strcpy(Elo_k1[xxx].ItemId, a);
-                Elo_k1[xxx].indexArrayMap = arrayMap[indexParentArrayMap].indexP;
-                Elo_k1[xxx].suporte = arrayMap[indexAtual].suporte;
-//                printf("THEREAD %d | xxx %d | %s INDEX %d  SUPORTE %d \n", indexAtual, xxx, Elo_k1[xxx].ItemId,
-//                       Elo_k1[xxx].indexArrayMap, Elo_k1[xxx].suporte);
+                Elo_k1[xxx].indexArrayMap = arrayMap[eloMap[indexAtual+xxx].indexArrayMap].indexP;
+                Elo_k1[xxx].suporte = arrayMap[eloMap[indexAtual+xxx].indexArrayMap].suporte;
             } else {
                 my_cpcat(arrayMap[eloMap[indexAtual].indexArrayMap].ItemId,
                          arrayMap[indexParentArrayMap].ItemId, a);
                 my_strcpy(Elo_k1[xxx].ItemId, a);
                 Elo_k1[xxx].indexArrayMap = arrayMap[indexParentArrayMap].indexP;
                 Elo_k1[xxx].suporte = arrayMap[indexAtual].suporte;
-//                printf("ERRO NAO ENTRO THEREAD %d | xxx %d | %s INDEX %d  SUPORTE %d \n", indexAtual, xxx,
-//                       Elo_k1[xxx].ItemId, Elo_k1[xxx].indexArrayMap, Elo_k1[xxx].suporte);
-                flag = false;
+               flag = false;
             }
             xxx++;
-        } else {
-            flag = false;
-        }
     }
     reducex_suporte(Elo_Grid[indexAtual], arrayMap, eloMap, arrayMapSize, eloMapSize, xxx - 1, Elo_k1);
-    free(Elo_k1);
-
-//    reducex_suporte(Elo_Map,arrayMap,eloMap,arrayMapSize,eloMapSize,xxx-1,Elo_k1);
-
 
 }
 
@@ -108,7 +95,7 @@ __global__ void run(EloGrid **Elo_k1, gpuArrayMap *arrayMap, gpuEloMap *eloMap, 
         Elo_k1[threadIdx.x]->eloMap = (EloMap *) malloc(sizeof(EloMap *)* eloMapSize);
         geracao_candidato(Elo_k1, arrayMap, eloMap, sizeArrayMap, eloMapSize);
     }
-    cudaFree(Elo_k1);
+//    cudaFree(Elo_k1);
 
 }
 
