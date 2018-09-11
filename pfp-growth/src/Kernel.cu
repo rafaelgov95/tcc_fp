@@ -47,18 +47,18 @@ reducex_suporte(EloGrid *eloGrid, gpuArrayMap *arrayMap, gpuEloMap *eloMap, size
                 int elo_k1_map_size, gpuEloMap *Elo_k1) {
 
 
-    int indexEloMap = eloGrid->size;
-    eloGrid->eloMap[indexEloMap].elo = Elo_k1;
-    eloGrid->eloMap[indexEloMap].size=elo_k1_map_size;
-
-    for (int i = 0; i < eloGrid->eloMap[indexEloMap].size; i++)
-        printf("THREAD %d ITEMID %s | IndexArray %d| Suporte %d |\n", threadIdx.x,  eloGrid->eloMap[indexEloMap].elo[i].ItemId,eloGrid->eloMap[indexEloMap].elo[i].indexArrayMap,eloGrid->eloMap[indexEloMap].elo[i].suporte);
-    eloGrid->size=+eloGrid->size;
+    int indexEloMap = eloGrid[threadIdx.x].size;
+    eloGrid[threadIdx.x].eloMap[indexEloMap].elo = Elo_k1;
+    eloGrid[threadIdx.x].eloMap[indexEloMap].size=elo_k1_map_size;
+//
+    for (int i = 0; i < eloGrid[threadIdx.x].eloMap[indexEloMap].size; i++)
+        printf("THREAD %d ITEMID %s | IndexArray %d| Suporte %d |\n", threadIdx.x,  eloGrid[threadIdx.x].eloMap[indexEloMap].elo[i].ItemId,eloGrid[threadIdx.x].eloMap[indexEloMap].elo[i].indexArrayMap,eloGrid[threadIdx.x].eloMap[indexEloMap].elo[i].suporte);
+    eloGrid[threadIdx.x].size=eloGrid[threadIdx.x].size+1;
 }
 
 
 __device__ void
-geracao_candidato(EloGrid **Elo_Grid, gpuArrayMap *arrayMap, gpuEloMap *eloMap, size_t arrayMapSize, size_t eloMapSize) {
+geracao_candidato(EloGrid *Elo_Grid, gpuArrayMap *arrayMap, gpuEloMap *eloMap, size_t arrayMapSize, size_t eloMapSize) {
     auto indexAtual = threadIdx.x;
     int xxx = 0;
     bool flag = true;
@@ -82,17 +82,21 @@ geracao_candidato(EloGrid **Elo_Grid, gpuArrayMap *arrayMap, gpuEloMap *eloMap, 
                flag = false;
             }
             xxx++;
+
     }
-    reducex_suporte(Elo_Grid[indexAtual], arrayMap, eloMap, arrayMapSize, eloMapSize, xxx - 1, Elo_k1);
+    reducex_suporte(Elo_Grid, arrayMap, eloMap, arrayMapSize, eloMapSize, xxx - 1, Elo_k1);
 
 }
 
-__global__ void run(EloGrid **Elo_k1, gpuArrayMap *arrayMap, gpuEloMap *eloMap, size_t sizeArrayMap, size_t eloMapSize) {
+__global__ void run(EloGrid *Elo_k1, gpuArrayMap *arrayMap, gpuEloMap *eloMap, size_t sizeArrayMap, size_t eloMapSize) {
+//    if (threadIdx.x ==0) {
+//        Elo_k1 = (EloGrid *) malloc(sizeof(EloGrid)*eloMapSize);
+//    }
 
     if (threadIdx.x < eloMapSize) {
-        Elo_k1[threadIdx.x] = (EloGrid *) malloc(sizeof(EloGrid));
-        Elo_k1[threadIdx.x]->size = 0;
-        Elo_k1[threadIdx.x]->eloMap = (EloMap *) malloc(sizeof(EloMap *)* eloMapSize);
+//        Elo_k1[threadIdx.x]=(EloGrid *) malloc(sizeof(EloGrid*));
+        Elo_k1[threadIdx.x].size = 0;
+        Elo_k1[threadIdx.x].eloMap = (EloMap *) malloc(sizeof(EloMap *)* eloMapSize);
         geracao_candidato(Elo_k1, arrayMap, eloMap, sizeArrayMap, eloMapSize);
     }
 //    cudaFree(Elo_k1);

@@ -23,20 +23,18 @@ PFPGrowth::PFPGrowth(gpuArrayMap *arrayMap, gpuEloMap *eloMap,size_t arrayMapSiz
     gpuEloMap *device_EloMap;
 
 
-    EloGrid **devicePointersStoredInDeviceMemory;
-    cudaMalloc( (void**)&devicePointersStoredInDeviceMemory, sizeof(EloGrid)*eloPosMapSize);
 
+    EloGrid* hostPointersStoredInHostMemory=(EloGrid*)malloc(sizeof(EloGrid)*eloPosMapSize);
+    for (int i = 0; i < eloPosMapSize ; ++i) {
+        hostPointersStoredInHostMemory[i].size=12;
+//        hostPointersStoredInHostMemory[i].eloMap=(EloMap*)malloc(sizeof(EloMap)*eloPosMapSize);
 
-    EloGrid* devicePointersStoredInHostMemory[eloPosMapSize];
-    for(int i=0; i<eloPosMapSize; i++)
-        cudaMalloc( (void**)&devicePointersStoredInHostMemory[i], sizeof(EloGrid *) );
+    }
 
-    cudaMemcpy(
-            devicePointersStoredInDeviceMemory,
-            devicePointersStoredInHostMemory,
-            sizeof(EloGrid*), cudaMemcpyHostToDevice);
+    EloGrid * devicePointersStoredInDeviceMemory;
 
-
+    gpuErrchk(cudaMalloc((void**)&devicePointersStoredInDeviceMemory, sizeof(EloGrid)*eloPosMapSize));
+    gpuErrchk(cudaMemcpy(devicePointersStoredInDeviceMemory, hostPointersStoredInHostMemory, sizeof(EloGrid)*eloPosMapSize, cudaMemcpyHostToDevice));
 
     gpuErrchk(cudaMalloc((void **) &device_ArrayMap, sizeof(gpuArrayMap)*arrayMapSize));
     gpuErrchk(cudaMemcpy(device_ArrayMap, arrayMap, sizeof(gpuArrayMap)*arrayMapSize, cudaMemcpyHostToDevice));
@@ -44,23 +42,18 @@ PFPGrowth::PFPGrowth(gpuArrayMap *arrayMap, gpuEloMap *eloMap,size_t arrayMapSiz
     gpuErrchk(cudaMalloc((void **) &device_EloMap, sizeof(gpuEloMap)*eloPosMapSize));
     gpuErrchk(cudaMemcpy(device_EloMap, eloMap, sizeof(gpuArrayMap)*eloPosMapSize, cudaMemcpyHostToDevice));
 
-
-
     run<<<1,eloPosMapSize>>>(devicePointersStoredInDeviceMemory,device_ArrayMap,device_EloMap,arrayMapSize,eloPosMapSize);
+
     gpuErrchk( cudaPeekAtLastError());
     gpuErrchk( cudaDeviceSynchronize());
 
-    EloGrid* hostPointersStoredInHostMemory[eloPosMapSize];
-    for(int i=0; i<eloPosMapSize; i++) {
-        EloGrid* hostPointer = hostPointersStoredInHostMemory[i];
-        // (allocate memory for hostPointer here!)
-        EloGrid* devicePointer = devicePointersStoredInHostMemory[i];
-        cudaMemcpy(hostPointer, devicePointer, sizeof(EloGrid), cudaMemcpyDeviceToHost);
-    }
-    printf("%d",hostPointersStoredInHostMemory[0]->size);
 
-//    cudaFree(device_EloMap);
-//    cudaFree(device_ArrayMap);
+    cudaMemcpy(hostPointersStoredInHostMemory, devicePointersStoredInDeviceMemory, sizeof(EloGrid)*eloPosMapSize, cudaMemcpyDeviceToHost);
+
+
+    printf("%d",hostPointersStoredInHostMemory[0].size);
+    cudaFree(device_EloMap);
+    cudaFree(device_ArrayMap);
 //    cudaFree(host_elo_grid);
 //    cudaFree(device_elo_grid);
 
