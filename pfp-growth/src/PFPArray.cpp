@@ -29,8 +29,8 @@ PFPArray::PFPArray(const PFPTree &fptree) {
 
 
 void PFPArray::eloPosStapOne() {
-    size_t size = sizeof(gpuEloMap) * (arrayMap.size()-1);
-    _eloMap = (gpuEloMap *) malloc(size);
+    size_t size = sizeof(Elo) * (arrayMap.size()-1);
+    _eloMap = (Elo *) malloc(size);
     int b =0;
     for (int i=0; i < arrayMap.size();i++) {
         if(_arrayMap[i].indexP > -1) {
@@ -98,8 +98,8 @@ void PFPArray::create_array_and_elepos(const PFPTree &fptree) {
         }
         rootFolha = rootFolha.get()->next;
     }
-    size_t size = sizeof(gpuArrayMap) * arrayMap.size();
-    _arrayMap = (gpuArrayMap *) malloc(size);
+    size_t size = sizeof(ArrayMap) * arrayMap.size();
+    _arrayMap = (ArrayMap *) malloc(size);
     for (auto it = arrayMap.begin(); it != arrayMap.end(); ++it) {
         long index = std::distance(arrayMap.begin(), it);
         _arrayMap[index].suporte = (*it).suporte;

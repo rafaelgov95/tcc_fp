@@ -12,7 +12,7 @@
 #include "cudaHeaders.h"
 #include "PFPArray.h"
 
-__global__ void run(EloGrid *Elo_k1, gpuArrayMap *arrayMap, gpuEloMap *eloMap, size_t arrayMapSize, size_t eloMapSize);
+__global__ void run(Elo **Elo_k1,int *array_int_elo, ArrayMap *arrayMap, Elo *eloMap, size_t arrayMapSize, size_t eloMapSize);
 
 
 #endif //FP_GROWTH_GPU_KERNEL_PFP_H

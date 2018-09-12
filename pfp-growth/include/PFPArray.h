@@ -26,16 +26,16 @@ typedef struct {
      char ItemId[MAX_STR_SIZE];
     cuda_int indexArrayMap;
     cuda_int suporte;
-} gpuEloMap;
+} Elo;
 
 typedef struct {
      char ItemId[MAX_STR_SIZE];
     cuda_int indexP;
     cuda_int suporte;
-} gpuArrayMap;
+} ArrayMap;
 
 typedef struct {
-    gpuEloMap *elo;
+    Elo *elo;
     cuda_int size;
 } EloMap;
 
@@ -52,8 +52,8 @@ class PFPArray {
 public:
     PFPArray(const PFPTree &fptree);
     HashMap hashMap;
-    gpuArrayMap*  _arrayMap;
-    gpuEloMap*  _eloMap;
+    ArrayMap*  _arrayMap;
+    Elo*  _eloMap;
     std::vector<PFPArrayMap> arrayMap;
 private:
 

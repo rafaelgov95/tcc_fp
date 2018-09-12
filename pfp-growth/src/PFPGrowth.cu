@@ -10,51 +10,61 @@
 #include "../include/PFPArray.h"
 
 #define gpuErrchk(ans) { gpuAssert((ans), __FILE__, __LINE__); }
-inline void gpuAssert(cudaError_t code, const char *file, int line, bool abort=true)
-    {
-        if (code != cudaSuccess)
-    {
-        fprintf(stderr,"GPUassert: %s %s %d\n", cudaGetErrorString(code), file, line);
+
+inline void gpuAssert(cudaError_t code, const char *file, int line, bool abort = true) {
+    if (code != cudaSuccess) {
+        fprintf(stderr, "GPUassert: %s %s %d\n", cudaGetErrorString(code), file, line);
         if (abort) exit(code);
     }
 }
-PFPGrowth::PFPGrowth(gpuArrayMap *arrayMap, gpuEloMap *eloMap,size_t arrayMapSize,size_t eloPosMapSize) {
-    gpuArrayMap *device_ArrayMap;
-    gpuEloMap *device_EloMap;
 
+PFPGrowth::PFPGrowth(ArrayMap *arrayMap, Elo *eloMap, size_t arrayMapSize, size_t eloPosMapSize) {
+    ArrayMap *device_ArrayMap;
+    Elo *device_EloMap;
+    Elo *device_pointer_elo_kx[eloPosMapSize], *host_pointer_elo_kx[eloPosMapSize];
+    int *device_int_array;
 
-
-    EloGrid* hostPointersStoredInHostMemory=(EloGrid*)malloc(sizeof(EloGrid)*eloPosMapSize);
+    cudaMalloc((void**) &device_int_array, sizeof(int)*eloPosMapSize);
+    cudaMemset (device_int_array , 0 , eloPosMapSize * sizeof ( int ));
     for (int i = 0; i < eloPosMapSize ; ++i) {
-        hostPointersStoredInHostMemory[i].size=12;
-//        hostPointersStoredInHostMemory[i].eloMap=(EloMap*)malloc(sizeof(EloMap)*eloPosMapSize);
-
+         host_pointer_elo_kx[i]=(Elo*)malloc(sizeof(Elo) * eloPosMapSize);
+   }
+   for (int i = 0; i < eloPosMapSize ; ++i) {
+        cudaMalloc((void **) &device_pointer_elo_kx[i], sizeof(Elo) * eloPosMapSize);
     }
 
-    EloGrid * devicePointersStoredInDeviceMemory;
+    for (int j = 0; j < eloPosMapSize; ++j) {
+        cudaMemcpy(device_pointer_elo_kx[j],host_pointer_elo_kx[j],sizeof(Elo) *eloPosMapSize,cudaMemcpyHostToDevice);
+    }
 
-    gpuErrchk(cudaMalloc((void**)&devicePointersStoredInDeviceMemory, sizeof(EloGrid)*eloPosMapSize));
-    gpuErrchk(cudaMemcpy(devicePointersStoredInDeviceMemory, hostPointersStoredInHostMemory, sizeof(EloGrid)*eloPosMapSize, cudaMemcpyHostToDevice));
+    gpuErrchk(cudaMalloc((void **) &device_ArrayMap, sizeof(ArrayMap) * arrayMapSize));
+    gpuErrchk(cudaMemcpy(device_ArrayMap, arrayMap, sizeof(ArrayMap) * arrayMapSize, cudaMemcpyHostToDevice));
 
-    gpuErrchk(cudaMalloc((void **) &device_ArrayMap, sizeof(gpuArrayMap)*arrayMapSize));
-    gpuErrchk(cudaMemcpy(device_ArrayMap, arrayMap, sizeof(gpuArrayMap)*arrayMapSize, cudaMemcpyHostToDevice));
+    gpuErrchk(cudaMalloc((void **) &device_EloMap, sizeof(Elo) * eloPosMapSize));
+    gpuErrchk(cudaMemcpy(device_EloMap, eloMap, sizeof(Elo) * eloPosMapSize, cudaMemcpyHostToDevice));
 
-    gpuErrchk(cudaMalloc((void **) &device_EloMap, sizeof(gpuEloMap)*eloPosMapSize));
-    gpuErrchk(cudaMemcpy(device_EloMap, eloMap, sizeof(gpuArrayMap)*eloPosMapSize, cudaMemcpyHostToDevice));
+    run << < 1,eloPosMapSize >>>
+            (device_pointer_elo_kx,
+                    device_int_array,
+                    device_ArrayMap,
+                    device_EloMap,
+                    arrayMapSize,
+                    eloPosMapSize);
 
-    run<<<1,eloPosMapSize>>>(devicePointersStoredInDeviceMemory,device_ArrayMap,device_EloMap,arrayMapSize,eloPosMapSize);
-
-    gpuErrchk( cudaPeekAtLastError());
-    gpuErrchk( cudaDeviceSynchronize());
+    gpuErrchk(cudaPeekAtLastError());
+    gpuErrchk(cudaDeviceSynchronize());
 
 
-    cudaMemcpy(hostPointersStoredInHostMemory, devicePointersStoredInDeviceMemory, sizeof(EloGrid)*eloPosMapSize, cudaMemcpyDeviceToHost);
+//    for (int l = 0; l < eloPosMapSize ; ++l) {
+//        cudaMemcpy(host_pointer_elo_kx[l],
+//                   device_pointer_elo_kx[l],
+//                   sizeof(Elo)*eloPosMapSize,
+//                   cudaMemcpyDeviceToHost);
+//
+//    }
 
-
-    printf("%d",hostPointersStoredInHostMemory[0].size);
     cudaFree(device_EloMap);
     cudaFree(device_ArrayMap);
-//    cudaFree(host_elo_grid);
-//    cudaFree(device_elo_grid);
+
 
 }

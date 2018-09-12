@@ -19,10 +19,10 @@
 
 
 class PFPGrowth {
-    gpuArrayMap*  ArrayMap;
-    gpuArrayMap*  EloPos;
+    ArrayMap*  arrayMap;
+    ArrayMap*  eloPos;
 public:
-    PFPGrowth(gpuArrayMap *arrayMap,gpuEloMap *eloMap,size_t arrayMapSize,size_t eloPosMapSize);
+    PFPGrowth(ArrayMap *arrayMap,Elo *eloPos,size_t arrayMapSize,size_t eloPosSize);
 
 };
 
