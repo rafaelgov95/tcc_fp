@@ -27,8 +27,8 @@ inline void gpuAssert(cudaError_t code, const char *file, int line, bool abort =
 }
 __device__ int counter;
 __shared__ Elo elo[256];
+__device__ int index_elo_put;
 
-__device__ int roundd;
 
 __device__ char *my_strcpy(char *dest, const char *src) {
     int i = 0;
@@ -84,18 +84,28 @@ __device__ char *my_cpcat(const char *array1, const char *array2, char *src) {
 //
 __device__ void put_k1_elo(Elo **Elo_k1,Elo *elo_k1, int sizeEloLocal) {
 for (int i = 0; i < sizeEloLocal; ++i)
-elo[atomicAdd(&roundd,1)]=elo_k1[i];
+elo[atomicAdd(&index_elo_put,1)]=elo_k1[i];
+
+
+
 }
+__global__ void frequencia_x(Elo *elo, int x){
+//    printf("%s",elo[0].ItemId);
+    printf("%d %s\n", threadIdx.x, elo[threadIdx.x].ItemId);
 
-__device__ void reducex_suporte(Elo **Elo_k1,int *sizeArray,Elo *elo_k1, int sizeEloLocal) {
 
-
-if(threadIdx.x==10){
-for (int i = 0; i < roundd; ++i)
-printf("%d %s\n",threadIdx.x, elo[i].ItemId);
 }
+__device__ void reducex_suporte(int suporte,size_t endThread) {
 
-
+    if (threadIdx.x == endThread-1 ) {
+        Elo *elo_x= (Elo *)malloc(sizeof(Elo)*index_elo_put);
+        for (int i = 0; i < index_elo_put; ++i){
+            elo_x[i]= elo[i];
+        }
+        frequencia_x<<<1,25>> .(elo_x,index_elo_put);
+        index_elo_put=0;
+    }
+}
 
 //    int k=0;
 //    int kk=(int)nn;
@@ -136,7 +146,7 @@ printf("%d %s\n",threadIdx.x, elo[i].ItemId);
 //        printf("%s | %d\n",setMap->elo[k].ItemId,setMap->array[k]);
 //
 //    }
-}
+
 //for (int i = 0; i < n; ++i){
 //printf("THREAD %d ITEMID %s | IndexArray %d| Suporte %d |\n", threadIdx.x, Elo_k1[i].ItemId,
 //Elo_k1[i].indexArrayMap,Elo_k1[i].suporte);
@@ -148,10 +158,6 @@ geracao_candidato(Elo **elo_k1,int *nn,ArrayMap *arrayMap, Elo *eloMap, size_t a
     auto indexAtual = threadIdx.x;
     int xxx = 0;
     bool flag = true;
-//    Elo *elo_k1=(Elo *) malloc(sizeof(Elo*) * eloMapSize);
-//    Elo_Grid[threadIdx.x].eloMap[Elo_Grid[threadIdx.x].size].elo = (Elo *) malloc(sizeof(Elo*) * eloMapSize);
-//    Elo_Grid[threadIdx.x].eloMap[Elo_Grid[threadIdx.x].size].size =0;
-
     Elo *Elo_k1 = (Elo *) malloc(sizeof(Elo) * eloMapSize);
     while (flag && (indexAtual + xxx) < eloMapSize) {
         char a[32] = "";
@@ -175,7 +181,7 @@ geracao_candidato(Elo **elo_k1,int *nn,ArrayMap *arrayMap, Elo *eloMap, size_t a
 
     }
     put_k1_elo(elo_k1,Elo_k1,(xxx-1));
-    reducex_suporte(elo_k1,nn,Elo_k1,(xxx - 1));
+    reducex_suporte(3,eloMapSize);
 }
 
 __global__ void run(Elo **Elo_k1,int *nn, ArrayMap *arrayMap, Elo *eloMap, size_t ArrayMapSize, size_t eloMapSize) {
