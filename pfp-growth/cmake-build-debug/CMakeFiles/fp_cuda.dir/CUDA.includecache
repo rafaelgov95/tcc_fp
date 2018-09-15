@@ -129,6 +129,8 @@ cuda.h
 /home/rafael/socorro/tcc_fp/pfp-growth/src/cuda.h
 ../include/PFPArray.h
 /home/rafael/socorro/tcc_fp/pfp-growth/include/PFPArray.h
+../../../../../../usr/include/form.h
+/usr/include/form.h
 
 /home/rafael/socorro/tcc_fp/pfp-growth/unit-test/Test_PFPGrowth.cu
 PFPTree.h
@@ -7173,4 +7175,10 @@ thrust/detail/unique.inl
 /opt/cuda/include/vector_types.h
 host_defines.h
 /opt/cuda/include/host_defines.h
+
+/usr/include/form.h
+curses.h
+-
+eti.h
+-
 

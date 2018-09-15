@@ -10,12 +10,12 @@
 #include <cstdio>
 #include "cuda.h"
 #include "../include/PFPArray.h"
+#include "../../../../../../usr/include/form.h"
 
 #define gpuErrchk(ans) { gpuAssert((ans), __FILE__, __LINE__); }
 
 typedef struct {
-    Elo *elo;
-    int *array;
+    Elo elo;
     int size;
 }SetMap;
 
@@ -25,11 +25,37 @@ inline void gpuAssert(cudaError_t code, const char *file, int line, bool abort =
         if (abort) exit(code);
     }
 }
-__device__ int counter;
+__device__ char *counter1;
+__device__ int counter2;
+__device__ int counter3;
 __shared__ Elo elo[256];
 __device__ int index_elo_put;
 
 
+__device__ int compare(char* String_1, char* String_2)
+{
+    char TempChar_1,
+            TempChar_2;
+
+    do
+    {
+        TempChar_1 = *String_1++;
+        TempChar_2 = *String_2++;
+    } while(TempChar_1 && TempChar_1 == TempChar_2);
+
+    return TempChar_1 - TempChar_2;
+}
+
+__device__ bool my_strcmp( char *array1, char *array2) {
+    int i = 0;
+    while (array1[i] != '\0') {
+        if (array1[i] != array2[i]) {
+            return false;
+        }
+        i++;
+    }
+    return true;
+}
 __device__ char *my_strcpy(char *dest, const char *src) {
     int i = 0;
     do {
@@ -51,111 +77,55 @@ __device__ char *my_cpcat(const char *array1, const char *array2, char *src) {
     return src;
 }
 
-//extern __shared__ int s[];
-
-//__device__ void Add_Elo_Frequencia_Elo_k1(Elo *vecor){
-//    extern __shared__ int s[];
-//}
-
-
-
-//    SetMap *setMap =(SetMap*)malloc(sizeof(SetMap));
-//    setMap->array=(int*)malloc(sizeof(int)*eloMapSize);
-//    setMap->elo=(Elo *)malloc(sizeof(Elo)*eloMapSize);
-//    setMap->size=0;
-//
-//
-//    int indexEloMap = eloGrid[threadIdx.x].size;
-//    eloGrid[threadIdx.x].eloMap[indexEloMap].elo = Elo_k1;
-//    eloGrid[threadIdx.x].eloMap[indexEloMap].size=elo_k1_map_size;
-////
-//    for (int i = 0; i < eloGrid[threadIdx.x].eloMap[indexEloMap].size; i++) {
-//        for (int j = 0;j<setMap->size; ++j) {
-//            if(setMap->elo[j].ItemId==eloGrid[threadIdx.x].eloMap[indexEloMap].elo[i].ItemId){
-//                setMap->array[j]=setMap->array[j]+1;
-//            }
-//        }
-//        setMap->elo=&eloGrid[threadIdx.x].eloMap[indexEloMap].elo[i];
-//        setMap->array[i]=setMap->array[i]+1;
-//        setMap->size=setMap->size+1;
-
-//Final_Elo[0] =*
-//Elo_k1;
-//
-__device__ void put_k1_elo(Elo **Elo_k1,Elo *elo_k1, int sizeEloLocal) {
-for (int i = 0; i < sizeEloLocal; ++i)
-elo[atomicAdd(&index_elo_put,1)]=elo_k1[i];
-
-
+__global__ void frequencia_x( Elo *elo_x,int eloMapSize){
+extern __shared__ SetMap setMap[];
+memset(setMap,0,sizeof(SetMap)*eloMapSize);
+char  valr[23]="";
+if(threadIdx.x==0){
+   for(int k=0;k<eloMapSize;++k){
+          my_strcpy(setMap[k].elo.ItemId," ");
+   }
 
 }
-__global__ void frequencia_x(Elo *elo, int x){
-//    printf("%s",elo[0].ItemId);
-    printf("%d %s\n", threadIdx.x, elo[threadIdx.x].ItemId);
 
+__syncthreads();
+if(threadIdx.x==0){
+int eloSize=0;
 
-}
-__device__ void reducex_suporte(int suporte,size_t endThread) {
-
-    if (threadIdx.x == endThread-1 ) {
-        Elo *elo_x= (Elo *)malloc(sizeof(Elo)*index_elo_put);
-        for (int i = 0; i < index_elo_put; ++i){
-            elo_x[i]= elo[i];
+for(int k=0;k<eloMapSize;++k){
+        int i=0;
+        bool flag= true;
+            while(i<eloMapSize && flag){
+            if(0==compare(setMap[i].elo.ItemId," ")){
+                printf("Igual Thread %d  | SET %s | ELO  %s \n",k,setMap[i].elo.ItemId,elo_x[k].ItemId);
+                setMap[i].elo=elo_x[k];
+                eloSize++;
+                flag =false;
+            }else{
+                if(0==compare(elo_x[k].ItemId,setMap[i].elo.ItemId)){
+                    flag =false;
+                    printf("Thread %d  | SET %s | ELO  %s \n",k,setMap[i].elo.ItemId,elo_x[k].ItemId);
+                }
+            }
+            i++;
         }
-        frequencia_x<<<1,25>> .(elo_x,index_elo_put);
-        index_elo_put=0;
     }
+
+
+    for(int i =0;i<eloSize;++i ){
+        printf("SeMap Thread %d valor MAP %s \n",threadIdx.x,setMap[i].elo.ItemId);
+     }
+    }
+    __syncthreads();
+
 }
 
-//    int k=0;
-//    int kk=(int)nn;
-//
 
-//    for (int i=kk; i < (n+kk); ++i) {
-//
-//        Elo_k1[i] = elo_k1[k];
-//        printf("THREAD %d ITEMID %s | IndexArray %d| Suporte %d |\n", threadIdx.x,Elo_k1[i].ItemId,Elo_k1[i].indexArrayMap,Elo_k1[i].suporte);
-//
-//        k++;
-//    }
-//    if(threadIdx.x==9){
-//        for (int i=0; i <15; ++i) {
-//            printf("THREAD %d ITEMID %s | IndexArray %d| Suporte %d |\n", threadIdx.x,Elo_k1[i].ItemId,Elo_k1[i].indexArrayMap,Elo_k1[i].suporte);
-//        }
-//    }
+__device__ void pfp_growth(Elo **elo_k1,int *nn,ArrayMap *arrayMap, Elo *eloMap, size_t arrayMapSize, size_t eloMapSize) {
 
-//    nn=(int*)kk+n;
-//    printf("%d %d\n",threadIdx.x ,nn);
-//    __syncthreads();
-//    if(threadIdx.x==10) {
-//        printf("FIM %d %d\n",threadIdx.x ,nn);
-//        for (int i = 0; i < nn ; ++i) {
-//            printf("THREAD %d ITEMID %s | IndexArray %d| Suporte %d |\n", threadIdx.x,elo_k1[i].ItemId,elo_k1[i].indexArrayMap,elo_k1[i].suporte);
-//        }
-//    }
-//    __syncthreads();
+// Algoritmo 1 Begin;
 
-//        printf("THREAD %d ITEMID %s | IndexArray %d| Suporte %d |\n", threadIdx.x,
-//               eloGrid[threadIdx.x].eloMap[indexEloMap].elo[i].ItemId,
-//               eloGrid[threadIdx.x].eloMap[indexEloMap].elo[i].indexArrayMap,
-//               eloGrid[threadIdx.x].eloMap[indexEloMap].elo[i].suporte);
-//    }
-//    eloGrid[threadIdx.x].size=eloGrid[threadIdx.x].size+1;
-////    eloGrid[threadIdx.x].size=eloGrid[threadIdx.x].size+1;
-//    for (int k = 0; k < setMap->size ; ++k) {
-//        printf("%s | %d\n",setMap->elo[k].ItemId,setMap->array[k]);
-//
-//    }
-
-//for (int i = 0; i < n; ++i){
-//printf("THREAD %d ITEMID %s | IndexArray %d| Suporte %d |\n", threadIdx.x, Elo_k1[i].ItemId,
-//Elo_k1[i].indexArrayMap,Elo_k1[i].suporte);
-//}
-
-
-__device__ void
-geracao_candidato(Elo **elo_k1,int *nn,ArrayMap *arrayMap, Elo *eloMap, size_t arrayMapSize, size_t eloMapSize) {
-    auto indexAtual = threadIdx.x;
+auto indexAtual = threadIdx.x;
     int xxx = 0;
     bool flag = true;
     Elo *Elo_k1 = (Elo *) malloc(sizeof(Elo) * eloMapSize);
@@ -180,14 +150,27 @@ geracao_candidato(Elo **elo_k1,int *nn,ArrayMap *arrayMap, Elo *eloMap, size_t a
             xxx++;
 
     }
-    put_k1_elo(elo_k1,Elo_k1,(xxx-1));
-    reducex_suporte(3,eloMapSize);
+// Algoritmo 1 End;
+
+// Algoritmo 2 Begin;
+    for (int i = 0; i < (xxx-1); ++i)
+    elo[atomicAdd(&index_elo_put,1)]=Elo_k1[i];
+
+    if (threadIdx.x == eloMapSize-1 ) {
+        Elo *elo_x= (Elo *)malloc(sizeof(Elo)*index_elo_put);
+        for (int i = 0; i < index_elo_put; ++i){
+                    elo_x[i]= elo[i];
+        }
+        frequencia_x<<<1,index_elo_put,sizeof(SetMap)*index_elo_put*index_elo_put >>>(elo_x,index_elo_put);
+        cudaDeviceSynchronize();
+        index_elo_put=0;
+       }
 }
 
 __global__ void run(Elo **Elo_k1,int *nn, ArrayMap *arrayMap, Elo *eloMap, size_t ArrayMapSize, size_t eloMapSize) {
 
     if (threadIdx.x < eloMapSize) {
-    geracao_candidato(Elo_k1,nn,arrayMap, eloMap, ArrayMapSize, eloMapSize);
+        pfp_growth(Elo_k1,nn,arrayMap, eloMap, ArrayMapSize, eloMapSize);
     }
 
 }
