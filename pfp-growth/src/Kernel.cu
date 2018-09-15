@@ -26,12 +26,13 @@ inline void gpuAssert(cudaError_t code, const char *file, int line, bool abort =
     }
 }
 __device__ char *counter1;
-__device__ int counter2;
+__device__ int inde_new_elo;
 __device__ int index_elo_setmap;
 __shared__ Elo elo[256];
 __device__ int index_elo_put;
-
-
+ArrayMap *arrayMap;
+Elo **Elo_k1;
+int arr
 __device__ int compare(char* String_1, char* String_2)
 {
     char TempChar_1,
@@ -77,12 +78,16 @@ __device__ char *my_cpcat(const char *array1, const char *array2, char *src) {
     return src;
 }
 
-__global__ void frequencia_x( Elo *elo_x,int eloMapSize){
+__global__ void frequencia_x( Elo *elo_x,int eloMapSize, int minimo){
 extern __shared__ SetMap setMap[];
+ __shared__ Elo elo_new_put[70];
 int eloSize=0;
+//Elo *elo_new_put
+//elo_new_put = (Elo *)malloc(sizeof(Elo )* eloMapSize );
+
+memset(elo_new_put,0,sizeof(Elo)*eloMapSize);
 
 memset(setMap,0,sizeof(SetMap)*eloMapSize);
-char  valr[23]="";
 if(threadIdx.x==0){
    for(int k=0;k<eloMapSize;++k){
           my_strcpy(setMap[k].elo.ItemId," ");
@@ -90,7 +95,7 @@ if(threadIdx.x==0){
 
 }
 
-//__syncthreads();
+__syncthreads();
 if(threadIdx.x==0){
 
 for(int k=0;k<eloMapSize;++k){
@@ -105,24 +110,46 @@ for(int k=0;k<eloMapSize;++k){
                 if(0==compare(elo_x[k].ItemId,setMap[i].elo.ItemId)){
                     flag =false;
                     setMap[i].elo.suporte+=elo_x[k].suporte;
-                }
+                    }
             }
             i++;
         }
     }
         atomicAdd(&index_elo_setmap,eloSize);
-
-
+}
+__syncthreads();
+bool newFlag=true;
+int indexSetMap=0;
+while(newFlag && indexSetMap < index_elo_setmap){
+    if((0==compare(elo_x[threadIdx.x].ItemId,setMap[indexSetMap].elo.ItemId )) && (setMap[indexSetMap].elo.suporte >= minimo)){
+        elo_new_put[atomicAdd(&inde_new_elo,1)]=elo_x[threadIdx.x];
+        newFlag=false;
     }
-    if(threadIdx.x==24){
-    for(int i =0;i<16;++i ){
-        printf("SeMap Thread %d valor MAP %s Suporte %d \n",threadIdx.x,setMap[i].elo.ItemId,setMap[i].elo.suporte);
-        }
-    }
+    indexSetMap++;
 }
 
 
-__device__ void pfp_growth(Elo **elo_k1,int *nn,ArrayMap *arrayMap, Elo *eloMap, size_t arrayMapSize, size_t eloMapSize) {
+    if(threadIdx.x==eloMapSize-1){
+        for(int i =0;i<index_elo_setmap;++i ){
+            printf("SetMAP Thread %d valor MAP %s Suporte %d \n",threadIdx.x,setMap[i].elo.ItemId,setMap[i].elo.suporte);
+        }
+        for(int i =0;i<inde_new_elo;++i ){
+        printf("Elo_new_PUT Thread %d valor MAP %s Suporte %d \n",threadIdx.x,elo_new_put[i].ItemId,elo_new_put[i].suporte);
+        }
+        run<<<1,>>>();
+
+    }
+
+}
+
+//__global__ void runInterno(Elo **Elo_k1,int *nn, ArrayMap *arrayMap, Elo *eloMap, size_t ArrayMapSize, size_t eloMapSize) {
+
+if (threadIdx.x < eloMapSize) {
+pfp_growth(Elo_k1,nn,arrayMap, eloMap, ArrayMapSize, eloMapSize);
+}
+
+}
+__device__ void pfp_growth(Elo **elo_k1,int *nn,ArrayMap *aarrayMap, Elo *eloMap, size_t arrayMapSize, size_t eloMapSize) {
 
 // Algoritmo 1 Begin;
 
@@ -161,13 +188,18 @@ auto indexAtual = threadIdx.x;
         for (int i = 0; i < index_elo_put; ++i){
                     elo_x[i]= elo[i];
         }
-        frequencia_x<<<1,index_elo_put,sizeof(SetMap)*index_elo_put*index_elo_put >>>(elo_x,index_elo_put);
+        frequencia_x<<<1,index_elo_put,sizeof(SetMap)*index_elo_put >>>(elo_x,index_elo_put,3);
         cudaDeviceSynchronize();
         index_elo_put=0;
        }
 }
 
-__global__ void run(Elo **Elo_k1,int *nn, ArrayMap *arrayMap, Elo *eloMap, size_t ArrayMapSize, size_t eloMapSize) {
+__global__ void run(Elo **EElo_k1,int *nn, ArrayMap *aarrayMap, Elo *eloMap, size_t AArrayMapSize, size_t eloMapSize) {
+if (threadIdx.x == 0) {
+arrayMap = aarrayMap;
+Elo_k1=EElo_k1;
+ArrayMapSize= AArrayMapSize;
+}
 
     if (threadIdx.x < eloMapSize) {
         pfp_growth(Elo_k1,nn,arrayMap, eloMap, ArrayMapSize, eloMapSize);
