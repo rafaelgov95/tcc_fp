@@ -27,7 +27,7 @@ inline void gpuAssert(cudaError_t code, const char *file, int line, bool abort =
 }
 __device__ char *counter1;
 __device__ int counter2;
-__device__ int counter3;
+__device__ int index_elo_setmap;
 __shared__ Elo elo[256];
 __device__ int index_elo_put;
 
@@ -79,6 +79,8 @@ __device__ char *my_cpcat(const char *array1, const char *array2, char *src) {
 
 __global__ void frequencia_x( Elo *elo_x,int eloMapSize){
 extern __shared__ SetMap setMap[];
+int eloSize=0;
+
 memset(setMap,0,sizeof(SetMap)*eloMapSize);
 char  valr[23]="";
 if(threadIdx.x==0){
@@ -88,36 +90,35 @@ if(threadIdx.x==0){
 
 }
 
-__syncthreads();
+//__syncthreads();
 if(threadIdx.x==0){
-int eloSize=0;
 
 for(int k=0;k<eloMapSize;++k){
         int i=0;
         bool flag= true;
             while(i<eloMapSize && flag){
             if(0==compare(setMap[i].elo.ItemId," ")){
-                printf("Igual Thread %d  | SET %s | ELO  %s \n",k,setMap[i].elo.ItemId,elo_x[k].ItemId);
                 setMap[i].elo=elo_x[k];
                 eloSize++;
                 flag =false;
             }else{
                 if(0==compare(elo_x[k].ItemId,setMap[i].elo.ItemId)){
                     flag =false;
-                    printf("Thread %d  | SET %s | ELO  %s \n",k,setMap[i].elo.ItemId,elo_x[k].ItemId);
+                    setMap[i].elo.suporte+=elo_x[k].suporte;
                 }
             }
             i++;
         }
     }
+        atomicAdd(&index_elo_setmap,eloSize);
 
 
-    for(int i =0;i<eloSize;++i ){
-        printf("SeMap Thread %d valor MAP %s \n",threadIdx.x,setMap[i].elo.ItemId);
-     }
     }
-    __syncthreads();
-
+    if(threadIdx.x==24){
+    for(int i =0;i<16;++i ){
+        printf("SeMap Thread %d valor MAP %s Suporte %d \n",threadIdx.x,setMap[i].elo.ItemId,setMap[i].elo.suporte);
+        }
+    }
 }
 
 
@@ -132,17 +133,16 @@ auto indexAtual = threadIdx.x;
     while (flag && (indexAtual + xxx) < eloMapSize) {
         char a[32] = "";
             auto indexParentArrayMap = arrayMap[eloMap[indexAtual + xxx].indexArrayMap].indexP;
-            if (arrayMap[indexParentArrayMap].indexP != -1 &&
-                arrayMap[eloMap[indexAtual].indexArrayMap].indexP != -1) {
-                my_cpcat(arrayMap[eloMap[indexAtual].indexArrayMap].ItemId,
-                         arrayMap[indexParentArrayMap].ItemId, a);
-                my_strcpy(Elo_k1[xxx].ItemId, a);
-                Elo_k1[xxx].indexArrayMap = arrayMap[eloMap[indexAtual+xxx].indexArrayMap].indexP;
-                Elo_k1[xxx].suporte = arrayMap[eloMap[indexAtual+xxx].indexArrayMap].suporte;
+            auto indexThreadArrayMap = eloMap[indexAtual].indexArrayMap;
+            if (arrayMap[indexThreadArrayMap].indexP != -1 &&
+                arrayMap[indexParentArrayMap].indexP != -1) {
+                my_cpcat(arrayMap[indexThreadArrayMap].ItemId,
+                         arrayMap[indexParentArrayMap].ItemId, Elo_k1[xxx].ItemId);
+                Elo_k1[xxx].indexArrayMap = arrayMap[indexParentArrayMap].indexP;
+                Elo_k1[xxx].suporte = arrayMap[indexThreadArrayMap].suporte;
             } else {
                 my_cpcat(arrayMap[eloMap[indexAtual].indexArrayMap].ItemId,
-                         arrayMap[indexParentArrayMap].ItemId, a);
-                my_strcpy(Elo_k1[xxx].ItemId, a);
+                         arrayMap[indexParentArrayMap].ItemId, Elo_k1[xxx].ItemId);
                 Elo_k1[xxx].indexArrayMap = arrayMap[indexParentArrayMap].indexP;
                 Elo_k1[xxx].suporte = arrayMap[indexAtual].suporte;
                flag = false;
