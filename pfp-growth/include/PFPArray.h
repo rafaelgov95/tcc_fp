@@ -47,7 +47,7 @@ typedef struct {
 
 typedef struct{
     Elo *eloArray;
-    size_t size;
+    int size;
 }EloVector;
 
 

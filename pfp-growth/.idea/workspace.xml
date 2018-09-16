@@ -14,54 +14,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5c27c88-cbca-48a3-9363-a43c1d9f5e45" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeDetermineCompilerABI_CUDA.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeDetermineCompilerABI_CUDA.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/a.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/CUDA.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/src/PFPArray.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/CUDA.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/CUDA.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/cmake_device_link.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/cmake_device_link.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/dlink.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/dlink.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/main.cu.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/main.cu.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/src/Kernel.cu.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/src/Kernel.cu.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/unit-test/Test_PFPGrowth.cu.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/CUDA.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/CUDA.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/src/Kernel.cu.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/fp_cuda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/fp_cuda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libcpu_library_fp_growth.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libcpu_library_fp_growth.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libgpu_library_fp_growth.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libgpu_library_fp_growth.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/pfp_growth.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/pfp_growth.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/src/Kernel.cu.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/include/Kernel.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Kernel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/PFPArray.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/PFPArray.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kernel.cu" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kernel.cu" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PFPGrowth.cu" beforeDir="false" afterPath="$PROJECT_DIR$/src/PFPGrowth.cu" afterDir="false" />
     </list>
@@ -83,16 +38,16 @@
         <entry file="file://$PROJECT_DIR$/include/Kernel.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="14" column="53" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="53" />
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PFPTree.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/PFPTree.h">
+      <file leaf-file-name="cudaHeaders.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/cudaHeaders.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="48" column="2" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="2" />
+            <state relative-caret-position="400">
+              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -100,8 +55,8 @@
       <file leaf-file-name="Kernel.cu" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Kernel.cu">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="188" column="46" selection-start-line="188" selection-start-column="46" selection-end-line="188" selection-end-column="46" />
+            <state relative-caret-position="172">
+              <caret line="158" column="64" selection-start-line="158" selection-start-column="64" selection-end-line="158" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -136,8 +91,8 @@
       <file leaf-file-name="PFPGrowth.cu" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PFPGrowth.cu">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+            <state relative-caret-position="3">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
             </state>
           </provider>
         </entry>
@@ -163,8 +118,8 @@
       <file leaf-file-name="PFPArray.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/PFPArray.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+            <state relative-caret-position="80">
+              <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -219,9 +174,9 @@
         <option value="$PROJECT_DIR$/unit-test/Test_PFPGrowth.cu" />
         <option value="$PROJECT_DIR$/src/PFPArray.cpp" />
         <option value="$PROJECT_DIR$/include/PFPGrowth.cu.h" />
-        <option value="$PROJECT_DIR$/include/PFPArray.h" />
         <option value="$PROJECT_DIR$/include/Kernel.h" />
         <option value="$PROJECT_DIR$/src/PFPGrowth.cu" />
+        <option value="$PROJECT_DIR$/include/PFPArray.h" />
         <option value="$PROJECT_DIR$/src/Kernel.cu" />
       </list>
     </option>
@@ -430,12 +385,12 @@
       <workItem from="1537036561567" duration="11373000" />
       <workItem from="1537103512524" duration="11042000" />
       <workItem from="1537118071072" duration="243000" />
-      <workItem from="1537118337450" duration="1476000" />
+      <workItem from="1537118337450" duration="4455000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="514532000" />
+    <option name="totallyTimeSpent" value="517511000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -450,17 +405,17 @@
     <frame x="1920" y="0" width="1360" height="768" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.64831805" visible="true" weight="0.23859386" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6476427" visible="true" weight="0.23859386" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32894737" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.87658936" weight="0.32376397" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.8563949" weight="0.5295056" />
       <window_info anchor="bottom" id="CMake" order="9" weight="0.33881578" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5078534" side_tool="true" visible="true" weight="0.4784689" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.52879584" side_tool="true" visible="true" weight="0.35725677" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.23285486" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32854864" />
       <window_info anchor="bottom" id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32695374" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4921466" visible="true" weight="0.4784689" />
-      <window_info id="Favorites" order="1" sideWeight="0.35168195" side_tool="true" visible="true" weight="0.23859386" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4973822" weight="0.20574163" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4712042" visible="true" weight="0.35725677" />
+      <window_info id="Favorites" order="1" sideWeight="0.35235733" side_tool="true" visible="true" weight="0.23859386" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -696,13 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/cudaHeaders.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/PFPGrowth.cu.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -759,31 +707,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/PFPArray.h">
+    <entry file="file://$PROJECT_DIR$/include/cudaHeaders.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+        <state relative-caret-position="400">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/Kernel.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="14" column="53" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="53" />
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/PFPArray.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PFPGrowth.cu">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+        <state relative-caret-position="3">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Kernel.cu">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="188" column="46" selection-start-line="188" selection-start-column="46" selection-end-line="188" selection-end-column="46" />
+        <state relative-caret-position="172">
+          <caret line="158" column="64" selection-start-line="158" selection-start-column="64" selection-end-line="158" selection-end-column="64" />
         </state>
       </provider>
     </entry>
