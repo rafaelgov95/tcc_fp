@@ -21,21 +21,25 @@ inline void gpuAssert(cudaError_t code, const char *file, int line, bool abort =
 PFPGrowth::PFPGrowth(ArrayMap *arrayMap, Elo *eloMap, size_t arrayMapSize, size_t eloPosMapSize) {
     ArrayMap *device_ArrayMap;
     Elo *device_EloMap;
-    Elo *device_pointer_elo_kx[eloPosMapSize], *host_pointer_elo_kx[eloPosMapSize];
-    int *device_int_array;
+    EloVector *device_pointer_elo_kx, *host_pointer_elo_kx, *data_host_pointer_elo_kx;
 
-    cudaMalloc((void**) &device_int_array, sizeof(int)*eloPosMapSize);
-    cudaMemset (device_int_array , 0 , eloPosMapSize * sizeof ( int ));
-    for (int i = 0; i < eloPosMapSize ; ++i) {
-         host_pointer_elo_kx[i]=(Elo*)malloc(sizeof(Elo) * eloPosMapSize);
-   }
-   for (int i = 0; i < eloPosMapSize ; ++i) {
-        cudaMalloc((void **) &device_pointer_elo_kx[i], sizeof(Elo) * eloPosMapSize);
-    }
-
+    data_host_pointer_elo_kx = (EloVector *)malloc(sizeof(EloVector)*eloPosMapSize);
     for (int j = 0; j < eloPosMapSize; ++j) {
-        cudaMemcpy(device_pointer_elo_kx[j],host_pointer_elo_kx[j],sizeof(Elo) *eloPosMapSize,cudaMemcpyHostToDevice);
+        data_host_pointer_elo_kx[j].eloArray=(Elo *)malloc(sizeof(Elo)*eloPosMapSize);
     }
+    data_host_pointer_elo_kx->eloArray=eloMap;
+    data_host_pointer_elo_kx->size=eloPosMapSize;
+
+    host_pointer_elo_kx = (EloVector*)malloc(eloPosMapSize * sizeof(EloVector));
+    memcpy(host_pointer_elo_kx, data_host_pointer_elo_kx, eloPosMapSize * sizeof(EloVector));
+
+    for (int i=0; i<eloPosMapSize; i++){
+        cudaMalloc(&(host_pointer_elo_kx[i].eloArray), eloPosMapSize*sizeof(Elo));
+        cudaMemcpy(host_pointer_elo_kx[i].eloArray, data_host_pointer_elo_kx[i].eloArray, eloPosMapSize*sizeof(Elo), cudaMemcpyHostToDevice);
+    }
+
+    cudaMalloc((void **)&device_pointer_elo_kx, sizeof(EloVector)*eloPosMapSize);
+    cudaMemcpy(device_pointer_elo_kx,host_pointer_elo_kx,sizeof(EloVector)*eloPosMapSize,cudaMemcpyHostToDevice);
 
     gpuErrchk(cudaMalloc((void **) &device_ArrayMap, sizeof(ArrayMap) * arrayMapSize));
     gpuErrchk(cudaMemcpy(device_ArrayMap, arrayMap, sizeof(ArrayMap) * arrayMapSize, cudaMemcpyHostToDevice));
@@ -45,11 +49,8 @@ PFPGrowth::PFPGrowth(ArrayMap *arrayMap, Elo *eloMap, size_t arrayMapSize, size_
 
     run << < 1,eloPosMapSize >>>
             (device_pointer_elo_kx,
-                    device_int_array,
                     device_ArrayMap,
-                    device_EloMap,
-                    arrayMapSize,
-                    eloPosMapSize);
+                    arrayMapSize);
 
     gpuErrchk(cudaPeekAtLastError());
     gpuErrchk(cudaDeviceSynchronize());

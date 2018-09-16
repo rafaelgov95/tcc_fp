@@ -36,7 +36,7 @@ typedef struct {
 
 typedef struct {
     Elo *elo;
-    cuda_int size;
+    size_t size;
 } EloMap;
 
 
@@ -44,6 +44,11 @@ typedef struct {
     EloMap *eloMap;
     cuda_int size;
 } EloGrid;
+
+typedef struct{
+    Elo *eloArray;
+    size_t size;
+}EloVector;
 
 
 using HashMap = std::vector<std::pair<PFPArrayMap, int >>;
