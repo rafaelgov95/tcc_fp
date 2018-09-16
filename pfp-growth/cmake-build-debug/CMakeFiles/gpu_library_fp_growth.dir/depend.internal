@@ -7,8 +7,8 @@ CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o
  ../include/PFPGrowth.cu.h
  ../include/PFPTree.h
  ../include/cudaHeaders.h
- /home/rafael/socorro/tcc_fp/pfp-growth/include/PFPArray.h
- /home/rafael/socorro/tcc_fp/pfp-growth/src/PFPGrowth.cu
+ /home/rafael/Documentos/tcc_fp/pfp-growth/include/PFPArray.h
+ /home/rafael/Documentos/tcc_fp/pfp-growth/src/PFPGrowth.cu
  /opt/cuda/include/builtin_types.h
  /opt/cuda/include/crt/host_defines.h
  /opt/cuda/include/cuda.h
