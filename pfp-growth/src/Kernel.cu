@@ -108,6 +108,8 @@ __global__ void frequencia_x(EloVector *elo_k1,int elo_k1_current,Elo *elo_x,int
                 while (i < eloMapSize && flag) {
                     if (0 == compare(setMap[i].elo.ItemId, " ")) {
                         setMap[i].elo = elo_x[k];
+//                        printf("%s\n", setMap[i].elo.ItemId);
+                        elo_k1[elo_k1_current].eloArray[i] = setMap[i].elo;
                         eloSize++;
                         flag = false;
                     } else {
@@ -120,7 +122,7 @@ __global__ void frequencia_x(EloVector *elo_k1,int elo_k1_current,Elo *elo_x,int
                 }
             }
             atomicAdd(&index_elo_setmap, eloSize);
-
+            elo_k1[elo_k1_current].size = eloSize;
         }
         __syncthreads();
         while (newFlag && indexSetMap < index_elo_setmap) {
@@ -133,21 +135,19 @@ __global__ void frequencia_x(EloVector *elo_k1,int elo_k1_current,Elo *elo_x,int
         }
         __syncthreads();
 
-    if (threadIdx.x == eloMapSize - 1) {
-            for (int i = 0; i < index_new_elo; ++i) {
-                elo_k1[elo_k1_current].eloArray[i] = elo_new_put[i];
-            }
-            elo_k1[elo_k1_current].size = index_new_elo;
-        }
+//    if (threadIdx.x == eloMapSize - 1) {
+//            for (int i = 0; i < index_new_elo; ++i) {
+//                elo_k1[elo_k1_current].eloArray[i] = elo_new_put[i];
+//            }
+//            elo_k1[elo_k1_current].size = index_new_elo;
+//        }
 
 }
 
 __global__ void pfp_growth(EloVector *elo_k1, int *elo_curr ,ArrayMap *arrayMap,size_t arrayMapSize) {
-//    __shared__ Elo elo[199];
     extern __shared__ Elo elo[];
-
     auto indexAtual = blockIdx.x * blockDim.x + threadIdx.x;
-    int  elo_cur= *elo_curr;
+    int  elo_cur= (*elo_curr)-1;
     int xxx = 0;
     bool flag = true;
     Elo *Elo_k1 = (Elo *) malloc(sizeof(Elo) * elo_k1[elo_cur].size);
@@ -168,8 +168,6 @@ __global__ void pfp_growth(EloVector *elo_k1, int *elo_curr ,ArrayMap *arrayMap,
         }
 
 
-
-
 // Algoritmo 1 End;
 // Algoritmo 2 Begin;
     for (int i = 0; i < (xxx-1); ++i)
@@ -179,14 +177,14 @@ __global__ void pfp_growth(EloVector *elo_k1, int *elo_curr ,ArrayMap *arrayMap,
         Elo *elo_x= (Elo *)malloc(sizeof(Elo)*index_elo_put);
         for (int i = 0; i < index_elo_put; ++i){
                     elo_x[i]= elo[i];
-                    printf("INDO PRA MORTE Round :%d  | ELO :%s | IndexArray :%d | Suporte :%d\n",elo_cur,elo_x[i].ItemId,elo_x[i].indexArrayMap,elo_x[i].suporte);
+//                    printf("INDO PRA MORTE Round :%d  | ELO :%s | IndexArray :%d | Suporte :%d\n",elo_cur,elo_x[i].ItemId,elo_x[i].indexArrayMap,elo_x[i].suporte);
         }
 
 
         frequencia_x<<<1,index_elo_put,sizeof(SetMap)*index_elo_put>>>(elo_k1,elo_cur+1,elo_x,index_elo_put,3);
         cudaDeviceSynchronize();
         for (int i = 0; i < elo_k1[elo_cur+1].size; ++i){
-                printf("VOLTA DA MORTE  Round :%d  | ELO :%s | IndexArray :%d | Suporte :%d\n",elo_cur,elo_k1[elo_cur+1].eloArray[i].ItemId,elo_k1[elo_cur+1].eloArray[i].indexArrayMap,elo_k1[elo_cur+1].eloArray[i].suporte);
+//                printf("VOLTA DA MORTE  Round :%d  | ELO :%s | IndexArray :%d | Suporte :%d\n",elo_cur,elo_k1[elo_cur+1].eloArray[i].ItemId,elo_k1[elo_cur+1].eloArray[i].indexArrayMap,elo_k1[elo_cur+1].eloArray[i].suporte);
         }
         index_elo_put=0;
         if(elo_k1[elo_cur+1].size > 0){
