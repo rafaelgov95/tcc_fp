@@ -77,7 +77,7 @@ PFPGrowth::PFPGrowth(ArrayMap *arrayMap, Elo *eloMap, size_t arrayMapSize, size_
     printf("Total de Gerações de Frequência %d\n",hostEloVectorSize+1);
     for (int k = 0; k <=hostEloVectorSize; ++k) {
         for (int j = 0; j <host_elos_vector_and_memory_pointer_elos[k].size; ++j) {
-            printf("VALOR %s  IndexMAP %d  Suporte %d \n",host_elos[k][j].ItemId,host_elos[k][j].indexArrayMap,host_elos[k][j].suporte);
+            printf("%s;%d;%d \n",host_elos[k][j].ItemId,host_elos[k][j].indexArrayMap,host_elos[k][j].suporte);
         }
     }
 

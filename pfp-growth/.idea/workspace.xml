@@ -15,11 +15,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a5c27c88-cbca-48a3-9363-a43c1d9f5e45" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cpu_library_fp_growth.dir/src/PFPTree.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/cmake_device_link.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/cmake_device_link.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/main.cu.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/main.cu.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/src/Kernel.cu.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fp_cuda.dir/src/Kernel.cu.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gpu_library_fp_growth.dir/src/PFPGrowth.cu.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/fp_cuda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/fp_cuda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libcpu_library_fp_growth.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libcpu_library_fp_growth.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/libgpu_library_fp_growth.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libgpu_library_fp_growth.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kernel.cu" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kernel.cu" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PFPGrowth.cu" beforeDir="false" afterPath="$PROJECT_DIR$/src/PFPGrowth.cu" afterDir="false" />
@@ -39,11 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Kernel.cu" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Kernel.cu" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Kernel.cu">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="126" column="22" selection-start-line="126" selection-start-column="22" selection-end-line="126" selection-end-column="22" />
+            <state relative-caret-position="300">
+              <caret line="157" column="49" selection-start-line="157" selection-start-column="49" selection-end-line="157" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -51,8 +52,8 @@
       <file leaf-file-name="PFPGrowth.cu" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PFPGrowth.cu">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="74" column="5" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+            <state relative-caret-position="525">
+              <caret line="77" column="41" lean-forward="true" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -66,11 +67,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PFPTree.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PFPTree.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PFPTree.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="56" column="26" selection-start-line="43" selection-start-column="21" selection-end-line="56" selection-end-column="26" />
+            <state relative-caret-position="497">
+              <caret line="69" column="11" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_allocator.h" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/ext/new_allocator.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="110" selection-start-line="110" selection-end-line="110" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fp_cuda (disassembly)" pinned="false" current-in-tab="false">
+        <entry file="mock:///fp_cuda (disassembly)">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fp_cuda (disassembly)" pinned="false" current-in-tab="false">
+        <entry file="mock:///fp_cuda (disassembly)">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="atomicity.h" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/ext/atomicity.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
             </state>
           </provider>
         </entry>
@@ -140,9 +180,9 @@
         <option value="$PROJECT_DIR$/include/PFPArray.h" />
         <option value="$PROJECT_DIR$/include/Kernel.h" />
         <option value="$PROJECT_DIR$/unit-test/Test_PFPGrowth.cu" />
+        <option value="$PROJECT_DIR$/src/PFPTree.cpp" />
         <option value="$PROJECT_DIR$/src/PFPGrowth.cu" />
         <option value="$PROJECT_DIR$/src/Kernel.cu" />
-        <option value="$PROJECT_DIR$/src/PFPTree.cpp" />
       </list>
     </option>
   </component>
@@ -355,12 +395,12 @@
       <workItem from="1537192163133" duration="3269000" />
       <workItem from="1537214173000" duration="2867000" />
       <workItem from="1537231145709" duration="15000" />
-      <workItem from="1537231695534" duration="13298000" />
+      <workItem from="1537231695534" duration="16209000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="552511000" />
+    <option name="totallyTimeSpent" value="555422000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -375,17 +415,17 @@
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6360153" visible="true" weight="0.2641012" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8611632" visible="true" weight="0.2641012" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32894737" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.6209805" weight="0.4901316" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.5882973" weight="0.4901316" />
       <window_info anchor="bottom" id="CMake" order="9" weight="0.33881578" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.34475487" side_tool="true" visible="true" weight="0.4276316" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.37743807" side_tool="true" visible="true" weight="0.41557017" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.23285486" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32854864" />
       <window_info anchor="bottom" id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4949921" weight="0.40460527" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6552451" visible="true" weight="0.4276316" />
-      <window_info id="Favorites" order="1" sideWeight="0.36398467" side_tool="true" visible="true" weight="0.2641012" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49446493" weight="0.40460527" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.62256193" visible="true" weight="0.41557017" />
+      <window_info id="Favorites" order="1" sideWeight="0.13883677" side_tool="true" visible="true" weight="0.2641012" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -484,20 +524,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="844">
           <caret line="419" column="6" selection-start-line="419" selection-start-column="6" selection-end-line="419" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/ext/new_allocator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="135" column="6" selection-start-line="135" selection-start-column="6" selection-end-line="135" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/ext/atomicity.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>
@@ -677,24 +703,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/ext/atomicity.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/include/c++/ext/new_allocator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="110" selection-start-line="110" selection-end-line="110" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/unit-test/Test_PFPGrowth.cu">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
           <caret line="38" column="119" selection-start-line="38" selection-start-column="119" selection-end-line="38" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PFPGrowth.cu">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="74" column="5" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kernel.cu">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="126" column="22" selection-start-line="126" selection-start-column="22" selection-end-line="126" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -707,8 +733,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PFPTree.cpp">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="69" column="11" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PFPGrowth.cu">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="77" column="41" lean-forward="true" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kernel.cu">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="56" column="26" selection-start-line="43" selection-start-column="21" selection-end-line="56" selection-end-column="26" />
+          <caret line="157" column="49" selection-start-line="157" selection-start-column="49" selection-end-line="157" selection-end-column="49" />
         </state>
       </provider>
     </entry>
