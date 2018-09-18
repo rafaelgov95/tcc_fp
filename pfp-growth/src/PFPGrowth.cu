@@ -20,52 +20,70 @@ inline void gpuAssert(cudaError_t code, const char *file, int line, bool abort =
 
 PFPGrowth::PFPGrowth(ArrayMap *arrayMap, Elo *eloMap, size_t arrayMapSize, size_t eloPosMapSize) {
     ArrayMap *device_ArrayMap;
-    Elo *device_EloMap;
-    EloVector *device_pointer_elo_kx, *host_pointer_elo_kx, *data_host_pointer_elo_kx;
+    EloVector *device_pointer_elo_vector, *host_elos_vector_and_memory_pointer_elos, *data_host_elos_vector;
+    Elo *host_elos[eloPosMapSize];
+    int *deviceEloVectorSize;
+    int hostEloVectorSize=0;
 
-    data_host_pointer_elo_kx = (EloVector *)malloc(sizeof(EloVector)*eloPosMapSize);
+
+    data_host_elos_vector = (EloVector *)malloc(sizeof(EloVector)*eloPosMapSize);
     for (int j = 0; j < eloPosMapSize; ++j) {
-        data_host_pointer_elo_kx[j].eloArray=(Elo *)malloc(sizeof(Elo)*eloPosMapSize);
+        data_host_elos_vector[j].eloArray=(Elo *)malloc(sizeof(Elo)*eloPosMapSize);
     }
-    data_host_pointer_elo_kx->eloArray=eloMap;
-    data_host_pointer_elo_kx->size=eloPosMapSize;
+    data_host_elos_vector[0].eloArray=eloMap;
+    data_host_elos_vector[0].size=eloPosMapSize;
 
-    host_pointer_elo_kx = (EloVector*)malloc(eloPosMapSize * sizeof(EloVector));
-    memcpy(host_pointer_elo_kx, data_host_pointer_elo_kx, eloPosMapSize * sizeof(EloVector));
+    host_elos_vector_and_memory_pointer_elos = (EloVector*)malloc(eloPosMapSize * sizeof(EloVector));
+    memcpy(host_elos_vector_and_memory_pointer_elos, data_host_elos_vector, eloPosMapSize * sizeof(EloVector));
 
     for (int i=0; i<eloPosMapSize; i++){
-        cudaMalloc(&(host_pointer_elo_kx[i].eloArray), eloPosMapSize*sizeof(Elo));
-        cudaMemcpy(host_pointer_elo_kx[i].eloArray, data_host_pointer_elo_kx[i].eloArray, eloPosMapSize*sizeof(Elo), cudaMemcpyHostToDevice);
+        cudaMalloc(&(host_elos_vector_and_memory_pointer_elos[i].eloArray), eloPosMapSize*sizeof(Elo));
+        cudaMemcpy(host_elos_vector_and_memory_pointer_elos[i].eloArray, data_host_elos_vector[i].eloArray, eloPosMapSize*sizeof(Elo), cudaMemcpyHostToDevice);
     }
+    cudaMalloc((void **)&device_pointer_elo_vector, sizeof(EloVector)*eloPosMapSize);
+    cudaMemcpy(device_pointer_elo_vector,host_elos_vector_and_memory_pointer_elos,sizeof(EloVector)*eloPosMapSize,cudaMemcpyHostToDevice);
 
-    cudaMalloc((void **)&device_pointer_elo_kx, sizeof(EloVector)*eloPosMapSize);
-    cudaMemcpy(device_pointer_elo_kx,host_pointer_elo_kx,sizeof(EloVector)*eloPosMapSize,cudaMemcpyHostToDevice);
 
     gpuErrchk(cudaMalloc((void **) &device_ArrayMap, sizeof(ArrayMap) * arrayMapSize));
+
+    gpuErrchk(cudaMalloc((void **) &deviceEloVectorSize, sizeof(int)));
+
     gpuErrchk(cudaMemcpy(device_ArrayMap, arrayMap, sizeof(ArrayMap) * arrayMapSize, cudaMemcpyHostToDevice));
 
-    gpuErrchk(cudaMalloc((void **) &device_EloMap, sizeof(Elo) * eloPosMapSize));
-    gpuErrchk(cudaMemcpy(device_EloMap, eloMap, sizeof(Elo) * eloPosMapSize, cudaMemcpyHostToDevice));
+    gpuErrchk(cudaMemcpy(deviceEloVectorSize,&hostEloVectorSize, sizeof(int), cudaMemcpyHostToDevice));
 
-    pfp_growth << < 1,eloPosMapSize >>>
-            (device_pointer_elo_kx,0,
+    pfp_growth << < 1,eloPosMapSize,eloPosMapSize*2*sizeof(Elo)>>>
+                  (device_pointer_elo_vector,
+                    deviceEloVectorSize,
                     device_ArrayMap,
                     arrayMapSize);
 
     gpuErrchk(cudaPeekAtLastError());
     gpuErrchk(cudaDeviceSynchronize());
 
+    for(int i =0;i<eloPosMapSize;++i) {
+        host_elos[i] = (Elo *) malloc(eloPosMapSize * sizeof(Elo));
+    }
 
-//    for (int l = 0; l < eloPosMapSize ; ++l) {
-//        cudaMemcpy(host_pointer_elo_kx[l],
-//                   device_pointer_elo_kx[l],
-//                   sizeof(Elo)*eloPosMapSize,
-//                   cudaMemcpyDeviceToHost);
-//
-//    }
+    gpuErrchk(cudaMemcpy(host_elos_vector_and_memory_pointer_elos,device_pointer_elo_vector,sizeof(EloVector)*eloPosMapSize,cudaMemcpyDeviceToHost));
+    gpuErrchk(cudaMemcpy(&hostEloVectorSize,deviceEloVectorSize,sizeof(int),cudaMemcpyDeviceToHost));
 
-    cudaFree(device_EloMap);
+
+    for(int i =0;i<eloPosMapSize;++i){
+        gpuErrchk(cudaMemcpy(host_elos[i],host_elos_vector_and_memory_pointer_elos[i].eloArray,sizeof(Elo)*eloPosMapSize,cudaMemcpyDeviceToHost));
+
+    }
+
+    printf("Valor de Size GrideMap %d\n",hostEloVectorSize);
+    for (int k = 0; k <=hostEloVectorSize+1; ++k) {
+        for (int j = 0; j <host_elos_vector_and_memory_pointer_elos[k].size; ++j) {
+            printf("VALOR %s  IndexMAP %d  Suporte %d \n",host_elos[k][j].ItemId,host_elos[k][j].indexArrayMap,host_elos[k][j].suporte);
+        }
+    }
+
+
     cudaFree(device_ArrayMap);
-
-
+    cudaFree(deviceEloVectorSize);
+    cudaFree(device_pointer_elo_vector);
+    cudaFree(host_elos_vector_and_memory_pointer_elos->eloArray);
 }
